@@ -1,0 +1,42 @@
+id: tlsa-dane-detect
+
+info:
+  name: TLSA/DANE Record Detection
+  author: rxerium
+  severity: info
+  description: |
+    Detects TLSA (Transport Layer Security Authentication) records used for DANE (DNS-based Authentication of Named Entities). DANE allows TLS certificates to be bound to DNS names using DNSSEC.
+  reference:
+    - https://www.rfc-editor.org/rfc/rfc6698
+    - https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities
+  metadata:
+    max-request: 10
+  tags: dns,tlsa,dane,certificate,security,discovery
+
+dns:
+  - name: "{{port}}._tcp.{{FQDN}}"
+    type: TLSA
+
+    payloads:
+      port:
+        - _443
+        - _25
+        - _465
+        - _587
+        - _993
+        - _995
+        - _143
+        - _110
+        - _389
+        - _636
+
+    matchers:
+      - type: word
+        part: answer
+        words:
+          - "IN\tTLSA"
+
+    extractors:
+      - type: regex
+        regex:
+          - 'TLSA\s+\d+\s+\d+\s+\d+\s+(.+)'
