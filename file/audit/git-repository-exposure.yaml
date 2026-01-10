@@ -1,0 +1,41 @@
+id: git-repository-exposure
+
+info:
+  name: Git Repository Exposure
+  author: rxerium
+  severity: high
+  description: Detects exposed .git directory which can leak sensitive source code and configuration information
+  reference:
+    - https://en.internetwache.org/git-scanner-7-12-2015/
+    - https://github.com/internetwache/GitTools
+  classification:
+    cwe-id: CWE-215
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+  metadata:
+    verified: true
+    max-request: 1
+  tags: file,git,exposure,audit,disclosure
+
+file:
+  - extensions:
+      - git
+    matchers:
+      - type: word
+        words:
+          - ".git"
+        part: relative_path
+      
+      - type: regex
+        regex:
+          - "^.*/\\.git$"
+          - "^.*/\\.git/config$"
+          - "^.*/\\.git/HEAD$"
+        part: relative_path
+        condition: or
+    
+    extractors:
+      - type: regex
+        name: git_path
+        regex:
+          - "([^\n]+\\.git[^\n]*)"
+        part: relative_path

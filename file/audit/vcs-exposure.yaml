@@ -1,0 +1,36 @@
+id: vcs-exposure
+
+info:
+  name: Version Control System Exposure
+  author: rxerium
+  severity: high
+  description: Detects exposed version control system directories (.svn, .hg, .bzr) which can leak sensitive source code
+  reference:
+    - https://owasp.org/www-community/attacks/Path_Traversal
+  classification:
+    cwe-id: CWE-215
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+  metadata:
+    verified: true
+    max-request: 1
+  tags: file,vcs,exposure,audit,disclosure,svn,hg,bzr
+
+file:
+  - extensions:
+      - svn
+      - hg
+      - bzr
+    matchers:
+      - type: regex
+        regex:
+          - "^.*/(\\.svn|entries|wc\\.db)$"
+          - "^.*/(\\.hg|store)$"
+          - "^.*/\\.bzr"
+        part: relative_path
+    
+    extractors:
+      - type: regex
+        name: vcs_path
+        regex:
+          - "([^\n]+(?:\\.svn|\\.hg|\\.bzr)[^\n]*)"
+        part: relative_path

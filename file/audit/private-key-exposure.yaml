@@ -1,0 +1,48 @@
+id: private-key-exposure
+
+info:
+  name: Private Key File Exposure
+  author: rxerium
+  severity: critical
+  description: Detects exposed private key files (RSA, DSA, ECDSA, PGP) which can be used to compromise authentication and encryption
+  reference:
+    - https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html
+  classification:
+    cwe-id: CWE-798
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+  metadata:
+    verified: true
+    max-request: 1
+  tags: file,keys,ssh,private-key,exposure,audit,critical
+
+file:
+  - extensions:
+      - pem
+      - key
+      - priv
+      - private
+      - ppk
+    matchers:
+      - type: regex
+        regex:
+          - "^.*/.*(?:id_rsa|id_dsa|id_ecdsa|id_ed25519|private).*$"
+          - "^.*/(server|client|signing)\\.key$"
+          - "^.*/.*\\.ppk$"
+          - "^.*/.*\\.pem$"
+        part: relative_path
+      
+      - type: word
+        words:
+          - "BEGIN RSA PRIVATE KEY"
+          - "BEGIN DSA PRIVATE KEY"
+          - "BEGIN ECDSA PRIVATE KEY"
+          - "BEGIN OPENSSH PRIVATE KEY"
+          - "BEGIN ENCRYPTED PRIVATE KEY"
+        part: body
+    
+    extractors:
+      - type: regex
+        name: private_key
+        regex:
+          - "([^\n]+(?:private|key|pem|ppk)[^\n]*)"
+        part: relative_path

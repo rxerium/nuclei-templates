@@ -1,0 +1,35 @@
+id: environment-variable-exposure
+
+info:
+  name: Environment Variable File Exposure
+  author: rxerium
+  severity: critical
+  description: Detects exposed environment configuration files (.env, .env.local, .env.example) which often contain API keys, database credentials, and other secrets
+  reference:
+    - https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+    - https://github.com/motdotla/dotenv
+  classification:
+    cwe-id: CWE-798
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
+  metadata:
+    verified: true
+    max-request: 1
+  tags: file,env,exposure,audit,secrets,credential
+
+file:
+  - extensions:
+      - env
+      - config
+    matchers:
+      - type: regex
+        regex:
+          - "^.*/\\.env(\\.local|\\.production|\\.development|\\.example|\\.sample)?$"
+          - "^.*/(config\\.env|app\\.env)$"
+        part: relative_path
+    
+    extractors:
+      - type: regex
+        name: env_file
+        regex:
+          - "([^\n]+\\.env[^\n]*)"
+        part: relative_path

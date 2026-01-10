@@ -1,0 +1,40 @@
+id: backup-file-exposure
+
+info:
+  name: Backup File Exposure
+  author: rxerium
+  severity: medium
+  description: Detects exposed backup files (.bak, .backup, .old, .orig, .swp) which may contain sensitive information or outdated credentials
+  reference:
+    - https://owasp.org/www-community/attacks/Path_Traversal
+  classification:
+    cwe-id: CWE-215
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:M/I:N/A:N
+  metadata:
+    verified: true
+    max-request: 1
+  tags: file,backup,exposure,audit
+
+file:
+  - extensions:
+      - bak
+      - backup
+      - old
+      - orig
+      - swp
+      - swo
+      - tmp
+    matchers:
+      - type: regex
+        regex:
+          - "^.*/.*\\.(bak|backup|old|orig|swp|swo|tmp)$"
+          - "^.*/\\~$"
+          - "^.*/#.*#$"
+        part: relative_path
+    
+    extractors:
+      - type: regex
+        name: backup_file
+        regex:
+          - "([^\n]+\\.(?:bak|backup|old|orig|swp|swo|tmp)[^\n]*)"
+        part: relative_path

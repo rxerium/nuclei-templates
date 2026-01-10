@@ -1,0 +1,37 @@
+id: docker-config-exposure
+
+info:
+  name: Docker Configuration Exposure
+  author: rxerium
+  severity: medium
+  description: Detects exposed Docker configuration files (Dockerfile, docker-compose.yaml) which may leak sensitive build information and credentials
+  reference:
+    - https://docs.docker.com/engine/reference/builder/
+    - https://docs.docker.com/compose/compose-file/
+  classification:
+    cwe-id: CWE-215
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:M/I:N/A:N
+  metadata:
+    verified: true
+    max-request: 1
+  tags: file,docker,exposure,audit,configuration
+
+file:
+  - extensions:
+      - Dockerfile
+      - dockerfile
+      - yaml
+      - yml
+    matchers:
+      - type: regex
+        regex:
+          - "^.*/(Dockerfile|docker-compose\\.ya?ml|\\.dockerignore)$"
+          - "^.*/docker-compose.*\\.ya?ml$"
+        part: relative_path
+    
+    extractors:
+      - type: regex
+        name: docker_file
+        regex:
+          - "([^\n]+(?:Dockerfile|docker-compose)[^\n]*)"
+        part: relative_path

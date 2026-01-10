@@ -1,0 +1,46 @@
+id: kubernetes-manifest-exposure
+
+info:
+  name: Kubernetes Manifest File Exposure
+  author: rxerium
+  severity: high
+  description: Detects exposed Kubernetes configuration files (YAML manifests) which may contain secrets, API tokens, and cluster configuration details
+  reference:
+    - https://kubernetes.io/docs/concepts/configuration/secret/
+    - https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-encryption/
+  classification:
+    cwe-id: CWE-215
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+  metadata:
+    verified: true
+    max-request: 1
+  tags: file,kubernetes,k8s,manifest,exposure,audit,secrets
+
+file:
+  - extensions:
+      - yaml
+      - yml
+    matchers:
+      - type: regex
+        regex:
+          - "^.*/(?:kube|kubernetes)(?:config)?.*\\.ya?ml$"
+          - "^.*/deployment.*\\.ya?ml$"
+          - "^.*/service.*\\.ya?ml$"
+          - "^.*/secret.*\\.ya?ml$"
+          - "^.*/configmap.*\\.ya?ml$"
+        part: relative_path
+      
+      - type: word
+        words:
+          - "apiVersion:"
+          - "kind:"
+          - "metadata:"
+        part: body
+        condition: and
+    
+    extractors:
+      - type: regex
+        name: k8s_manifest
+        regex:
+          - "([^\n]+(?:deployment|service|secret|configmap|kubeconfig)[^\n]*)"
+        part: relative_path

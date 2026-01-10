@@ -1,0 +1,45 @@
+id: database-dump-exposure
+
+info:
+  name: Database Dump File Exposure
+  author: rxerium
+  severity: critical
+  description: Detects exposed database dump files (SQL, MongoDB, PostgreSQL exports) which contain complete database contents including sensitive data
+  reference:
+    - https://owasp.org/www-community/attacks/Path_Traversal
+  classification:
+    cwe-id: CWE-215
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+  metadata:
+    verified: true
+    max-request: 1
+  tags: file,database,dump,exposure,audit,sql,mongodb
+
+file:
+  - extensions:
+      - sql
+      - dump
+      - bak
+      - gz
+      - tar
+    matchers:
+      - type: regex
+        regex:
+          - "^.*(?:database|db|backup|dump)\\.(?:sql|dump|bak)$"
+          - "^.*\\.sql(?:\\.gz|\\.bak)?$"
+          - "^.*/dump\\.(?:tar\\.gz|zip)$"
+        part: relative_path
+      
+      - type: word
+        words:
+          - "CREATE TABLE"
+          - "CREATE DATABASE"
+          - "INSERT INTO"
+        part: body
+    
+    extractors:
+      - type: regex
+        name: db_dump
+        regex:
+          - "([^\n]+\\.(?:sql|dump|bak)[^\n]*)"
+        part: relative_path

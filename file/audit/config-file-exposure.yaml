@@ -1,0 +1,42 @@
+id: config-file-exposure
+
+info:
+  name: Configuration File Exposure
+  author: rxerium
+  severity: medium
+  description: Detects exposed configuration files (application.properties, web.config, settings.ini, config.php) which may contain sensitive application settings
+  reference:
+    - https://owasp.org/www-community/attacks/Path_Traversal
+  classification:
+    cwe-id: CWE-215
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:M/I:N/A:N
+  metadata:
+    verified: true
+    max-request: 1
+  tags: file,configuration,exposure,audit
+
+file:
+  - extensions:
+      - properties
+      - config
+      - ini
+      - conf
+      - cfg
+      - xml
+    matchers:
+      - type: regex
+        regex:
+          - "^.*/(?:application|database|server)\\.properties$"
+          - "^.*/web\\.config$"
+          - "^.*/app(?:lication)?\\.config$"
+          - "^.*/settings\\.(?:ini|conf|cfg)$"
+          - "^.*/config\\.(?:php|py|js|rb)$"
+          - "^.*/configuration\\.xml$"
+        part: relative_path
+    
+    extractors:
+      - type: regex
+        name: config_file
+        regex:
+          - "([^\n]+\\.(?:properties|config|ini|conf|cfg)[^\n]*)"
+        part: relative_path
