@@ -1,0 +1,33 @@
+id: vimrc-exposure
+
+info:
+  name: Vim Configuration File Exposure
+  author: nuclei-templates
+  severity: low
+  description: |
+    Vim configuration file (.vimrc) is publicly accessible. This file may contain file paths and custom configurations.
+  reference:
+    - https://www.vim.org/
+  metadata:
+    verified: true
+    max-request: 1
+  tags: vim,editor,files,config,exposure,vuln
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/.vimrc"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - 'set '
+          - 'let '
+          - 'map '
+        condition: or
+
+      - type: status
+        status:
+          - 200
