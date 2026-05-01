@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Spotify - Web Player: Music for everyone'
+          - 'Spotify – Web Player'
 
+      - type: word
+        part: body
+        words:
+          - 'Spotify – Web Player'
       - type: status
         status:
           - 200

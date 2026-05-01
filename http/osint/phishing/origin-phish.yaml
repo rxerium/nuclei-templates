@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Explore PC video games available for download right now. Electronic Arts is a leading publisher of games for the PC, consoles, and mobile."
+          - 'PC Games and Computer Video Games for Download - Electronic Arts'
 
+      - type: word
+        part: body
+        words:
+          - 'Explore PC video games available for download right now'
       - type: status
         status:
           - 200

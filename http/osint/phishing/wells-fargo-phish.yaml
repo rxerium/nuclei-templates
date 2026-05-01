@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Committed to the financial health of our customers and communities. Explore bank accounts, loans, mortgages, investing, credit cards & banking services»"
+          - 'Wells Fargo Bank | Financial Services & Online Banking'
 
+      - type: word
+        part: body
+        words:
+          - 'Committed to the financial health of our customers and communities'
       - type: status
         status:
           - 200

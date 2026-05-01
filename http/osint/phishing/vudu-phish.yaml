@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Vudu'
-          - 'title="Fandango at Home"'
+          - 'Service is not available in your region.'
+
+      - type: word
+        part: body
+        words:
+          - 'Service is not available in your region.'
         condition: and
 
       - type: status

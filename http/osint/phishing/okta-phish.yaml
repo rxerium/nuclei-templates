@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "The Okta and Auth0 Platforms enable secure access, authentication, and automation — putting Identity at the heart of business security and growth."
+          - 'Secure Identity for Employees, Customers, and AI | Okta'
 
+      - type: word
+        part: body
+        words:
+          - 'The Okta and Auth0 Platforms enable secure access, authentication, and automation — putting identity at the heart of business security and growth'
       - type: status
         status:
           - 200

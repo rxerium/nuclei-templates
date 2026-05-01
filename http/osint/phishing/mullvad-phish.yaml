@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Mullvad VPN - Privacy is for the people'
+          - 'Mullvad VPN - Privacy is for the people'
 
+      - type: word
+        part: body
+        words:
+          - 'Free the internet from mass surveillance and censorship'
       - type: status
         status:
           - 200

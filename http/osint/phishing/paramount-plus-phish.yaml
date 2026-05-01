@@ -22,10 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Paramount+'
-          - 'Sign in'
-          - 'Paramount+ Login'
+          - 'Paramount+ United Kingdom | Watch Movies & TV Shows Online'
+
+      - type: word
+        part: body
+        words:
+          - 'Watch hit movies, new originals & your favourite shows with Paramount+'
         condition: and
 
       - type: status

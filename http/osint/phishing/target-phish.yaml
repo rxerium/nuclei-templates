@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Target : Expect More. Pay Less.'
 
+      - type: word
+        part: body
+        words:
+          - 'Shop Target online and in-store for everything from groceries and essentials to clothing and electronics'
       - type: status
         status:
           - 200

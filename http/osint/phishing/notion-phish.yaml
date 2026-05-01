@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Your connected workspace for wiki, docs &amp; projects | Notion'
+          - 'The AI workspace that works for you. | Notion'
 
+      - type: word
+        part: body
+        words:
+          - 'Build Custom Agents, search across all your apps, and automate busywork'
       - type: status
         status:
           - 200

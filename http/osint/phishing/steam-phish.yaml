@@ -22,10 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Welcome to Steam'
-          - 'Steam is the ultimate destination for playing, discussing, and creating games.'
 
+      - type: word
+        part: body
+        words:
+          - 'Steam is the ultimate destination for playing, discussing, and creating games.'
 
       - type: status
         status:

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "The official home of Rockstar Games"
+          - 'Rockstar Games'
 
+      - type: word
+        part: body
+        words:
+          - 'The official home of Rockstar Games'
       - type: status
         status:
           - 200

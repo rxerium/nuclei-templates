@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Rocket.Chat | Secure CommsOS™ for Mission-Critical Operations'
+          - 'Rocket.Chat | Secure CommsOS™ for Mission-Critical Operations'
 
+      - type: word
+        part: body
+        words:
+          - 'Centralize real-time messaging, voice, video, AI, and apps for secure, reliable and unified communication among internal and external stakeholders'
       - type: status
         status:
           - 200

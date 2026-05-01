@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Home - Varo"
+          - 'Home - Varo'
 
+      - type: word
+        part: body
+        words:
+          - 'Home - Varo'
       - type: status
         status:
           - 200

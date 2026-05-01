@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'LinkedIn: Log In or Sign Up'
 
+      - type: word
+        part: body
+        words:
+          - '1 billion members | Manage your professional identity'
       - type: status
         status:
           - 200

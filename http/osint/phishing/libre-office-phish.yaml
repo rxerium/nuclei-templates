@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Home | LibreOffice - Free Office Suite - Based on OpenOffice - Compatible with Microsoft'
+          - 'LibreOffice'
 
+      - type: word
+        part: body
+        words:
+          - 'LibreOffice is a free office suite'
       - type: status
         status:
           - 200

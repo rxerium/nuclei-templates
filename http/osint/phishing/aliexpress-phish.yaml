@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'AliExpress - Affordable Prices on Top Brands with Free Shipping'
+          - 'AliExpress - Affordable Chinese Stores & Free Shipping - Online Shopping'
 
+      - type: word
+        part: body
+        words:
+          - 'Passion shouldn''t cost a fortune'
       - type: status
         status:
           - 200

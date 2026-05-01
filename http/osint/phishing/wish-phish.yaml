@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Wish'
-          - '<title>Wish | Shop and Save'
+          - 'Wish | Shop and Save'
+
+      - type: word
+        part: body
+        words:
+          - 'Discover affordable items for your home and life needs'
         condition: and
 
       - type: status

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Discover a world of financial services with OCBC, the best trusted and established Singapore bank. Explore our range of banking solutions today."
+          - 'OCBC - Personal Banking, Business Banking, Wealth Management'
 
+      - type: word
+        part: body
+        words:
+          - 'Discover a world of financial services with OCBC, the best trusted and established Singapore bank'
       - type: status
         status:
           - 200

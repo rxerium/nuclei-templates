@@ -23,10 +23,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '네이버 : 로그인'
-          - '로그인'
+          - 'Naver Sign in'
 
+      - type: word
+        part: body
+        words:
+          - 'Sign in to your Naver Account'
       - type: status
         status:
           - 200

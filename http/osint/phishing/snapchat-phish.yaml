@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Snapchat - Say It In A Snap"
-          - 'Snapchat'
+          - 'Snapchat – Say it in a Snap'
+
+      - type: word
+        part: body
+        words:
+          - 'Chat, send Snaps, explore Stories and try Lenses on desktop, or download the app on mobile! See how to connect and create with friends on Snapchat, wherever you are'
         condition: or
 
       - type: status

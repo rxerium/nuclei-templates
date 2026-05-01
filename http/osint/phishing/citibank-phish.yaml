@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Citi'
-          - 'Citibank is the consumer division of financial services multinational Citigroup. Citibank was founded in 1812 as the City Bank of New York, and later became First National City Bank of New York. Citibank provides credit cards, mortgages, personal loans, commercial loans, and lines of credit.'
+          - 'Credit Cards, Banking, Mortgage, Personal Loans | Citi.com'
+
+      - type: word
+        part: body
+        words:
+          - 'Credit Cards, Banking, Mortgage, Personal Loans | Citi.com'
         condition: and
 
       - type: status

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Bitfinex'
-          - 'Bitfinex is the longest-running and most liquid major cryptocurrency exchange. Founded in 2012, it has become the go-to platform for traders &amp; institutional investors.'
+          - 'Bitfinex | Trade Crypto with Zero Fees'
+
+      - type: word
+        part: body
+        words:
+          - 'Bitfinex is the longest-running and most liquid major cryptocurrency exchange'
         condition: and
 
       - type: status

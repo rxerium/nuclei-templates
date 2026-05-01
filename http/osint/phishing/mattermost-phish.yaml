@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Mattermost | Collaboration Platform for Mission Critical Work'
+          - 'Mattermost | Collaboration Platform for Mission Critical Work'
 
+      - type: word
+        part: body
+        words:
+          - 'Accelerate your mission critical workflow by integrating people, processes, tools and AI infrastructure on a resilient and adaptable platform'
       - type: status
         status:
           - 200

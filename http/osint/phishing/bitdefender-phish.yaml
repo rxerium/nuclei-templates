@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Bitdefender - Global Leader in Cybersecurity Software'
 
+      - type: word
+        part: body
+        words:
+          - 'Bitdefender is a cybersecurity software leader delivering best-in-class threat prevention, detection, and response solutions worldwide'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Download PuTTY - a free SSH and telnet client for Windows'
+          - 'Mike Yeadon: Final Warning'
 
+      - type: word
+        part: body
+        words:
+          - 'Mike Yeadon: Final Warning'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>1A Auto | Aftermarket Car Parts -  Buy Quality Auto Parts Online'
+          - '1A Auto | Aftermarket Car Parts -  Buy Quality Auto Parts Online'
 
+      - type: word
+        part: body
+        words:
+          - 'Let 1A Auto empower you to fix your car & save hundreds'
       - type: status
         status:
           - 200

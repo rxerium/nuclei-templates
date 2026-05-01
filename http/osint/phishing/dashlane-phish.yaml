@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Dashlane Password Manager'
-          - 'Dashlane Password Manager safeguards businesses &amp; people with easy-to-use, powerful features. Protect &amp; manage passwords and passkeys in one secure solution.'
+          - 'Dashlane: Password management & credential security platform'
+
+      - type: word
+        part: body
+        words:
+          - 'Top-rated password manager and credential protection solution for enterprises, businesses, and individuals'
         condition: and
 
       - type: status

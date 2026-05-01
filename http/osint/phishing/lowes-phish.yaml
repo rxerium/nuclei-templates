@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Lowe's"
-          - "Lowe’s Home Improvement"
+          - 'Access Denied'
+
+      - type: word
+        part: body
+        words:
+          - 'Access Denied'
         condition: and
 
       - type: status

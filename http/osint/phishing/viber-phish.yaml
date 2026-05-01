@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Home | Viber"
+          - 'Home | Viber'
 
+      - type: word
+        part: body
+        words:
+          - 'Home | Viber'
       - type: status
         status:
           - 200

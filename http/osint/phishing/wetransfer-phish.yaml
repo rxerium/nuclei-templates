@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'WeTransfer - Send Large Files &amp; Share Photos Online'
+          - 'WeTransfer | Send Large Files Fast'
 
+      - type: word
+        part: body
+        words:
+          - 'The simple, quick and secure way to send your files around the world without an account'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'SunTrust'
-          - 'Sign On'
+          - 'Truist Bank | Checking, Savings, Lending, and Financial Services'
+
+      - type: word
+        part: body
+        words:
+          - 'Your journey to better banking starts with Truist'
         condition: and
 
       - type: status

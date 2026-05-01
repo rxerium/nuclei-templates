@@ -22,8 +22,13 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Welcome to Python.org'
+
+      - type: word
+        part: body
+        words:
           - 'The official home of the Python Programming Language'
         condition: and
 

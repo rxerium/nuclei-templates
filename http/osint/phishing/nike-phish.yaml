@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Nike'
-          - '<title>Nike. Just Do It. Nike.com'
+          - 'Nike. Just Do It. Nike UK'
+
+      - type: word
+        part: body
+        words:
+          - 'Inspiring the world''s athletes, Nike delivers innovative products, experiences and services.'
         condition: and
 
       - type: status

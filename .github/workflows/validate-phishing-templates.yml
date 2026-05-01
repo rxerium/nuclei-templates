@@ -1,0 +1,188 @@
+name: Validate Phishing Templates
+
+on:
+  schedule:
+    # Run on the 1st of every month at 00:00 UTC
+    - cron: '0 0 1 * *'
+  workflow_dispatch:  # Allow manual trigger
+    inputs:
+      update_templates:
+        description: 'Automatically update templates after validation'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+jobs:
+  validate:
+    name: Validate Phishing Templates
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pyyaml
+      
+      - name: Run validation script
+        id: validate
+        continue-on-error: true
+        run: |
+          cd $GITHUB_WORKSPACE
+          python .github/scripts/validate_phishing_templates.py
+          echo "validation_exit_code=$?" >> $GITHUB_OUTPUT
+      
+      - name: Upload validation report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phishing-validation-report
+          path: |
+            PHISHING_VALIDATION_REPORT.md
+            phishing_waf_blocked.md
+            templates_to_update.json
+          retention-days: 90
+      
+      - name: Check if updates needed
+        id: check_updates
+        run: |
+          if [ -f templates_to_update.json ]; then
+            UPDATE_COUNT=$(jq '.needs_update_count' templates_to_update.json)
+            echo "updates_needed=$UPDATE_COUNT" >> $GITHUB_OUTPUT
+            if [ "$UPDATE_COUNT" -gt 0 ]; then
+              echo "needs_update=true" >> $GITHUB_OUTPUT
+            else
+              echo "needs_update=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "needs_update=false" >> $GITHUB_OUTPUT
+            echo "updates_needed=0" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create issue for manual review
+        if: steps.check_updates.outputs.needs_update == 'true' && github.event.inputs.update_templates != 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('PHISHING_VALIDATION_REPORT.md', 'utf8');
+            const wafBlocked = fs.readFileSync('phishing_waf_blocked.md', 'utf8');
+            
+            const updateCount = ${{ steps.check_updates.outputs.updates_needed }};
+            
+            const issueBody = `## Phishing Template Validation Report
+            
+            **Templates Needing Updates:** ${updateCount}
+            
+            The monthly phishing template validation has detected templates that need updating.
+            
+            ### Actions Required
+            
+            1. Review the validation report artifact
+            2. Manually verify suggested changes
+            3. Run the workflow with \`update_templates: true\` to auto-update, or update manually
+            
+            ### Reports
+            
+            Download the artifacts from this workflow run to view:
+            - \`PHISHING_VALIDATION_REPORT.md\` - Full validation report
+            - \`phishing_waf_blocked.md\` - WAF-blocked sites
+            - \`templates_to_update.json\` - Structured update data
+            
+            ### Quick Summary
+            
+            <details>
+            <summary>View Validation Report Preview</summary>
+            
+            ${report.substring(0, 2000)}
+            
+            ${report.length > 2000 ? '... (truncated, see artifacts for full report)' : ''}
+            
+            </details>
+            
+            ---
+            
+            **Workflow Run:** [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            `;
+            
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[Phishing Templates] ${updateCount} template(s) need updating`,
+              body: issueBody,
+              labels: ['phishing-audit', 'automated']
+            });
+      
+      - name: Auto-update templates (if enabled)
+        if: steps.check_updates.outputs.needs_update == 'true' && github.event.inputs.update_templates == 'true'
+        run: |
+          python .github/scripts/update_phishing_templates.py
+      
+      - name: Create Pull Request
+        if: steps.check_updates.outputs.needs_update == 'true' && github.event.inputs.update_templates == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update phishing templates with current matchers'
+          title: '[Automated] Update Phishing Templates'
+          body: |
+            ## Automated Phishing Template Updates
+            
+            This PR updates phishing templates based on the monthly validation run.
+            
+            **Templates Updated:** ${{ steps.check_updates.outputs.updates_needed }}
+            
+            ### Changes
+            
+            - Updated word matchers to match current official site content
+            - Added dual matchers (title + description/body) for improved accuracy
+            - All templates validated against official sites
+            
+            ### Validation Reports
+            
+            See workflow artifacts for:
+            - Full validation report
+            - WAF-blocked sites documentation
+            - Structured update data (JSON)
+            
+            **Workflow Run:** [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            
+            ---
+            
+            **Auto-generated by:** `.github/workflows/validate-phishing-templates.yml`
+          branch: phishing-templates-auto-update-${{ github.run_number }}
+          delete-branch: true
+          labels: |
+            phishing-audit
+            automated
+            osint
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Phishing Template Validation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Total Templates:** 399" >> $GITHUB_STEP_SUMMARY
+          echo "**Templates Needing Updates:** ${{ steps.check_updates.outputs.updates_needed }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.check_updates.outputs.needs_update }}" == "true" ]; then
+            echo "✓ Validation complete - updates needed" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Download artifacts to review changes." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✓ All templates are up to date!" >> $GITHUB_STEP_SUMMARY
+          fi

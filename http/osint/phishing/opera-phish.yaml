@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Opera Web Browser | Faster, Safer, Smarter | Oper'
+          - 'Opera Web Browser | Faster, Safer, Smarter | Opera'
 
+      - type: word
+        part: body
+        words:
+          - 'Faster, safer and smarter than default browsers'
       - type: status
         status:
           - 200

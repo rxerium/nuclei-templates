@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Vistaprint'
-          - '<title>VistaPrint Official Website: Online Printing Services'
+          - 'VistaPrint Official Website: Online Printing Services'
+
+      - type: word
+        part: body
+        words:
+          - 'VistaPrint online printing services help you create and order the best custom products: marketing materials, business cards, signage, promotional products, custom gifts, packaging and more'
         condition: and
 
       - type: status

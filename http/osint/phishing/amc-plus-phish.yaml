@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'AMC+ features world-class originals, award-winning series, and exclusive movies. Includes Shudder &amp; Sundance Now. AMC+ is entertainment uncompromised. Start your free trial!'
-          - '<title>AMC+ | Premium Streaming Bundle | Watch TV Shows &amp; Movies'
+          - 'AMC+ | Geographic Restriction - AMC Plus'
+
+      - type: word
+        part: body
+        words:
+          - 'Add a description about your page or projects. Should be around 135 to 160 characters.'
         condition: and
 
       - type: status

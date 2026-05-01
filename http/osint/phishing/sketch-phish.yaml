@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Sketch · Design, prototype, collaborate and handoff'
+          - 'Sketch · Design, prototype, collaborate and handoff'
 
+      - type: word
+        part: body
+        words:
+          - 'Sketch puts the focus back on you and your work. Made by designers, for designers.'
       - type: status
         status:
           - 200

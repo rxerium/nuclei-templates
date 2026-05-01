@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Summit Racing'
-          - '<title>Summit Racing | Aftermarket Parts &amp; Accessories, Performance Parts, OEM Auto Parts'
+          - 'Pardon Our Interruption'
+
+      - type: word
+        part: body
+        words:
+          - 'Pardon Our Interruption'
         condition: and
 
       - type: status

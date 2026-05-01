@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Authy: Two-factor Authentication (2FA) App &amp; Guides | Authy'
+          - 'Authy: Two-factor Authentication (2FA) App & Guides | Authy'
 
+      - type: word
+        part: body
+        words:
+          - 'Two-factor authentication (2FA) adds an additional layer of protection beyond passwords'
       - type: status
         status:
           - 200

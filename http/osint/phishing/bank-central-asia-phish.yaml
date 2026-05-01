@@ -22,10 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "BCA - Senantiasa di sisi Anda"
-          - "BCA - Always by your side"
-          - "myBCA"
+          - 'BCA - Senantiasa di sisi Anda'
+
+      - type: word
+        part: body
+        words:
+          - 'Temukan berbagai produk dan layanan BCA untuk memudahkan transaksi dan mengelola keuangan dengan aman dan nyaman'
         condition: or
 
       - type: status

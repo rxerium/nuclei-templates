@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Disney+ | Stream new Originals, blockbusters and series'
+          - 'Disney+ | Stream Movies, TV Shows, Documentaries & More | U.S. Site'
 
+      - type: word
+        part: body
+        words:
+          - 'Access your favorite entertainment with Disney+'
       - type: status
         status:
           - 200

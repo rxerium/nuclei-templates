@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Deutsche Bank'
-          - "Discover Deutsche Bank, one of the world’s leading financial services providers. News and Information about the bank and its products"
+
+      - type: word
+        part: body
+        words:
+          - 'Discover Deutsche Bank, one of the world’s leading financial services providers'
         condition: and
 
       - type: status

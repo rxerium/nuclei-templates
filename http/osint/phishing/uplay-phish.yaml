@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Welcome to the official website for Ubisoft, creator of Assassin's Creed, Just Dance, Tom Clancy's video game series, Rayman, Far Cry, Watch Dogs and many others. Learn more about our breathtaking games here!"
+          - 'Ubisoft'
 
+      - type: word
+        part: body
+        words:
+          - 'Ubisoft website'
       - type: status
         status:
           - 200

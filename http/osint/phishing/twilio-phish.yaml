@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Communications APIs with AI and data for SMS, Voice, Email | Twilio'
+          - 'Communications APIs with AI and data for SMS, Voice, Email | Twilio'
 
+      - type: word
+        part: body
+        words:
+          - 'Create amazing customer experiences with our Customer Engagement Platform (CEP) that combines communication APIs with AI'
       - type: status
         status:
           - 200

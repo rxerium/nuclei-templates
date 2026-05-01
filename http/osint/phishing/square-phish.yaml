@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Sell anywhere. Diversify revenue streams. Streamline operations. Manage your staff. Get paid faster. Sign up for Square today."
-          - 'Square Dashboard'
+          - 'Power your entire business | Square'
+
+      - type: word
+        part: body
+        words:
+          - 'Sell more'
         condition: or
 
       - type: status

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "We exist to inspire the world through Play. Electronic Arts is a leading publisher of games on Console, PC and Mobile."
+          - 'Electronic Arts Home Page - Official EA Site'
 
+      - type: word
+        part: body
+        words:
+          - 'We exist to inspire the world through Play'
       - type: status
         status:
           - 200

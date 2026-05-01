@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Sumitomo Mitsui'
-          - 'Sign On'
+          - 'OäZFâs'
+
+      - type: word
+        part: body
+        words:
+          - 'OäZFâsÌz[y[WÅ·BûÀJÝAZî[AOÝaàAMõÌeí¤iET[rXÉÂ¢ÄfÚµÄ¢Ü·BC^[lbgoLOÅÍAcÆïâUAOÝaàâMõÌ¨æèø«Ì¼AÖÈWebÊ à²p¢½¾¯Ü·B'
         condition: and
 
       - type: status

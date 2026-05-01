@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Electronics, Cars, Fashion, Collectibles &amp; More | eBay'
+          - 'Electronics, Cars, Fashion, Collectibles & More | eBay'
 
+      - type: word
+        part: body
+        words:
+          - 'Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world''s online marketplace'
       - type: status
         status:
           - 200

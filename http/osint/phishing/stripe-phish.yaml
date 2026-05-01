@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes. Accept payments and scale faster with AI."
-          - 'Stripe Dashboard'
+          - 'Stripe | Financial Infrastructure to Grow Your Revenue'
+
+      - type: word
+        part: body
+        words:
+          - 'Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models and manage money movement'
         condition: or
 
       - type: status

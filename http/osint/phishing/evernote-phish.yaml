@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Best Note Taking App - Organize Your Notes with Evernote'
 
+      - type: word
+        part: body
+        words:
+          - 'Our note taking app helps you capture and prioritize ideas, projects and to-do lists, so nothing falls through the cracks'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Superfast 5G &amp; 4G Phones, Tablets and Fibre Broadband | EE'
+          - 'Superfast 5G & 4G Phones, Tablets and Fibre Broadband | EE'
 
+      - type: word
+        part: body
+        words:
+          - 'We''re EE, the UK''s No'
       - type: status
         status:
           - 200

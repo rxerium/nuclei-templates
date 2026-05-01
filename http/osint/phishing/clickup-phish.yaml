@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'ClickUp™ | Maximize productivity • Software, AI, and humans converge'
+          - 'ClickUpâ¢ | Maximize productivity â¢ Software, AI, and humans converge'
 
+      - type: word
+        part: body
+        words:
+          - 'Our mission is to make the world more productive'
       - type: status
         status:
           - 200

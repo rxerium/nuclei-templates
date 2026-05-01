@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Comerica'
-          - 'Your partner for personal finance, business banking, and wealth management with a legacy of excellence and industry recognition.'
+          - 'Trusted Banking for 175 Years | Comerica'
+
+      - type: word
+        part: body
+        words:
+          - 'Your partner for personal finance, business banking, and wealth management with a legacy of excellence and industry recognition'
         condition: and
 
       - type: status

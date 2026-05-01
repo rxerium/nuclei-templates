@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'VLC: Official site - Free multimedia solutions for all OS! - VideoLAN'
 
+      - type: word
+        part: body
+        words:
+          - 'VLC: Official site - Free multimedia solutions for all OS! - VideoLAN'
       - type: status
         status:
           - 200

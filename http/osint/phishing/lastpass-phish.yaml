@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '#1 Password Manager &amp; Vault App with Single-Sign On &amp; MFA Solutions - LastPass'
+          - '#1 Password Manager & Vault App with Single-Sign On & MFA Solutions - LastPass'
 
+      - type: word
+        part: body
+        words:
+          - 'Go beyond saving passwords with the best password manager! Generate strong passwords and store them in a secure vault'
       - type: status
         status:
           - 200

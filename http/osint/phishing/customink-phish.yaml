@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'CustomInk'
-          - '<title>Custom T-shirts - Design T-shirts, Apparel & Promo Products Online'
+          - 'Custom Ink - Design Custom T-shirts, Apparel & Promo Products Online'
+
+      - type: word
+        part: body
+        words:
+          - 'Make custom T-shirts, apparel & promotional products online with the highest quality printing & customer service'
         condition: and
 
       - type: status

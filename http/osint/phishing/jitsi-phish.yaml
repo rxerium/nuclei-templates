@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Free Video Conferencing Software for Web &amp; Mobile | Jitsi'
+          - 'Free Video Conferencing Software for Web & Mobile | Jitsi'
 
+      - type: word
+        part: body
+        words:
+          - 'Learn more about Jitsi, a free open-source video conferencing software for web & mobile'
       - type: status
         status:
           - 200

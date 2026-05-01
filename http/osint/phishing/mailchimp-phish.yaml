@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Use real-time behavior data and AI to convert more customers with Mailchimp&#039;s marketing, automation &amp; email marketing platform. Easy to use - start for free!'
+          - 'Email & SMS Marketing Platform | Mailchimp'
 
+      - type: word
+        part: body
+        words:
+          - 'Utilize real-time user behavior data and artificial intelligence to convert more customers'
       - type: status
         status:
           - 200

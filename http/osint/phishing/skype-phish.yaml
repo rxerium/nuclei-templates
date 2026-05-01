@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Skype | Stay connected with free video calls worldwide'
+          - 'Free Online Meetings & Video Calls | Microsoft Teams'
 
+      - type: word
+        part: body
+        words:
+          - 'Start free Teams video calls instantly! Connect, collaborate, and communicate effortlessly'
       - type: status
         status:
           - 200

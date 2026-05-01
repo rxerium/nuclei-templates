@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'CIBC'
-          - 'CIBC U.S. provides tailored commercial and personal banking services, private wealth management and small business financial solutions from coast to coast. We invest in businesses, people and communities, striving to build trusting and enduring relationships by putting our clients at the center of all we do.'
+          - 'Personal Banking and Financial Services | CIBC'
+
+      - type: word
+        part: body
+        words:
+          - 'Bank on your terms with CIBC – whether it’s in person, over the phone or online, CIBC has you covered'
         condition: and
 
       - type: status

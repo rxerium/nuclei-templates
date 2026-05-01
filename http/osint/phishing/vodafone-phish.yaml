@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Vodafone &ndash; Our Best Ever Network'
+          - 'Vodafone - Our Best Ever Network | Now With 5G'
 
+      - type: word
+        part: body
+        words:
+          - 'Now offering 5G, experience our best ever network'
       - type: status
         status:
           - 200

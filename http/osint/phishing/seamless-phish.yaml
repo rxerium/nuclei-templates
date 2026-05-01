@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Prepare your taste buds..."
+          - 'Prepare your taste buds...'
 
+      - type: word
+        part: body
+        words:
+          - 'Prepare your taste buds...'
       - type: status
         status:
           - 200

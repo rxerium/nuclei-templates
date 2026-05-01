@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Hulu'
-          - 'Stream TV and Movies Live and Online | Hulu"'
+          - 'Disney+ | Stream Movies, TV Shows, Documentaries & More | U.S. Site'
+
+      - type: word
+        part: body
+        words:
+          - 'Access your favorite entertainment with Disney+'
         condition: and
 
       - type: status

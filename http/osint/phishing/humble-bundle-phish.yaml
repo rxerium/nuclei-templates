@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Humble Bundle sells games, books, software, and more. Our mission is to support charity while providing awesome content to customers at great prices. Since 2010, Humble Bundle customers have given over $275,000,000 to charity."
+          - 'Humble Bundle | game bundles, book bundles, software bundles, and more'
 
+      - type: word
+        part: body
+        words:
+          - 'Humble Bundle sells games, books, software, and more'
       - type: status
         status:
           - 200

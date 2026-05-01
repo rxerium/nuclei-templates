@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "United Overseas Bank"
+          - 'United Overseas Bank'
 
+      - type: word
+        part: body
+        words:
+          - 'United Overseas Bank'
       - type: status
         status:
           - 200

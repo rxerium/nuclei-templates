@@ -22,10 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Best Password Manager: No more writing down passwords'
-          - 'Multi-platform secure solution to simplify your online experience. One click login on Chrome, Firefox, Safari, IE, Opera, Edge, Windows, Mac, iOS, Android.'
-          - 'roboform'
+          - 'RoboForm Password Manager | Best Password Manager for 2026'
+
+      - type: word
+        part: body
+        words:
+          - 'RoboForm Password Manager'
         condition: and
 
       - type: status

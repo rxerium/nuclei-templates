@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "With a community bank approach, M&T Bank helps people reach their personal and business goals with banking, mortgage, loan and investment services."
+          - 'Personal Banking  | M&T Bank'
 
+      - type: word
+        part: body
+        words:
+          - 'With a community bank approach, M&T Bank helps people reach their personal and business goals with banking, mortgage, loan and investment services'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'O2 | Phone, SIM &amp; Tech Deals - See What You Can Do'
+          - 'O2 - Essential For Living'
 
+      - type: word
+        part: body
+        words:
+          - 'Find exclusive offers and discover Switch Up, Flexible Superfast 5G Tariffs, Free Roaming & O2 Priority'
       - type: status
         status:
           - 200

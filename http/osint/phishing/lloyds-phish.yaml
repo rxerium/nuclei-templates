@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "<title>Lloyds Bank - Personal Banking, Personal Finances &amp; Bank Accounts"
+          - 'Lloyds Bank - Personal Banking, Personal Finances & Bank Accounts'
 
+      - type: word
+        part: body
+        words:
+          - 'Wherever you want to get to in life, Lloyds Bank has a range of bank accounts and personal banking services to suit you'
       - type: status
         status:
           - 200

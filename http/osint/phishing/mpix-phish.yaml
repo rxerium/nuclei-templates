@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Mpix'
-          - '<title>Mpix Photo Lab | Create Custom Photo Products'
+          - 'Mpix Photo Lab | Create Custom Photo Products'
+
+      - type: word
+        part: body
+        words:
+          - 'Create and order professional quality prints, handcrafted photo books & albums, customized cards, and invitations'
         condition: and
 
       - type: status

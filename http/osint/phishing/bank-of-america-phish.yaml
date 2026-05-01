@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Bank of America - Banking, Credit Cards, Loans and Merrill Investing'
 
+      - type: word
+        part: body
+        words:
+          - 'What would you like the power to do? At Bank of America, our purpose is to help make financial lives better through the power of every connection'
       - type: status
         status:
           - 200

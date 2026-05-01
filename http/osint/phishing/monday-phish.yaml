@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>monday.com'
-          - 'Monday.com'
+          - 'monday.com | Outpace everyone with the best AI work platform'
+
+      - type: word
+        part: body
+        words:
+          - 'monday'
         condition: and
 
       - type: status

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Capital One'
-          - '<title>Capital One | Credit Cards, Checking, Savings &amp; Auto Loans'
+          - 'Capital One | Credit Cards, Checking, Savings & Auto Loans'
+
+      - type: word
+        part: body
+        words:
+          - 'Learn how banking with Capital One can help you meet your financial goals.'
         condition: and
 
       - type: status

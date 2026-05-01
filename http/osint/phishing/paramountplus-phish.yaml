@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Paramount+ United Kingdom - Stream Blockbusters, New Originals and Hit Shows'
+          - 'Paramount+ United Kingdom | Watch Movies & TV Shows Online'
 
+      - type: word
+        part: body
+        words:
+          - 'Watch hit movies, new originals & your favourite shows with Paramount+'
       - type: status
         status:
           - 200

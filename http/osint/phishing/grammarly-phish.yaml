@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Grammarly: Free AI Writing Assistant'
+          - 'Grammarly: Free AI Writing Assistance'
 
+      - type: word
+        part: body
+        words:
+          - 'Grammarly makes AI writing convenient'
       - type: status
         status:
           - 200

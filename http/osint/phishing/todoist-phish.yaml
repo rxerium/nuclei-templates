@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Todoist | A To-Do List to Organize Your Work &amp; Life'
+          - 'Todoist | A To-Do List to Organize Your Work & Life'
 
+      - type: word
+        part: body
+        words:
+          - 'Trusted by 30 million people and teams'
       - type: status
         status:
           - 200

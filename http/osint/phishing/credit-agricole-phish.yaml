@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Crédit Agricole'
-          - 'Crédit Agricole 1re banque de l&#039;habitat, de l&#039;agriculture, des entreprises, des pros, des collectivites territoriales'
+          - 'Banque des particuliers professionnels en France | Crédit Agricole'
+
+      - type: word
+        part: body
+        words:
+          - 'Crédit Agricole 1re banque de l''habitat, de l''agriculture, des entreprises, des pros, des collectivites territoriales'
         condition: and
 
       - type: status

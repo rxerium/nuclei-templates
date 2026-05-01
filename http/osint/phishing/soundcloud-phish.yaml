@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Stream and listen to music online for free with SoundCloud'
+          - 'Stream and listen to music online for free with SoundCloud'
 
+      - type: word
+        part: body
+        words:
+          - 'Discover and play over 320 million music tracks'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Official Site | Norton™ - Antivirus &amp; Anti-Malware Software'
+          - 'Norton AntiVirus, Privacy, Identity, & Advanced Scam Protection'
 
+      - type: word
+        part: body
+        words:
+          - 'Our best protection, trusted by millions, now includes Genie AI Scam Detection'
       - type: status
         status:
           - 200

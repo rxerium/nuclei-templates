@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Creators of the Warcraft, Diablo, StarCraft, and Overwatch series, Blizzard Entertainment is an industry-leading developer responsible for the most epic entertainment experiences, ever.'
-          - 'Blizzard'
+          - 'Blizzard Entertainment'
+
+      - type: word
+        part: body
+        words:
+          - 'Creators of the Warcraft, Diablo, StarCraft, and Overwatch series, Blizzard Entertainment is an industry-leading developer responsible for the most epic entertainment experiences, ever'
         condition: and
 
       - type: status

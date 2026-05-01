@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Samsung UK | Mobile | Home Electronics | Home Appliances | TV'
 
+      - type: word
+        part: body
+        words:
+          - 'Welcome to Samsung UK'
       - type: status
         status:
           - 200

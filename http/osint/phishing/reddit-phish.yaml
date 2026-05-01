@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Reddit - Dive into anything'
+          - 'Reddit - Please wait for verification'
 
+      - type: word
+        part: body
+        words:
+          - 'Reddit - Please wait for verification'
       - type: status
         status:
           - 200

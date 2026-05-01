@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Website Builder &mdash; Easily Create Your Own Website &mdash; Squarespace'
+          - 'Website Builder – Easily Create Your Own Website — Squarespace'
 
+      - type: word
+        part: body
+        words:
+          - 'Create a website and grow your business with a free Squarespace trial'
       - type: status
         status:
           - 200

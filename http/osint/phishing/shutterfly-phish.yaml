@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Create photo books, personalize photo cards & stationery, and share photos with family and friends at Shutterfly.com."
+          - 'Shutterfly | Photo Books, Cards, Prints, Wall Art, Gifts, Wedding'
 
+      - type: word
+        part: body
+        words:
+          - 'Shop Shutterfly for custom photo books, prints, cards, invitations, gifts, wall art, calendars, and more'
       - type: status
         status:
           - 200

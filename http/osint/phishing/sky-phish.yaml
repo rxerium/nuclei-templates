@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Discover TV, Broadband & Mobile Phone Packages with Sky'
 
+      - type: word
+        part: body
+        words:
+          - 'Discover Sky packages for TV, broadband & mobile including Glass - the new streaming TV with Sky Inside'
       - type: status
         status:
           - 200

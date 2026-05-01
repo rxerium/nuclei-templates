@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Sign in - edge Accounts'
+          - 'Download Microsoft Edge: Windows, macOS, iOS & Android'
 
+      - type: word
+        part: body
+        words:
+          - 'Download Microsoft Edge for your computer or smartphone'
       - type: status
         status:
           - 200

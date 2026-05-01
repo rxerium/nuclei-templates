@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Sign in to GitHub · GitHub'
+          - 'GitHub · Change is constant. GitHub keeps you ahead. · GitHub'
 
+      - type: word
+        part: body
+        words:
+          - 'Join the world''s most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Affordable dedicated servers, cloud &amp; hosting from Germany'
+          - 'Günstige Dedicated Server, Cloud & Hosting aus Deutschland'
 
+      - type: word
+        part: body
+        words:
+          - 'Günstige Hosting-Lösungen, Dedicated Server und Cloud-Services bei Hetzner ✓ DSGVO-konform ✓ günstige Preise  ✓ 100 % grüne Energie'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Say &quot;hello&quot; to a different messaging experience. An unexpected focus on privacy, combined with all of the features you expect.'
+          - 'Signal >> Home'
 
+      - type: word
+        part: body
+        words:
+          - 'Say "hello" to a different messaging experience'
       - type: status
         status:
           - 200

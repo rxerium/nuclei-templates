@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Discover'
-          - '<title>Discover - Personal Banking, Credit Cards &amp; Loans'
+          - 'Discover - Personal Banking, Credit Cards & Loans'
+
+      - type: word
+        part: body
+        words:
+          - 'Discover offers online banking, reward credit cards, home equity loans, and personal loans to help meet your financial needs'
         condition: and
 
       - type: status

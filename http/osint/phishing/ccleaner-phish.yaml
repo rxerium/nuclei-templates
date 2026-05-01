@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'CCleaner Makes Your Computer Faster & More Secure | Official Website'
 
+      - type: word
+        part: body
+        words:
+          - 'CCleaner is the number-one tool for cleaning your PC'
       - type: status
         status:
           - 200

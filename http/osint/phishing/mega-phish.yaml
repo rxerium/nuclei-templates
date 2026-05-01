@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Home - MEGA'
-          - 'Secure and private cloud storage for everyone. Store and share files, chat, meet, back up, sync, and more.'
+          - 'MEGA: Protect your Online Privacy'
+
+      - type: word
+        part: body
+        words:
+          - 'MEGA offers 20 GB free encrypted cloud storage, secure file upload, download and sharing, private chat and meetings, plus VPN and password manager'
         condition: and
 
       - type: status

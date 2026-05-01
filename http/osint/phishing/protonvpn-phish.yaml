@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>The best VPN for speed and security'
+          - 'The best VPN for speed and security | Proton VPN'
 
+      - type: word
+        part: body
+        words:
+          - 'Get fast, secure VPN service in 120+ countries'
       - type: status
         status:
           - 200

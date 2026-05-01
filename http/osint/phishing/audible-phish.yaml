@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Audible'
-          - 'Try Audible free for 30 days! Start listening to best-selling audiobooks, exclusive Originals, and free podcasts with the Audible app.'
+          - 'Audible | Listen to Audiobooks, Podcasts & Originals'
+
+      - type: word
+        part: body
+        words:
+          - 'Try Audible free for 30 days'
         condition: and
 
       - type: status

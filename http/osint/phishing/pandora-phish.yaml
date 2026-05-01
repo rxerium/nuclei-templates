@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Play the songs, albums, playlists and podcasts you love on the all-new Pandora. Sign up for a subscription plan to stream ad-free and on-demand. Listen on your mobile phone, desktop, TV, smart speakers or in the car."
+          - 'Pandora'
 
+      - type: word
+        part: body
+        words:
+          - 'Pandora is unavailable in this country or region'
       - type: status
         status:
           - 200

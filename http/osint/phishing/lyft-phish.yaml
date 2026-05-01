@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Ride or drive with Lyft'
-          - 'Lyft'
+
+      - type: word
+        part: body
+        words:
+          - 'Request a ride whenever you need one'
         condition: and
 
       - type: status

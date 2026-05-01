@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Postmates'
-          - 'Order delivery or pickup from more than 600,000 restaurants, retailers, grocers, and more all across your city. Download the app now to get everything you crave, on-demand.'
+          - 'Postmates: Food Delivery, Groceries, Alcohol - Anything from Anywhere'
+
+      - type: word
+        part: body
+        words:
+          - 'Order delivery or pickup from more than 600,000 restaurants, retailers, grocers, and more all across your city'
         condition: and
 
       - type: status

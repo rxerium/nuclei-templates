@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Stream must-see series, hit movies, exclusive originals, family favorites, and live sports."
+          - 'HBO Max | Stream Series and Movies'
 
+      - type: word
+        part: body
+        words:
+          - 'Stream must-see series, hit movies, exclusive originals, family favorites, and live sports.'
       - type: status
         status:
           - 200

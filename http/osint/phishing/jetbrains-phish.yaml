@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>JetBrains: Essential tools for software developers and teams'
+          - 'JetBrains: Essential tools for software developers and teams'
 
+      - type: word
+        part: body
+        words:
+          - 'JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA – the leading Java IDE, and the Kotlin programming language'
       - type: status
         status:
           - 200

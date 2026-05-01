@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Securely Store, Manage &amp; Autofill Passwords | NordPass'
+          - 'Securely Store, Manage & Autofill Passwords | NordPass'
 
+      - type: word
+        part: body
+        words:
+          - 'NordPass password manager remembers complex passwords, auto-fills logins and online forms and lets you access it all from anywhere'
       - type: status
         status:
           - 200

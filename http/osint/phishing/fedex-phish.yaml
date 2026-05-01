@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'FedEx'
-          - '<title>Track &amp; Ship Online or Find Nearby Locations | FedEx'
+          - 'FedEx | System Down'
+
+      - type: word
+        part: body
+        words:
+          - 'FedEx | System Down'
         condition: and
 
       - type: status

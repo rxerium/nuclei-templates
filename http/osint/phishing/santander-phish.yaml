@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Our purpose is to help people and businesses prosper. We strive to make all we do Simple, Personal and Fair."
+          - 'Santander Corporate Website'
 
+      - type: word
+        part: body
+        words:
+          - 'Our purpose is to help people and businesses prosper'
       - type: status
         status:
           - 200

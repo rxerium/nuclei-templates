@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'https://a0.muscache.com/airbnb/static/'
-          - 'Airbnb'
+          - 'Airbnb: Holiday Rentals, Cabins, Beach Houses, Unique Homes & Experiences'
+
+      - type: word
+        part: body
+        words:
+          - 'Get an Airbnb for every kind of trip → 7 million holiday rentals → 2 million Guest Favourites → 220+ countries and regions worldwide'
         condition: and
 
       - type: status

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Pay Friends | Payments App | Venmo"
-          - 'Pay. Get paid. Shop. Share.'
+          - 'Pay Friends | Payments App | Venmo'
+
+      - type: word
+        part: body
+        words:
+          - 'Welcome to Venmo! Manage your account balance, send/receive money, split bills, pay friends, and stay connected with your network all in one place'
         condition: and
 
       - type: status

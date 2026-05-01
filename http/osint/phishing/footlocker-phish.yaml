@@ -22,9 +22,15 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Foot Locker'
-          - 'Sneakers, Apparel &amp; More | Foot Locker'
+          - 'Foot Locker 
+Europe'
+
+      - type: word
+        part: body
+        words:
+          - 'The official Foot Locker Europe webstore'
         condition: and
 
       - type: status

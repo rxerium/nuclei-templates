@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML."
+          - 'AI and Cloud Computing Services | Google Cloud'
 
+      - type: word
+        part: body
+        words:
+          - 'Meet your business challenges head on with AI and cloud computing services from Google, including security, data management, and hybrid & multi-cloud'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Deliveroo - Takeaway Food Delivery from Local Restaurants &amp; Shops'
+          - 'Deliveroo - Food, Groceries, Pharmacy, Gifts & More. Delivered In A Tap.'
 
+      - type: word
+        part: body
+        words:
+          - 'From food to flowers, gifts to groceries, we bring the best of your neighbourhood to your door'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Walmart | Save Money. Live better.'
 
+      - type: word
+        part: body
+        words:
+          - 'Shop Walmart'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Deezer | Listen to music | Online music streaming platform'
+          - 'Deezer | Listen to music online | Music streaming app'
 
+      - type: word
+        part: body
+        words:
+          - 'Discover our streaming app Deezer! Create an account, listen to your music for free and access millions of songs, playlists and podcasts'
       - type: status
         status:
           - 200

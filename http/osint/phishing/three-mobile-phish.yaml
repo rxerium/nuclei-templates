@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Three | Phones, Broadband &amp; SIM Only deals'
+          - 'Three | Phones, Broadband & SIM Only deals'
 
+      - type: word
+        part: body
+        words:
+          - 'Get phones, tablets, Mobile Broadband and SIM Only deals on the UK’s Fastest 5G Network.'
       - type: status
         status:
           - 200

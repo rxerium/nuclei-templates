@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>ExpressVPN: Best VPN Service for Speed & Privacy in 2025'
+          - 'ExpressVPN: Best VPN Service for Speed & Privacy in 2026'
 
+      - type: word
+        part: body
+        words:
+          - 'Protect your privacy, stream worldwide, and enjoy fast speeds with ExpressVPN'
       - type: status
         status:
           - 200

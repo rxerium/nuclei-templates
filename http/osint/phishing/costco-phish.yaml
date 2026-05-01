@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Costco'
-          - 'Shop Costco.com for electronics, computers, furniture, outdoor living, appliances, jewelry and more. Enjoy low warehouse prices on name-brands products delivered to your door'
+          - 'Welcome to Costco Wholesale'
+
+      - type: word
+        part: body
+        words:
+          - 'Shop Costco'
         condition: and
 
       - type: status

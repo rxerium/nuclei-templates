@@ -1,0 +1,5171 @@
+{
+  "generated_at": "2026-05-01 18:52:27 UTC",
+  "total_templates": 399,
+  "needs_update_count": 183,
+  "templates": [
+    {
+      "template_name": "1a-auto-phish",
+      "official_url": "https://www.1aauto.com",
+      "title": "1A Auto | Aftermarket Car Parts -  Buy Quality Auto Parts Online",
+      "description": "Let 1A Auto empower you to fix your car & save hundreds. More than quality auto parts! Auto Repair Video library. USA customer support. Fast & Free shipping.",
+      "current_matchers": [
+        "<title>1A Auto | Aftermarket Car Parts -  Buy Quality Auto Parts Online"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "1A Auto | Aftermarket Car Parts -  Buy Quality Auto Parts Online"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Let 1A Auto empower you to fix your car & save hundreds"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "1password-phish",
+      "official_url": "https://www.1password.com",
+      "title": "Passwords, Secrets, and Access Management | 1Password",
+      "description": "Protect passwords and secrets, manage app access, and secure AI tools with 1Password. Easy to adopt from growing teams to enterprise.",
+      "current_matchers": [
+        "Password Manager for Families, Enterprise &amp; Business | 1Password"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Passwords, Secrets, and Access Management | 1Password"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Protect passwords and secrets, manage app access, and secure AI tools with 1Password"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "airbnb-phish",
+      "official_url": "https://www.airbnb.com",
+      "title": "Airbnb: Holiday Rentals, Cabins, Beach Houses, Unique Homes & Experiences",
+      "description": "Get an Airbnb for every kind of trip \u2192 7 million holiday rentals \u2192 2 million Guest Favourites \u2192 220+ countries and regions worldwide",
+      "current_matchers": [
+        "https://a0.muscache.com/airbnb/static/",
+        "Airbnb"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Airbnb: Holiday Rentals, Cabins, Beach Houses, Unique Homes & Experiences"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Get an Airbnb for every kind of trip \u2192 7 million holiday rentals \u2192 2 million Guest Favourites \u2192 220+ countries and regions worldwide"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "aliexpress-phish",
+      "official_url": "https://www.aliexpress.com",
+      "title": "AliExpress - Affordable Chinese Stores & Free Shipping - Online Shopping",
+      "description": "Passion shouldn't cost a fortune. On AliExpress, shop online for over 111 million affordable products from China on Fashion, Men's and Women's Clothing, Electronics, Toys, Tools, Home & Garden on our marketplace  with free shipping! Login app for coupons.",
+      "current_matchers": [
+        "AliExpress - Affordable Prices on Top Brands with Free Shipping"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "AliExpress - Affordable Chinese Stores & Free Shipping - Online Shopping"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Passion shouldn't cost a fortune"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "amazon-web-services-phish",
+      "official_url": "https://signin.aws.amazon.com",
+      "title": "Cloud Computing Services - Amazon Web Services (AWS)",
+      "description": "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.",
+      "current_matchers": [
+        "Amazon Web Services Sign-In"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Cloud Computing Services - Amazon Web Services (AWS)"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "amc-plus-phish",
+      "official_url": "https://www.amcplus.com",
+      "title": "AMC+ | Geographic Restriction - AMC Plus",
+      "description": "Add a description about your page or projects. Should be around 135 to 160 characters.",
+      "current_matchers": [
+        "AMC+ features world-class originals, award-winning series, and exclusive movies. Includes Shudder &amp; Sundance Now. AMC+ is entertainment uncompromised. Start your free trial!",
+        "<title>AMC+ | Premium Streaming Bundle | Watch TV Shows &amp; Movies"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "AMC+ | Geographic Restriction - AMC Plus"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Add a description about your page or projects. Should be around 135 to 160 characters."
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "american-express-phish",
+      "official_url": "https://www.americanexpress.com",
+      "title": "Credit Cards, Rewards, Travel and Business Services | American Express UK",
+      "description": "Welcome to American Express United Kingdom, provider of Credit Cards, Charge Cards, Travel & Insurance products. Apply for a Card or login to your Account.",
+      "current_matchers": [
+        "Credit Cards, Rewards, Travel and Business Services | American Express"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Credit Cards, Rewards, Travel and Business Services | American Express UK"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Welcome to American Express United Kingdom, provider of Credit Cards, Charge Cards, Travel & Insurance products"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "anz-phish",
+      "official_url": "https://www.anz.com",
+      "title": "ANZ Personal \u2013 Bank accounts, home loans, credit cards & more | ANZ",
+      "description": "ANZ offers a range of personal banking services such as internet banking, bank accounts, credit cards, home loans, personal loans, travel and international, investment and insurance. Learn about easy and secure ways to manage your money.",
+      "current_matchers": [
+        "<title>ANZ Personal \u2013 Bank accounts, home loans, credit cards &amp; more | ANZ"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "ANZ Personal \u2013 Bank accounts, home loans, credit cards & more | ANZ"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "ANZ offers a range of personal banking services such as internet banking, bank accounts, credit cards, home loans, personal loans, travel and international, investment and insurance"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "audible-phish",
+      "official_url": "https://www.audible.com",
+      "title": "Audible | Listen to Audiobooks, Podcasts & Originals",
+      "description": "Try Audible free for 30 days. Discover best-selling audiobooks, free podcasts and exclusive Audible Originals. Listen offline with the Audible app.",
+      "current_matchers": [
+        "Audible",
+        "Try Audible free for 30 days! Start listening to best-selling audiobooks, exclusive Originals, and free podcasts with the Audible app."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Audible | Listen to Audiobooks, Podcasts & Originals"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Try Audible free for 30 days"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "authy-phish",
+      "official_url": "https://www.authy.com",
+      "title": "Authy: Two-factor Authentication (2FA) App & Guides | Authy",
+      "description": "Two-factor authentication (2FA) adds an additional layer of protection beyond passwords. Download our free app today and follow our easy to use guides to protect your accounts and personal information.",
+      "current_matchers": [
+        "<title>Authy: Two-factor Authentication (2FA) App &amp; Guides | Authy"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Authy: Two-factor Authentication (2FA) App & Guides | Authy"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Two-factor authentication (2FA) adds an additional layer of protection beyond passwords"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "avg-phish",
+      "official_url": "https://www.avg.com",
+      "title": "AVG 2026 | FREE Antivirus, VPN & TuneUp for All Your Devices",
+      "description": "Download free antivirus and malware protection. Tune up your PC, Mac, & Android. Encrypt your connection and browse anonymously with a VPN.",
+      "current_matchers": [
+        "AVG 2024 | FREE Antivirus, VPN & TuneUp for All Your Devices"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "AVG 2026 | FREE Antivirus, VPN & TuneUp for All Your Devices"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Download free antivirus and malware protection"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "bandcamp-phish",
+      "official_url": "https://www.bandcamp.com",
+      "title": "Bandcamp",
+      "description": "Discover amazing music and directly support the artists who make it.",
+      "current_matchers": [
+        "Bandcamp",
+        "Discover amazing music and directly support the artists who make it."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Bandcamp"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Discover amazing music and directly support the artists who make it."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "bank-central-asia-phish",
+      "official_url": "https://bca.co.id",
+      "title": "BCA - Senantiasa di sisi Anda",
+      "description": "Temukan berbagai produk dan layanan BCA untuk memudahkan transaksi dan mengelola keuangan dengan aman dan nyaman.",
+      "current_matchers": [
+        "BCA - Senantiasa di sisi Anda",
+        "BCA - Always by your side",
+        "myBCA"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "BCA - Senantiasa di sisi Anda"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Temukan berbagai produk dan layanan BCA untuk memudahkan transaksi dan mengelola keuangan dengan aman dan nyaman"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "bank-of-america-phish",
+      "official_url": "https://www.bankofamerica.com",
+      "title": "Bank of America - Banking, Credit Cards, Loans and Merrill Investing",
+      "description": "What would you like the power to do? At Bank of America, our purpose is to help make financial lives better through the power of every connection.",
+      "current_matchers": [
+        "Bank of America - Banking, Credit Cards, Loans and Merrill Investing"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Bank of America - Banking, Credit Cards, Loans and Merrill Investing"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "What would you like the power to do? At Bank of America, our purpose is to help make financial lives better through the power of every connection"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "barclays-phish",
+      "official_url": "https://www.barclays.com",
+      "title": "Barclays Group corporate website | Barclays",
+      "description": "Barclays is a British universal bank. Our businesses include consumer banking, as well as a top-tier, global corporate and investment bank.",
+      "current_matchers": [
+        "Barclays",
+        "<title>Barclays Group corporate website | Barclays"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Barclays Group corporate website | Barclays"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Barclays is a British universal bank"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "battlenet-phish",
+      "official_url": "https://eu.account.battle.net/login",
+      "title": "Battle.net Login",
+      "description": null,
+      "current_matchers": [
+        "Battle.net Login"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Battle.net Login"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Battle.net Login"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "bitbucket-phish",
+      "official_url": "https://www.bitbucket.org",
+      "title": "Bitbucket | Git solution for teams using Jira",
+      "description": "Bitbucket Cloud is a Git-based code and CI/CD tool optimized for teams using Jira.",
+      "current_matchers": [
+        "Bitbucket",
+        "<title> Bitbucket | Git solution for teams using Jira"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Bitbucket | Git solution for teams using Jira"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Bitbucket Cloud is a Git-based code and CI/CD tool optimized for teams using Jira."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "bitdefender-phish",
+      "official_url": "https://www.bitdefender.com",
+      "title": "Bitdefender - Global Leader in Cybersecurity Software",
+      "description": "Bitdefender is a cybersecurity software leader delivering best-in-class threat prevention, detection, and response solutions worldwide.",
+      "current_matchers": [
+        "Bitdefender - Global Leader in Cybersecurity Software"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Bitdefender - Global Leader in Cybersecurity Software"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Bitdefender is a cybersecurity software leader delivering best-in-class threat prevention, detection, and response solutions worldwide"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "bitfinex-phish",
+      "official_url": "https://www.bitfinex.com",
+      "title": "Bitfinex | Trade Crypto with Zero Fees",
+      "description": "Bitfinex is the longest-running and most liquid major cryptocurrency exchange. Founded in 2012, it has become the go-to platform for traders & institutional investors.",
+      "current_matchers": [
+        "Bitfinex",
+        "Bitfinex is the longest-running and most liquid major cryptocurrency exchange. Founded in 2012, it has become the go-to platform for traders &amp; institutional investors."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Bitfinex | Trade Crypto with Zero Fees"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Bitfinex is the longest-running and most liquid major cryptocurrency exchange"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "blizzard-phish",
+      "official_url": "https://www.blizzard.com",
+      "title": "Blizzard Entertainment",
+      "description": "Creators of the Warcraft, Diablo, StarCraft, and Overwatch series, Blizzard Entertainment is an industry-leading developer responsible for the most epic entertainment experiences, ever.",
+      "current_matchers": [
+        "Creators of the Warcraft, Diablo, StarCraft, and Overwatch series, Blizzard Entertainment is an industry-leading developer responsible for the most epic entertainment experiences, ever.",
+        "Blizzard"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Blizzard Entertainment"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Creators of the Warcraft, Diablo, StarCraft, and Overwatch series, Blizzard Entertainment is an industry-leading developer responsible for the most epic entertainment experiences, ever"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "brevo-phish",
+      "official_url": "https://www.brevo.com",
+      "title": "Brevo: Email & SMS Marketing, CRM & Automation Platform",
+      "description": "Brevo is the most intuitive all-in-one customer engagement platform: email and SMS marketing, automation, CRM, live chat, and transactional email. Try it free.",
+      "current_matchers": [
+        "<title>Brevo | All-in-one Marketing &amp; Sales Platform"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Brevo: Email & SMS Marketing, CRM & Automation Platform"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Brevo is the most intuitive all-in-one customer engagement platform: email and SMS marketing, automation, CRM, live chat, and transactional email"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "capital-one-phish",
+      "official_url": "https://www.capitalone.com",
+      "title": "Capital One | Credit Cards, Checking, Savings & Auto Loans",
+      "description": "Learn how banking with Capital One can help you meet your financial goals.",
+      "current_matchers": [
+        "Capital One",
+        "<title>Capital One | Credit Cards, Checking, Savings &amp; Auto Loans"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Capital One | Credit Cards, Checking, Savings & Auto Loans"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Learn how banking with Capital One can help you meet your financial goals."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "ccleaner-phish",
+      "official_url": "https://www.ccleaner.com",
+      "title": "CCleaner Makes Your Computer Faster & More Secure | Official Website",
+      "description": "CCleaner is the number-one tool for cleaning your PC. It protects your privacy and makes your computer faster and more secure! Download it FREE today.",
+      "current_matchers": [
+        "CCleaner Makes Your Computer Faster & More Secure | Official Website"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "CCleaner Makes Your Computer Faster & More Secure | Official Website"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "CCleaner is the number-one tool for cleaning your PC"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "chase-phish",
+      "official_url": "https://www.chase.com",
+      "title": "Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.com",
+      "description": "Chase online; credit cards, mortgages, commercial banking, auto loans, investing & retirement planning, checking and business banking.",
+      "current_matchers": [
+        "Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.com"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.com"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Chase online; credit cards, mortgages, commercial banking, auto loans, investing & retirement planning, checking and business banking"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "chrome-phish",
+      "official_url": "https://www.google.com/intl/en_uk/chrome/",
+      "title": "Google Chrome \u2013 Download the fast, secure browser from Google",
+      "description": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google\u2019s smarts built in. Download now.",
+      "current_matchers": [
+        "Google Chrome \u2013 Download the fast, secure browser from Google"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Google Chrome \u2013 Download the fast, secure browser from Google"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Get more done with the new Google Chrome"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "cibc-phish",
+      "official_url": "https://www.cibc.com",
+      "title": "Personal Banking and Financial Services | CIBC",
+      "description": "Bank on your terms with CIBC \u2013 whether it\u2019s in person, over the phone or online, CIBC has you covered.",
+      "current_matchers": [
+        "CIBC",
+        "CIBC U.S. provides tailored commercial and personal banking services, private wealth management and small business financial solutions from coast to coast. We invest in businesses, people and communities, striving to build trusting and enduring relationships by putting our clients at the center of all we do."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Personal Banking and Financial Services | CIBC"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Bank on your terms with CIBC \u2013 whether it\u2019s in person, over the phone or online, CIBC has you covered"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "citibank-phish",
+      "official_url": "https://www.citi.com",
+      "title": "Credit Cards, Banking, Mortgage, Personal Loans | Citi.com",
+      "description": null,
+      "current_matchers": [
+        "Citi",
+        "Citibank is the consumer division of financial services multinational Citigroup. Citibank was founded in 1812 as the City Bank of New York, and later became First National City Bank of New York. Citibank provides credit cards, mortgages, personal loans, commercial loans, and lines of credit."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Credit Cards, Banking, Mortgage, Personal Loans | Citi.com"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Credit Cards, Banking, Mortgage, Personal Loans | Citi.com"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "clickup-phish",
+      "official_url": "https://www.clickup.com",
+      "title": "ClickUp\u00e2\u0084\u00a2 | Maximize productivity \u00e2\u0080\u00a2 Software, AI, and humans converge",
+      "description": "Our mission is to make the world more productive. To do this, we built the everything app for work - Tasks, Docs, Goals, and Chat.",
+      "current_matchers": [
+        "ClickUp\u2122 | Maximize productivity \u2022 Software, AI, and humans converge"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "ClickUp\u00e2\u0084\u00a2 | Maximize productivity \u00e2\u0080\u00a2 Software, AI, and humans converge"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Our mission is to make the world more productive"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "comerica-phish",
+      "official_url": "https://www.comerica.com",
+      "title": "Trusted Banking for 175 Years | Comerica",
+      "description": "Your partner for personal finance, business banking, and wealth management with a legacy of excellence and industry recognition.",
+      "current_matchers": [
+        "Comerica",
+        "Your partner for personal finance, business banking, and wealth management with a legacy of excellence and industry recognition."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Trusted Banking for 175 Years | Comerica"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Your partner for personal finance, business banking, and wealth management with a legacy of excellence and industry recognition"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "costco-phish",
+      "official_url": "https://www.costco.com",
+      "title": "Welcome to Costco Wholesale",
+      "description": "Shop Costco.com for electronics, computers, furniture, outdoor living, appliances, jewelry and more. Enjoy low warehouse prices on name-brands products delivered to your door",
+      "current_matchers": [
+        "Costco",
+        "Shop Costco.com for electronics, computers, furniture, outdoor living, appliances, jewelry and more. Enjoy low warehouse prices on name-brands products delivered to your door"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Welcome to Costco Wholesale"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Shop Costco"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "credit-agricole-phish",
+      "official_url": "https://www.credit-agricole.com",
+      "title": "Banque des particuliers professionnels en France | Cr\u00e9dit Agricole",
+      "description": "Cr\u00e9dit Agricole 1re banque de l'habitat, de l'agriculture, des entreprises, des pros, des collectivites territoriales",
+      "current_matchers": [
+        "Cr\u00e9dit Agricole",
+        "Cr\u00e9dit Agricole 1re banque de l&#039;habitat, de l&#039;agriculture, des entreprises, des pros, des collectivites territoriales"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Banque des particuliers professionnels en France | Cr\u00e9dit Agricole"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Cr\u00e9dit Agricole 1re banque de l'habitat, de l'agriculture, des entreprises, des pros, des collectivites territoriales"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "customink-phish",
+      "official_url": "https://www.customink.com",
+      "title": "Custom Ink - Design Custom T-shirts, Apparel & Promo Products Online",
+      "description": "Make custom T-shirts, apparel & promotional products online with the highest quality printing & customer service. Easy Ordering. Fast & Free Shipping.",
+      "current_matchers": [
+        "CustomInk",
+        "<title>Custom T-shirts - Design T-shirts, Apparel & Promo Products Online"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Custom Ink - Design Custom T-shirts, Apparel & Promo Products Online"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Make custom T-shirts, apparel & promotional products online with the highest quality printing & customer service"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "dashlane-phish",
+      "official_url": "https://www.dashlane.com",
+      "title": "Dashlane: Password management & credential security platform",
+      "description": "Top-rated password manager and credential protection solution for enterprises, businesses, and individuals.",
+      "current_matchers": [
+        "Dashlane Password Manager",
+        "Dashlane Password Manager safeguards businesses &amp; people with easy-to-use, powerful features. Protect &amp; manage passwords and passkeys in one secure solution."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Dashlane: Password management & credential security platform"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Top-rated password manager and credential protection solution for enterprises, businesses, and individuals"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "deezer-phish",
+      "official_url": "https://www.deezer.com",
+      "title": "Deezer | Listen to music online | Music streaming app",
+      "description": "Discover our streaming app Deezer! Create an account, listen to your music for free and access millions of songs, playlists and podcasts. Sign up for free!",
+      "current_matchers": [
+        "Deezer | Listen to music | Online music streaming platform"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Deezer | Listen to music online | Music streaming app"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Discover our streaming app Deezer! Create an account, listen to your music for free and access millions of songs, playlists and podcasts"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "deliveroo-phish",
+      "official_url": "https://deliveroo.co.uk",
+      "title": "Deliveroo - Food, Groceries, Pharmacy, Gifts & More. Delivered In A Tap.",
+      "description": "From food to flowers, gifts to groceries, we bring the best of your neighbourhood to your door. All in as little as 30 minutes. Download our app or order online.",
+      "current_matchers": [
+        "Deliveroo - Takeaway Food Delivery from Local Restaurants &amp; Shops"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Deliveroo - Food, Groceries, Pharmacy, Gifts & More. Delivered In A Tap."
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "From food to flowers, gifts to groceries, we bring the best of your neighbourhood to your door"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "deutsche-bank-phish",
+      "official_url": "https://www.db.com",
+      "title": "Deutsche Bank",
+      "description": "Discover Deutsche Bank, one of the world\u2019s leading financial services providers. News and Information about the bank and its products",
+      "current_matchers": [
+        "Deutsche Bank",
+        "Discover Deutsche Bank, one of the world\u2019s leading financial services providers. News and Information about the bank and its products"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Deutsche Bank"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Discover Deutsche Bank, one of the world\u2019s leading financial services providers"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "digital-ocean-phish",
+      "official_url": "https://www.digitalocean.com",
+      "title": "AI-Native Cloud | DigitalOcean",
+      "description": "Run AI products in production with a unified stack for agents, inference, and cloud\u2014built for control, performance, and economics at scale.",
+      "current_matchers": [
+        "DigitalOcean | Cloud Infrastructure for Developers",
+        "DigitalOcean"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "AI-Native Cloud | DigitalOcean"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Run AI products in production with a unified stack for agents, inference, and cloud\u2014built for control, performance, and economics at scale"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "discover-phish",
+      "official_url": "https://www.discover.com",
+      "title": "Discover - Personal Banking, Credit Cards & Loans",
+      "description": "Discover offers online banking, reward credit cards, home equity loans, and personal loans to help meet your financial needs.",
+      "current_matchers": [
+        "Discover",
+        "<title>Discover - Personal Banking, Credit Cards &amp; Loans"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Discover - Personal Banking, Credit Cards & Loans"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Discover offers online banking, reward credit cards, home equity loans, and personal loans to help meet your financial needs"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "disneyplus-phish",
+      "official_url": "https://www.disneyplus.com",
+      "title": "Disney+ | Stream Movies, TV Shows, Documentaries & More | U.S. Site",
+      "description": "Access your favorite entertainment with Disney+. Disney+ is the streaming home for Disney, Hulu, ESPN, Pixar, Marvel, Star Wars, Nat Geo, and so much more.",
+      "current_matchers": [
+        "Disney+ | Stream new Originals, blockbusters and series"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Disney+ | Stream Movies, TV Shows, Documentaries & More | U.S. Site"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Access your favorite entertainment with Disney+"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "dota2-phish",
+      "official_url": "https://www.dota2.com",
+      "title": "Dota 2",
+      "description": "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own.",
+      "current_matchers": [
+        "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Dota 2"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "dribbble-phish",
+      "official_url": "https://www.dribbble.com",
+      "title": "Dribbble - Discover the World\u2019s Top Designers & Creative Professionals",
+      "description": "Find Top Designers & Creative Professionals on Dribbble. We are where designers gain inspiration, feedback, community, and jobs. Your best resource to discover and connect with designers worldwide.",
+      "current_matchers": [
+        "<title>Dribbble - Discover the World's Top Designers &amp; Creative Professionals"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Dribbble - Discover the World\u2019s Top Designers & Creative Professionals"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Find Top Designers & Creative Professionals on Dribbble"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "dropbox-phish",
+      "official_url": "https://www.dropbox.com",
+      "title": "dropbox.com",
+      "description": "Discover Dropbox \u2013 secure, easy cloud storage for file sharing and collaboration. With Dash, save time and organise all your company content in one place.",
+      "current_matchers": [
+        "Dropbox is a home for all of your work. You can store and share files, collaborate on projects and bring your best ideas to life, whether you\u2019re working alone or as part of a team."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "dropbox.com"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Discover Dropbox \u2013 secure, easy cloud storage for file sharing and collaboration"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "ea-phish",
+      "official_url": "https://www.ea.com",
+      "title": "Electronic Arts Home Page - Official EA Site",
+      "description": "We exist to inspire the world through Play. Electronic Arts is a leading publisher of games on Console, PC and Mobile.",
+      "current_matchers": [
+        "We exist to inspire the world through Play. Electronic Arts is a leading publisher of games on Console, PC and Mobile."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Electronic Arts Home Page - Official EA Site"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "We exist to inspire the world through Play"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "ebay-phish",
+      "official_url": "https://www.ebay.com",
+      "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
+      "description": "Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world's online marketplace. Top brands, low prices & free shipping on many items.",
+      "current_matchers": [
+        "Electronics, Cars, Fashion, Collectibles &amp; More | eBay"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Electronics, Cars, Fashion, Collectibles & More | eBay"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world's online marketplace"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "edge-phish",
+      "official_url": "https://www.microsoft.com/en-us/edge/download?form=MA13FJ&ch=1",
+      "title": "Download Microsoft Edge: Windows, macOS, iOS & Android",
+      "description": "Download Microsoft Edge for your computer or smartphone. Experience the cutting-edge AI Edge browser on your Windows, macOS, iOS, and Android device.",
+      "current_matchers": [
+        "Sign in - edge Accounts"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Download Microsoft Edge: Windows, macOS, iOS & Android"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Download Microsoft Edge for your computer or smartphone"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "ee-mobile-phish",
+      "official_url": "https://ee.co.uk",
+      "title": "Superfast 5G & 4G Phones, Tablets and Fibre Broadband | EE",
+      "description": "We're EE, the UK's No. 1 network with superfast 5G and 4G. Discover the best mobile phone, sim and fibre home broadband deals.",
+      "current_matchers": [
+        "Superfast 5G &amp; 4G Phones, Tablets and Fibre Broadband | EE"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Superfast 5G & 4G Phones, Tablets and Fibre Broadband | EE"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "We're EE, the UK's No"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "evernote-phish",
+      "official_url": "https://www.evernote.com",
+      "title": "Best Note Taking App - Organize Your Notes with Evernote",
+      "description": "Our note taking app helps you capture and prioritize ideas, projects and to-do lists, so nothing falls through the cracks. Start your free trial today!",
+      "current_matchers": [
+        "Best Note Taking App - Organize Your Notes with Evernote"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Best Note Taking App - Organize Your Notes with Evernote"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Our note taking app helps you capture and prioritize ideas, projects and to-do lists, so nothing falls through the cracks"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "expressvpn-phish",
+      "official_url": "https://www.expressvpn.com",
+      "title": "ExpressVPN: Best VPN Service for Speed & Privacy in 2026",
+      "description": "Protect your privacy, stream worldwide, and enjoy fast speeds with ExpressVPN. Servers in 105 countries, 24/7 support, and a 30-day risk-free trial\u2014start now!",
+      "current_matchers": [
+        "<title>ExpressVPN: Best VPN Service for Speed & Privacy in 2025"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "ExpressVPN: Best VPN Service for Speed & Privacy in 2026"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Protect your privacy, stream worldwide, and enjoy fast speeds with ExpressVPN"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "fedex-phish",
+      "official_url": "https://www.fedex.com",
+      "title": "FedEx | System Down",
+      "description": null,
+      "current_matchers": [
+        "FedEx",
+        "<title>Track &amp; Ship Online or Find Nearby Locations | FedEx"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "FedEx | System Down"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "FedEx | System Down"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "filezilla-phish",
+      "official_url": "https://www.filezilla-project.org",
+      "title": "FileZilla - The free FTP solution",
+      "description": "FileZilla - The free FTP solution for both client and server. Filezilla is open source software distributed free of charge.",
+      "current_matchers": [
+        "FileZilla - The free FTP solution"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "FileZilla - The free FTP solution"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "FileZilla - The free FTP solution for both client and server"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "footlocker-phish",
+      "official_url": "https://www.footlocker.com",
+      "title": "Foot Locker \r\nEurope",
+      "description": "The official Foot Locker Europe webstore. Get inspired by our lookbook and find a lot of brands  \u00e2\u009c\u0094 Nike, adidas, Converse and more  \u00e2\u009c\u0094",
+      "current_matchers": [
+        "Foot Locker",
+        "Sneakers, Apparel &amp; More | Foot Locker"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Foot Locker \r\nEurope"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "The official Foot Locker Europe webstore"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "freshworks-phish",
+      "official_url": "https://www.freshworks.com",
+      "title": "Freshworks: Uncomplicated Software | IT Service, Customer Service",
+      "description": "Freshworks enterprise-grade solutions are powerful, yet easy to use, and quick to deliver results for customer service and IT teams",
+      "current_matchers": [
+        "title>Freshworks: Uncomplicated Software | IT Service, Customer Service"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Freshworks: Uncomplicated Software | IT Service, Customer Service"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Freshworks enterprise-grade solutions are powerful, yet easy to use, and quick to deliver results for customer service and IT teams"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "gcp-phish",
+      "official_url": "https://cloud.google.com",
+      "title": "AI and Cloud Computing Services | Google Cloud",
+      "description": "Meet your business challenges head on with AI and cloud computing services from Google, including security, data management, and hybrid & multi-cloud.",
+      "current_matchers": [
+        "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "AI and Cloud Computing Services | Google Cloud"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Meet your business challenges head on with AI and cloud computing services from Google, including security, data management, and hybrid & multi-cloud"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "gimp-phish",
+      "official_url": "https://www.gimp.org",
+      "title": "GIMP - GNU Image Manipulation Program",
+      "description": "GIMP - The GNU Image Manipulation Program: The Free and Open Source Image Editor",
+      "current_matchers": [
+        "GIMP - GNU Image Manipulation Program"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "GIMP - GNU Image Manipulation Program"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "GIMP - The GNU Image Manipulation Program: The Free and Open Source Image Editor"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "github-phish",
+      "official_url": "https://www.github.com",
+      "title": "GitHub \u00b7 Change is constant. GitHub keeps you ahead. \u00b7 GitHub",
+      "description": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.",
+      "current_matchers": [
+        "Sign in to GitHub \u00b7 GitHub"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "GitHub \u00b7 Change is constant. GitHub keeps you ahead. \u00b7 GitHub"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "grammarly-phish",
+      "official_url": "https://www.grammarly.com",
+      "title": "Grammarly: Free AI Writing Assistance",
+      "description": "Grammarly makes AI writing convenient. Work smarter with personalized AI guidance and text generation on any app or website.",
+      "current_matchers": [
+        "<title>Grammarly: Free AI Writing Assistant"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Grammarly: Free AI Writing Assistance"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Grammarly makes AI writing convenient"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "green-man-gaming-phish",
+      "official_url": "https://www.greenmangaming.com",
+      "title": "Green Man Gaming | Buy Games, Game Keys & Digital Games Today",
+      "description": "Buy games & game keys with Green Man Gaming - get the best prices, awesome bundles & exclusive game deals daily! Visit to explore Green Man Gaming now!",
+      "current_matchers": [
+        "Buy games & game keys with Green Man Gaming - get the best prices, awesome bundles & exclusive game deals daily! Visit to explore Green Man Gaming now!"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Green Man Gaming | Buy Games, Game Keys & Digital Games Today"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Buy games & game keys with Green Man Gaming - get the best prices, awesome bundles & exclusive game deals daily! Visit to explore Green Man Gaming now!"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "grubhub-phish",
+      "official_url": "https://www.grubhub.com",
+      "title": "Prepare your taste buds...",
+      "description": "Prepare your taste buds...",
+      "current_matchers": [
+        "Prepare your taste buds..."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Prepare your taste buds..."
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Prepare your taste buds..."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "hbo-max-phish",
+      "official_url": "https://www.hbomax.com",
+      "title": "HBO Max | Stream Series and Movies",
+      "description": "Stream must-see series, hit movies, exclusive originals, family favorites, and live sports.",
+      "current_matchers": [
+        "Stream must-see series, hit movies, exclusive originals, family favorites, and live sports."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "HBO Max | Stream Series and Movies"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Stream must-see series, hit movies, exclusive originals, family favorites, and live sports."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "hetzner-phish",
+      "official_url": "https://www.hetzner.com",
+      "title": "G\u00fcnstige Dedicated Server, Cloud & Hosting aus Deutschland",
+      "description": "G\u00fcnstige Hosting-L\u00f6sungen, Dedicated Server und Cloud-Services bei Hetzner \u2713 DSGVO-konform \u2713 g\u00fcnstige Preise  \u2713 100 % gr\u00fcne Energie",
+      "current_matchers": [
+        "<title>Affordable dedicated servers, cloud &amp; hosting from Germany"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "G\u00fcnstige Dedicated Server, Cloud & Hosting aus Deutschland"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "G\u00fcnstige Hosting-L\u00f6sungen, Dedicated Server und Cloud-Services bei Hetzner \u2713 DSGVO-konform \u2713 g\u00fcnstige Preise  \u2713 100 % gr\u00fcne Energie"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "hsbc-phish",
+      "official_url": "https://www.hsbc.com",
+      "title": "HSBC Group corporate website | HSBC Holdings plc",
+      "description": "HSBC, one of the largest banking and financial services institutions in the world, serves millions of customers through its four global businesses.",
+      "current_matchers": [
+        "HSBC, one of the largest banking and financial services institutions in the world, serves millions of customers through its four global businesses."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "HSBC Group corporate website | HSBC Holdings plc"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "HSBC, one of the largest banking and financial services institutions in the world, serves millions of customers through its four global businesses"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "hulu-phish",
+      "official_url": "https://www.hulu.com",
+      "title": "Disney+ | Stream Movies, TV Shows, Documentaries & More | U.S. Site",
+      "description": "Access your favorite entertainment with Disney+. Disney+ is the streaming home for Disney, Hulu, ESPN, Pixar, Marvel, Star Wars, Nat Geo, and so much more.",
+      "current_matchers": [
+        "Hulu",
+        "Stream TV and Movies Live and Online | Hulu\""
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Disney+ | Stream Movies, TV Shows, Documentaries & More | U.S. Site"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Access your favorite entertainment with Disney+"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "humble-bundle-phish",
+      "official_url": "https://www.humblebundle.com",
+      "title": "Humble Bundle | game bundles, book bundles, software bundles, and more",
+      "description": "Humble Bundle sells games, books, software, and more. Our mission is to support charity while providing awesome content to customers at great prices. Since 2010, Humble Bundle customers have given over US$278,000,000 to charity.",
+      "current_matchers": [
+        "Humble Bundle sells games, books, software, and more. Our mission is to support charity while providing awesome content to customers at great prices. Since 2010, Humble Bundle customers have given over $275,000,000 to charity."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Humble Bundle | game bundles, book bundles, software bundles, and more"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Humble Bundle sells games, books, software, and more"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "icbc-phish",
+      "official_url": "https://icbc.com.cn",
+      "title": "\u00e4\u00b8\u00ad\u00e5\u009b\u00bd\u00e5\u00b7\u00a5\u00e5\u0095\u0086\u00e9\u0093\u00b6\u00e8\u00a1\u008c\u00e4\u00b8\u00ad\u00e5\u009b\u00bd\u00e7\u00bd\u0091\u00e7\u00ab\u0099",
+      "description": null,
+      "current_matchers": [
+        "\u5de5\u5546\u94f6\u884c\u91d1\u878d\u670d\u52a1\u5168\u9762\u4ecb\u7ecd\uff0c\u6295\u8d44\u7406\u8d22\u4fe1\u606f\u4e30\u5bcc\u5168\u9762\uff0c\u5728\u7ebf\u4ea4\u6613\u65b9\u4fbf\u5feb\u6377\uff0c\u6ee1\u8db3\u5ba2\u6237\u4e13\u4e1a\u5316\u3001\u591a\u5143\u5316\u3001\u4eba\u6027\u5316\u7684\u91d1\u878d\u670d\u52a1\u9700\u6c42\uff0c\u6253\u9020\u96c6\u4e1a\u52a1\u3001\u4fe1\u606f\u3001\u4ea4\u6613\u3001\u8d2d\u7269\u3001\u4e92\u52a8\u4e8e\u4e00\u4f53\u7efc\u5408\u6027\u91d1\u878d\u670d\u52a1\u5e73\u53f0\u3002"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "\u00e4\u00b8\u00ad\u00e5\u009b\u00bd\u00e5\u00b7\u00a5\u00e5\u0095\u0086\u00e9\u0093\u00b6\u00e8\u00a1\u008c\u00e4\u00b8\u00ad\u00e5\u009b\u00bd\u00e7\u00bd\u0091\u00e7\u00ab\u0099"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "\u00e4\u00b8\u00ad\u00e5\u009b\u00bd\u00e5\u00b7\u00a5\u00e5\u0095\u0086\u00e9\u0093\u00b6\u00e8\u00a1\u008c\u00e4\u00b8\u00ad\u00e5\u009b\u00bd\u00e7\u00bd\u0091\u00e7\u00ab\u0099"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "ing-phish",
+      "official_url": "https://www.ing.com",
+      "title": "ING global company website | ING",
+      "description": "Corporate site of ING, a global financial institution of Dutch origin, providing news, investor relations and general information",
+      "current_matchers": [
+        "Corporate site of ING, a global financial institution of Dutch origin, providing news, investor relations and general information"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "ING global company website | ING"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Corporate site of ING, a global financial institution of Dutch origin, providing news, investor relations and general information"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "jetbrains-phish",
+      "official_url": "https://www.jetbrains.com",
+      "title": "JetBrains: Essential tools for software developers and teams",
+      "description": "JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA \u2013 the leading Java IDE, and the Kotlin programming language.",
+      "current_matchers": [
+        "<title>JetBrains: Essential tools for software developers and teams"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "JetBrains: Essential tools for software developers and teams"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA \u2013 the leading Java IDE, and the Kotlin programming language"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "jitsi-phish",
+      "official_url": "https://www.jitsi.org",
+      "title": "Free Video Conferencing Software for Web & Mobile | Jitsi",
+      "description": "Learn more about Jitsi, a free open-source video conferencing software for web & mobile. Make a call, launch on your own servers, integrate into your app, and more.",
+      "current_matchers": [
+        "<title>Free Video Conferencing Software for Web &amp; Mobile | Jitsi"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Free Video Conferencing Software for Web & Mobile | Jitsi"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Learn more about Jitsi, a free open-source video conferencing software for web & mobile"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "kaspersky-phish",
+      "official_url": "https://kaspersky.co.uk",
+      "title": "Kaspersky Cyber Security Solutions for Home and Business  | Kaspersky",
+      "description": "A Global Leader in Next Generation Cybersecurity Solutions and Services, Kaspersky Offers Premium Protection Against All Cyber Threats for Your Home and Business.",
+      "current_matchers": [
+        "Kaspersky Cyber Security Solutions for Home and Business  | Kaspersky"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Kaspersky Cyber Security Solutions for Home and Business  | Kaspersky"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "A Global Leader in Next Generation Cybersecurity Solutions and Services, Kaspersky Offers Premium Protection Against All Cyber Threats for Your Home and Business"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "keepersecurity-phish",
+      "official_url": "https://www.keepersecurity.com",
+      "title": "Keeper Security | Identity Security for Humans, Machines and AI Agents",
+      "description": "Keeper is the unified control plane for privileged access, secrets, remote connections, endpoints and databases in a single zero-trust platform.",
+      "current_matchers": [
+        "Password and Secrets Management - Keeper Security"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Keeper Security | Identity Security for Humans, Machines and AI Agents"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Keeper is the unified control plane for privileged access, secrets, remote connections, endpoints and databases in a single zero-trust platform"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "keybase-phish",
+      "official_url": "https://www.keybase.io",
+      "title": "Keybase",
+      "description": "Keybase is for keeping everyone's chats and files safe, from families to communities to companies. MacOS, Windows, Linux, iPhone, and Android.",
+      "current_matchers": [
+        "Keybase is for keeping everyone's chats and files safe, from families to communities to companies. MacOS, Windows, Linux, iPhone, and Android."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Keybase"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Keybase is for keeping everyone's chats and files safe, from families to communities to companies"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "lastpass-phish",
+      "official_url": "https://www.lastpass.com",
+      "title": "#1 Password Manager & Vault App with Single-Sign On & MFA Solutions - LastPass",
+      "description": "Go beyond saving passwords with the best password manager! Generate strong passwords and store them in a secure vault. Now with single-sign on (SSO) and adaptive MFA solutions that integrate with over 1,200 apps.",
+      "current_matchers": [
+        "#1 Password Manager &amp; Vault App with Single-Sign On &amp; MFA Solutions - LastPass"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "#1 Password Manager & Vault App with Single-Sign On & MFA Solutions - LastPass"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Go beyond saving passwords with the best password manager! Generate strong passwords and store them in a secure vault"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "latemodel-restoration-phish",
+      "official_url": "https://www.lmr.com",
+      "title": "Ford Mustang Parts & Accessories | Late Model Restoration",
+      "description": "Shop 1000s of 1979-Present Mustang parts & accessories to restore or customize your car at LMR. Free delivery over $99. Mustang Parts Financing Available.",
+      "current_matchers": [
+        "lmr.com",
+        "<title>Ford Mustang Parts &amp; Accessories | Late Model Restoration"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Ford Mustang Parts & Accessories | Late Model Restoration"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Shop 1000s of 1979-Present Mustang parts & accessories to restore or customize your car at LMR"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "libre-office-phish",
+      "official_url": "https://www.libreoffice.org",
+      "title": "LibreOffice",
+      "description": "LibreOffice is a free office suite",
+      "current_matchers": [
+        "Home | LibreOffice - Free Office Suite - Based on OpenOffice - Compatible with Microsoft"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "LibreOffice"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "LibreOffice is a free office suite"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "linkedin-phish",
+      "official_url": "https://www.linkedin.com",
+      "title": "LinkedIn: Log In or Sign Up",
+      "description": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",
+      "current_matchers": [
+        "LinkedIn: Log In or Sign Up"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "LinkedIn: Log In or Sign Up"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "1 billion members | Manage your professional identity"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "lloyds-phish",
+      "official_url": "https://www.lloydsbank.com",
+      "title": "Lloyds Bank - Personal Banking, Personal Finances & Bank Accounts",
+      "description": "Wherever you want to get to in life, Lloyds Bank has a range of bank accounts and personal banking services to suit you. Visit us today to find out more",
+      "current_matchers": [
+        "<title>Lloyds Bank - Personal Banking, Personal Finances &amp; Bank Accounts"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Lloyds Bank - Personal Banking, Personal Finances & Bank Accounts"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Wherever you want to get to in life, Lloyds Bank has a range of bank accounts and personal banking services to suit you"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "lowes-phish",
+      "official_url": "https://www.lowes.com",
+      "title": "Access Denied",
+      "description": null,
+      "current_matchers": [
+        "Lowe's",
+        "Lowe\u2019s Home Improvement"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Access Denied"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Access Denied"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "lyft-phish",
+      "official_url": "https://www.lyft.com",
+      "title": "Ride or drive with Lyft",
+      "description": "Request a ride whenever you need one. Drivers earn on their own terms. Download the app to get started.",
+      "current_matchers": [
+        "Ride or drive with Lyft",
+        "Lyft"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Ride or drive with Lyft"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Request a ride whenever you need one"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "mailchimp-phish",
+      "official_url": "https://www.mailchimp.com",
+      "title": "Email & SMS Marketing Platform | Mailchimp",
+      "description": "Utilize real-time user behavior data and artificial intelligence to convert more customers. Easy to use, get started for free!",
+      "current_matchers": [
+        "Use real-time behavior data and AI to convert more customers with Mailchimp&#039;s marketing, automation &amp; email marketing platform. Easy to use - start for free!"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Email & SMS Marketing Platform | Mailchimp"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Utilize real-time user behavior data and artificial intelligence to convert more customers"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "mattermost-phish",
+      "official_url": "https://www.mattermost.com",
+      "title": "Mattermost | Collaboration Platform for Mission Critical Work",
+      "description": "Accelerate your mission critical workflow by integrating people, processes, tools and AI infrastructure on a resilient and adaptable platform.",
+      "current_matchers": [
+        "<title>Mattermost | Collaboration Platform for Mission Critical Work"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Mattermost | Collaboration Platform for Mission Critical Work"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Accelerate your mission critical workflow by integrating people, processes, tools and AI infrastructure on a resilient and adaptable platform"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "mega-phish",
+      "official_url": "https://www.mega.io",
+      "title": "MEGA: Protect your Online Privacy",
+      "description": "MEGA offers 20 GB free encrypted cloud storage, secure file upload, download and sharing, private chat and meetings, plus VPN and password manager.",
+      "current_matchers": [
+        "Home - MEGA",
+        "Secure and private cloud storage for everyone. Store and share files, chat, meet, back up, sync, and more."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "MEGA: Protect your Online Privacy"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "MEGA offers 20 GB free encrypted cloud storage, secure file upload, download and sharing, private chat and meetings, plus VPN and password manager"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "menards-phish",
+      "official_url": "https://www.menards.com",
+      "title": "Home at Menards\u00ae",
+      "description": "Save BIG Money on your home improvement needs at over 300 stores in categories like tools, lumber, appliances, pet supplies, lawn and gardening and much more.",
+      "current_matchers": [
+        "Menards",
+        "title>Home at Menards&#174;"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Home at Menards\u00ae"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Save BIG Money on your home improvement needs at over 300 stores in categories like tools, lumber, appliances, pet supplies, lawn and gardening and much more"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "microsoft-phish",
+      "official_url": "https://www.office.com",
+      "title": "Microsoft 365 | Write, Create & Collaborate with AI",
+      "description": "Microsoft 365 (formerly Office) with Copilot - AI that helps you write documents, create presentations, analyze data, and collaborate. Ask in plain language and get work done faster",
+      "current_matchers": [
+        "Login | Microsoft 365"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Microsoft 365 | Write, Create & Collaborate with AI"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Microsoft 365 (formerly Office) with Copilot - AI that helps you write documents, create presentations, analyze data, and collaborate"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "microsoft-teams-phish",
+      "official_url": "https://www.microsoft.com/en-gb/microsoft-teams/download-app",
+      "title": "Your request has been blocked. This could be\r\n                        due to several reasons.",
+      "description": null,
+      "current_matchers": [
+        "Download Microsoft Teams Desktop and Mobile Apps | Microsoft Teams"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Your request has been blocked. This could be\r\n                        due to several reasons."
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Your request has been blocked. This could be"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "monday-phish",
+      "official_url": "https://www.monday.com",
+      "title": "monday.com | Outpace everyone with the best AI work platform",
+      "description": "monday.com is the best AI work platform. Drive exponential execution and empower teams to expand what they achieve with an AI-powered product suite, AI agents, AI workflows, AI assistant and AI apps builder.",
+      "current_matchers": [
+        "<title>monday.com",
+        "Monday.com"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "monday.com | Outpace everyone with the best AI work platform"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "monday"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "monzo-phish",
+      "official_url": "https://www.monzo.com",
+      "title": "Monzo | Your New Favourite Bank",
+      "description": "Organise, save & invest with a free UK current account, joint account or business account. Make your money more Monzo.",
+      "current_matchers": [
+        "Organise, save & invest with a free UK current account, joint account or business account. Make your money more Monzo."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Monzo | Your New Favourite Bank"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Organise, save & invest with a free UK current account, joint account or business account"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "mpix-phish",
+      "official_url": "https://www.mpix.com",
+      "title": "Mpix Photo Lab | Create Custom Photo Products",
+      "description": "Create and order professional quality prints, handcrafted photo books & albums, customized cards, and invitations. Shop personalized photo gifts, custom wall art, and more online at Mpix.com.",
+      "current_matchers": [
+        "Mpix",
+        "<title>Mpix Photo Lab | Create Custom Photo Products"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Mpix Photo Lab | Create Custom Photo Products"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Create and order professional quality prints, handcrafted photo books & albums, customized cards, and invitations"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "mt-bank-phish",
+      "official_url": "https://www.mtb.com",
+      "title": "Personal Banking  | M&T Bank",
+      "description": "With a community bank approach, M&T Bank helps people reach their personal and business goals with banking, mortgage, loan and investment services.",
+      "current_matchers": [
+        "With a community bank approach, M&T Bank helps people reach their personal and business goals with banking, mortgage, loan and investment services."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Personal Banking  | M&T Bank"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "With a community bank approach, M&T Bank helps people reach their personal and business goals with banking, mortgage, loan and investment services"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "mullvad-phish",
+      "official_url": "https://www.mullvad.net",
+      "title": "Mullvad VPN - Privacy is for the people",
+      "description": "Free the internet from mass surveillance and censorship. Fight for privacy with Mullvad VPN and Mullvad Browser.",
+      "current_matchers": [
+        "<title>Mullvad VPN - Privacy is for the people"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Mullvad VPN - Privacy is for the people"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Free the internet from mass surveillance and censorship"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "nab-phish",
+      "official_url": "https://nab.com.au",
+      "title": "NAB personal banking | Loans, accounts, credit cards, insurance - NAB",
+      "description": "NAB personal banking services include online banking, bank accounts, credit cards, home loans and personal loans. We\u2019re here to help you with more than money.",
+      "current_matchers": [
+        "NAB personal banking services include online banking, bank accounts, credit cards, home loans and personal loans. We\u2019re here to help you with more than money."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "NAB personal banking | Loans, accounts, credit cards, insurance - NAB"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "NAB personal banking services include online banking, bank accounts, credit cards, home loans and personal loans"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "naver-login-phish",
+      "official_url": "https://nid.naver.com",
+      "title": "Naver Sign in",
+      "description": "Sign in to your Naver Account",
+      "current_matchers": [
+        "\ub124\uc774\ubc84 : \ub85c\uadf8\uc778",
+        "\ub85c\uadf8\uc778"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Naver Sign in"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Sign in to your Naver Account"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "netflix-phish",
+      "official_url": "https://www.netflix.com",
+      "title": "Netflix United Kingdom \u2013 Watch series online, watch films online",
+      "description": "Watch Netflix films & series online or stream straight to your smart TV, game console, PC, Mac, mobile, tablet and more.",
+      "current_matchers": [
+        "Watch Netflix films &amp; TV programmes online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Netflix United Kingdom \u2013 Watch series online, watch films online"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Watch Netflix films & series online or stream straight to your smart TV, game console, PC, Mac, mobile, tablet and more"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "nike-phish",
+      "official_url": "https://www.nike.com",
+      "title": "Nike. Just Do It. Nike UK",
+      "description": "Inspiring the world's athletes, Nike delivers innovative products, experiences and services.",
+      "current_matchers": [
+        "Nike",
+        "<title>Nike. Just Do It. Nike.com"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Nike. Just Do It. Nike UK"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Inspiring the world's athletes, Nike delivers innovative products, experiences and services."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "nordpass-phish",
+      "official_url": "https://www.nordpass.com",
+      "title": "Securely Store, Manage & Autofill Passwords | NordPass",
+      "description": "NordPass password manager remembers complex passwords, auto-fills logins and online forms and lets you access it all from anywhere. Even when you\u2019re offline.",
+      "current_matchers": [
+        "Securely Store, Manage &amp; Autofill Passwords | NordPass"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Securely Store, Manage & Autofill Passwords | NordPass"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "NordPass password manager remembers complex passwords, auto-fills logins and online forms and lets you access it all from anywhere"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "norton-phish",
+      "official_url": "https://www.norton.com",
+      "title": "Norton AntiVirus, Privacy, Identity, & Advanced Scam Protection",
+      "description": "Our best protection, trusted by millions, now includes Genie AI Scam Detection. Advanced tech for advanced threats. Explore plans.",
+      "current_matchers": [
+        "Official Site | Norton\u2122 - Antivirus &amp; Anti-Malware Software"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Norton AntiVirus, Privacy, Identity, & Advanced Scam Protection"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Our best protection, trusted by millions, now includes Genie AI Scam Detection"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "notion-phish",
+      "official_url": "https://www.notion.so",
+      "title": "The AI workspace that works for you. | Notion",
+      "description": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
+      "current_matchers": [
+        "Your connected workspace for wiki, docs &amp; projects | Notion"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "The AI workspace that works for you. | Notion"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Build Custom Agents, search across all your apps, and automate busywork"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "o2-mobile-phish",
+      "official_url": "https://o2.co.uk",
+      "title": "O2 - Essential For Living",
+      "description": "Find exclusive offers and discover Switch Up, Flexible Superfast 5G Tariffs, Free Roaming & O2 Priority. Stay connected, wherever you are.",
+      "current_matchers": [
+        "O2 | Phone, SIM &amp; Tech Deals - See What You Can Do"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "O2 - Essential For Living"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Find exclusive offers and discover Switch Up, Flexible Superfast 5G Tariffs, Free Roaming & O2 Priority"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "ocbc-phish",
+      "official_url": "https://www.ocbc.com",
+      "title": "OCBC - Personal Banking, Business Banking, Wealth Management",
+      "description": "Discover a world of financial services with OCBC, the best trusted and established Singapore bank. Explore our range of banking solutions today.",
+      "current_matchers": [
+        "Discover a world of financial services with OCBC, the best trusted and established Singapore bank. Explore our range of banking solutions today."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "OCBC - Personal Banking, Business Banking, Wealth Management"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Discover a world of financial services with OCBC, the best trusted and established Singapore bank"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "okta-phish",
+      "official_url": "https://www.okta.com",
+      "title": "Secure Identity for Employees, Customers, and AI | Okta",
+      "description": "The Okta and Auth0 Platforms enable secure access, authentication, and automation \u2014 putting identity at the heart of business security and growth.",
+      "current_matchers": [
+        "The Okta and Auth0 Platforms enable secure access, authentication, and automation \u2014 putting Identity at the heart of business security and growth."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Secure Identity for Employees, Customers, and AI | Okta"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "The Okta and Auth0 Platforms enable secure access, authentication, and automation \u2014 putting identity at the heart of business security and growth"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "opera-phish",
+      "official_url": "https://www.opera.com",
+      "title": "Opera Web Browser | Faster, Safer, Smarter | Opera",
+      "description": "Faster, safer and smarter than default browsers. Fully-featured for privacy, security, and so much more. Get the faster, better Opera browser for free.",
+      "current_matchers": [
+        "Opera Web Browser | Faster, Safer, Smarter | Oper"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Opera Web Browser | Faster, Safer, Smarter | Opera"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Faster, safer and smarter than default browsers"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "origin-phish",
+      "official_url": "https://www.origin.com",
+      "title": "PC Games and Computer Video Games for Download - Electronic Arts",
+      "description": "Explore PC video games available for download right now. Electronic Arts is a leading publisher of games for the PC, consoles, and mobile.",
+      "current_matchers": [
+        "Explore PC video games available for download right now. Electronic Arts is a leading publisher of games for the PC, consoles, and mobile."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "PC Games and Computer Video Games for Download - Electronic Arts"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Explore PC video games available for download right now"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "pandora-phish",
+      "official_url": "https://www.pandora.com",
+      "title": "Pandora",
+      "description": null,
+      "current_matchers": [
+        "Play the songs, albums, playlists and podcasts you love on the all-new Pandora. Sign up for a subscription plan to stream ad-free and on-demand. Listen on your mobile phone, desktop, TV, smart speakers or in the car."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Pandora"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Pandora is unavailable in this country or region"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "paramount-plus-phish",
+      "official_url": "https://www.paramountplus.com",
+      "title": "Paramount+ United Kingdom | Watch Movies & TV Shows Online",
+      "description": "Watch hit movies, new originals & your favourite shows with Paramount+. A mountain of entertainment. Start streaming on any device!",
+      "current_matchers": [
+        "Paramount+",
+        "Sign in",
+        "Paramount+ Login"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Paramount+ United Kingdom | Watch Movies & TV Shows Online"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Watch hit movies, new originals & your favourite shows with Paramount+"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "paramountplus-phish",
+      "official_url": "https://www.paramountplus.com",
+      "title": "Paramount+ United Kingdom | Watch Movies & TV Shows Online",
+      "description": "Watch hit movies, new originals & your favourite shows with Paramount+. A mountain of entertainment. Start streaming on any device!",
+      "current_matchers": [
+        "Paramount+ United Kingdom - Stream Blockbusters, New Originals and Hit Shows"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Paramount+ United Kingdom | Watch Movies & TV Shows Online"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Watch hit movies, new originals & your favourite shows with Paramount+"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "pcloud-phish",
+      "official_url": "https://www.pcloud.com",
+      "title": "pCloud - Secure Cloud Storage for Files, Photos & Documents",
+      "description": "Store, sync, and share your files securely with pCloud. Get up to 10 GB of free secure cloud storage and access your files from any device, anywhere.",
+      "current_matchers": [
+        "pCloud - Europe's Most Secure Cloud Storage"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "pCloud - Secure Cloud Storage for Files, Photos & Documents"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Store, sync, and share your files securely with pCloud"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "peacock-phish",
+      "official_url": "https://www.peacocktv.com",
+      "title": "Unavailable In Your Region",
+      "description": null,
+      "current_matchers": [
+        "Peacock",
+        "Watch TV shows and movies online with Peacock. Stream iconic shows and movies, exclusive Peacock Originals, live news and sports and more."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Unavailable In Your Region"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "philo-phish",
+      "official_url": "https://www.philo.com",
+      "title": "Philo - Stream Live and On-Demand TV",
+      "description": "Why pay more for TV? Start your Philo free trial and enjoy live TV plus on-demand content starting at just $25/month. Stream hit shows, movies, and more.",
+      "current_matchers": [
+        "Why pay more for TV? Philo offers live TV and on-demand content for just $33/month. Stream your favorite shows, movies, and more across all your devices."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Philo - Stream Live and On-Demand TV"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Why pay more for TV? Start your Philo free trial and enjoy live TV plus on-demand content starting at just $25/month"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "playstation-phish",
+      "official_url": "https://www.playstation.com",
+      "title": "PlayStation\u00ae Official Site: Consoles, Games, Accessories & More",
+      "description": "Explore the new generation PlayStation 4 and PS5 consoles - experience immersive gaming with thousands of hit games in every genre to rewrite the rules for what a PlayStation console can do.",
+      "current_matchers": [
+        "Explore the new generation PlayStation 4 and PS5 consoles - experience immersive gaming with thousands of hit games in every genre to rewrite the rules for what a PlayStation console can do."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "PlayStation\u00ae Official Site: Consoles, Games, Accessories & More"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Explore the new generation PlayStation 4 and PS5 consoles - experience immersive gaming with thousands of hit games in every genre to rewrite the rules for what a PlayStation console can do"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "postmates-phish",
+      "official_url": "https://www.postmates.com",
+      "title": "Postmates: Food Delivery, Groceries, Alcohol - Anything from Anywhere",
+      "description": "Order delivery or pickup from more than 600,000 restaurants, retailers, grocers, and more all across your city. Download the app now to get everything you crave, on-demand.",
+      "current_matchers": [
+        "Postmates",
+        "Order delivery or pickup from more than 600,000 restaurants, retailers, grocers, and more all across your city. Download the app now to get everything you crave, on-demand."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Postmates: Food Delivery, Groceries, Alcohol - Anything from Anywhere"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Order delivery or pickup from more than 600,000 restaurants, retailers, grocers, and more all across your city"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "proton-phish",
+      "official_url": "https://www.proton.me",
+      "title": "Proton: Privacy by default",
+      "description": "Over 100 million people use Proton to stay private and secure online. Get a free Proton account and take back your privacy.",
+      "current_matchers": [
+        "Proton Account: Sign-in"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Proton: Privacy by default"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Over 100 million people use Proton to stay private and secure online"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "protonvpn-phish",
+      "official_url": "https://www.protonvpn.com",
+      "title": "The best VPN for speed and security | Proton VPN",
+      "description": "Get fast, secure VPN service in 120+ countries. Download our free VPN now \u2014 or check out Proton VPN Plus for even more premium features.",
+      "current_matchers": [
+        "<title>The best VPN for speed and security"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "The best VPN for speed and security | Proton VPN"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Get fast, secure VPN service in 120+ countries"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "pubg-phish",
+      "official_url": "https://www.pubg.com",
+      "title": "PUBG: BATTLEGROUNDS",
+      "description": "PUBG: BATTLEGROUNDS is a battle royale that pits 100 players against each other. Outplay your opponents to become the lone survivor. Play free now!",
+      "current_matchers": [
+        "PUBG",
+        "<title>PUBG: BATTLEGROUNDS"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "PUBG: BATTLEGROUNDS"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "PUBG: BATTLEGROUNDS is a battle royale that pits 100 players against each other"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "putty-phish",
+      "official_url": "https://www.putty.org",
+      "title": "Mike Yeadon: Final Warning",
+      "description": null,
+      "current_matchers": [
+        "Download PuTTY - a free SSH and telnet client for Windows"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Mike Yeadon: Final Warning"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Mike Yeadon: Final Warning"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "python-phish",
+      "official_url": "https://www.python.org",
+      "title": "Welcome to Python.org",
+      "description": "The official home of the Python Programming Language",
+      "current_matchers": [
+        "Welcome to Python.org",
+        "The official home of the Python Programming Language"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Welcome to Python.org"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "The official home of the Python Programming Language"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "reddit-phish",
+      "official_url": "https://www.reddit.com",
+      "title": "Reddit - Please wait for verification",
+      "description": null,
+      "current_matchers": [
+        "Reddit - Dive into anything"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Reddit - Please wait for verification"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Reddit - Please wait for verification"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "riot-games-phish",
+      "official_url": "https://www.riotgames.com",
+      "title": "Riot Games. Developer of League of Legends, VALORANT, Teamfight Tactics, Legends of Runeterra, and Wild Rift. Creators of Arcane. Home of LOL and VALORANT Esports. | Riot Games",
+      "description": "Riot Games. Developer of League of Legends, VALORANT, Teamfight Tactics, Legends of Runeterra, and Wild Rift. Creators of Arcane. Home of LOL and VALORANT Esports.",
+      "current_matchers": [
+        "Riot Games. Developer of League of Legends, VALORANT, Teamfight Tactics, Legends of Runeterra, and Wild Rift. Creators of Arcane. Home of LOL and VALORANT Esports."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Riot Games. Developer of League of Legends, VALORANT, Teamfight Tactics, Legends of Runeterra, and Wild Rift. Creators of Arcane. Home of LOL and VALORANT Esports. | Riot Games"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Riot Games"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "robinhood-phish",
+      "official_url": "https://www.robinhood.com",
+      "title": "Robinhood: Commission-free Stock Trading & Investing App",
+      "description": "Robinhood UK has commission-free stock trading, and tools to help shape your financial future. Limitations, risks and other costs apply, including contract fees when trading options.",
+      "current_matchers": [
+        "Robinhood: 24/5 Commission-Free Stock Trading & Investing"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Robinhood: Commission-free Stock Trading & Investing App"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Robinhood UK has commission-free stock trading, and tools to help shape your financial future"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "roboform-phish",
+      "official_url": "https://www.roboform.com",
+      "title": "RoboForm Password Manager | Best Password Manager for 2026",
+      "description": "RoboForm Password Manager. Stay secure, productive, and efficient with our seamless free password manager and form filling solution.",
+      "current_matchers": [
+        "Best Password Manager: No more writing down passwords",
+        "Multi-platform secure solution to simplify your online experience. One click login on Chrome, Firefox, Safari, IE, Opera, Edge, Windows, Mac, iOS, Android.",
+        "roboform"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "RoboForm Password Manager | Best Password Manager for 2026"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "RoboForm Password Manager"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "rockauto-phish",
+      "official_url": "https://www.rockauto.com",
+      "title": "RockAuto | All The Parts Your Car Will Ever Need",
+      "description": "Auto Parts for Your Vehicle at Reliably Low Prices. Fast Online Catalog. DIY-Easy. Your Choice of Quality. Full Manufacturer Warranty.",
+      "current_matchers": [
+        "Auto Parts for Your Vehicle at Reliably Low Prices. Fast Online Catalog. DIY-Easy. Your Choice of Quality. Full Manufacturer Warranty."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "RockAuto | All The Parts Your Car Will Ever Need"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Auto Parts for Your Vehicle at Reliably Low Prices"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "rocketchat-phish",
+      "official_url": "https://www.rocket.chat",
+      "title": "Rocket.Chat | Secure CommsOS\u2122 for Mission-Critical Operations",
+      "description": "Centralize real-time messaging, voice, video, AI, and apps for secure, reliable and unified communication among internal and external stakeholders.",
+      "current_matchers": [
+        "<title>Rocket.Chat | Secure CommsOS\u2122 for Mission-Critical Operations"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Rocket.Chat | Secure CommsOS\u2122 for Mission-Critical Operations"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Centralize real-time messaging, voice, video, AI, and apps for secure, reliable and unified communication among internal and external stakeholders"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "rockstar-phish",
+      "official_url": "https://www.rockstargames.com",
+      "title": "Rockstar Games",
+      "description": "The official home of Rockstar Games",
+      "current_matchers": [
+        "The official home of Rockstar Games"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Rockstar Games"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "The official home of Rockstar Games"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "rockstar-social-club-phish",
+      "official_url": "https://socialclub.rockstargames.com",
+      "title": "Rockstar Games",
+      "description": "The official home of Rockstar Games",
+      "current_matchers": [
+        "The official home of Rockstar Games"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Rockstar Games"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "The official home of Rockstar Games"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "salesforce-phish",
+      "official_url": "https://www.salesforce.com",
+      "title": "Salesforce UK: The #1 AI CRM | Salesforce UK",
+      "description": "Salesforce is the #1 AI CRM, helping companies become Agentic Enterprises where humans and agents drive success together through a unified AI, data, and Customer 360 platform.",
+      "current_matchers": [
+        "Salesforce is the #1 AI CRM, helping companies become Agentic Enterprises where humans and agents drive success together through a unified AI, data, and Customer 360 platform."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Salesforce UK: The #1 AI CRM | Salesforce UK"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Salesforce is the #1 AI CRM, helping companies become Agentic Enterprises where humans and agents drive success together through a unified AI, data, and Customer 360 platform"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "sams-club-phish",
+      "official_url": "https://www.samsclub.com",
+      "title": "Let us know you're not a robot - Sam's Club",
+      "description": null,
+      "current_matchers": [
+        "Shop Samsclub.com today for Every Day Low Prices. Join Sam's Club as a Plus Member and get free same-day or next-day delivery from your club & free shipping on eligible items totaling $50 or more."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Let us know you're not a robot - Sam's Club"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Let us know you're not a robot - Sam's Club"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "samsung-phish",
+      "official_url": "https://www.samsung.com",
+      "title": "Samsung UK | Mobile | Home Electronics | Home Appliances | TV",
+      "description": "Welcome to Samsung UK. Discover a wide range of home electronics with cutting-edge technology including TVs, smartphones, tablets, home appliances & more!",
+      "current_matchers": [
+        "Samsung UK | Mobile | Home Electronics | Home Appliances | TV"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Samsung UK | Mobile | Home Electronics | Home Appliances | TV"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Welcome to Samsung UK"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "santander-phish",
+      "official_url": "https://www.santander.com",
+      "title": "Santander Corporate Website",
+      "description": "Our purpose is to help people and businesses prosper. We strive to make all we do Simple, Personal and Fair.",
+      "current_matchers": [
+        "Our purpose is to help people and businesses prosper. We strive to make all we do Simple, Personal and Fair."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Santander Corporate Website"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Our purpose is to help people and businesses prosper"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "scotiabank-phish",
+      "official_url": "https://www.scotiabank.com",
+      "title": "Scotiabank Global Site",
+      "description": null,
+      "current_matchers": [
+        "Scotiabank Global Site"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Scotiabank Global Site"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Scotiabank Global Site"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "seamless-phish",
+      "official_url": "https://www.seamless.com",
+      "title": "Prepare your taste buds...",
+      "description": "Prepare your taste buds...",
+      "current_matchers": [
+        "Prepare your taste buds..."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Prepare your taste buds..."
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Prepare your taste buds..."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "shutterfly-phish",
+      "official_url": "https://www.shutterfly.com",
+      "title": "Shutterfly | Photo Books, Cards, Prints, Wall Art, Gifts, Wedding",
+      "description": "Shop Shutterfly for custom photo books, prints, cards, invitations, gifts, wall art, calendars, and more. Personalize your favorite moments with high-quality, meaningful photo products.",
+      "current_matchers": [
+        "Create photo books, personalize photo cards & stationery, and share photos with family and friends at Shutterfly.com."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Shutterfly | Photo Books, Cards, Prints, Wall Art, Gifts, Wedding"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Shop Shutterfly for custom photo books, prints, cards, invitations, gifts, wall art, calendars, and more"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "signal-phish",
+      "official_url": "https://www.signal.org",
+      "title": "Signal >> Home",
+      "description": "Say \"hello\" to a different messaging experience. An unexpected focus on privacy, combined with all of the features you expect.",
+      "current_matchers": [
+        "Say &quot;hello&quot; to a different messaging experience. An unexpected focus on privacy, combined with all of the features you expect."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Signal >> Home"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Say \"hello\" to a different messaging experience"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "sketch-phish",
+      "official_url": "https://www.sketch.com",
+      "title": "Sketch \u00b7 Design, prototype, collaborate and handoff",
+      "description": "Sketch puts the focus back on you and your work. Made by designers, for designers.",
+      "current_matchers": [
+        "<title>Sketch \u00b7 Design, prototype, collaborate and handoff"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Sketch \u00b7 Design, prototype, collaborate and handoff"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Sketch puts the focus back on you and your work. Made by designers, for designers."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "sky-phish",
+      "official_url": "https://www.sky.com",
+      "title": "Discover TV, Broadband & Mobile Phone Packages with Sky",
+      "description": "Discover Sky packages for TV, broadband & mobile including Glass - the new streaming TV with Sky Inside. Login to manage your My Sky account & more.",
+      "current_matchers": [
+        "Discover TV, Broadband & Mobile Phone Packages with Sky"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Discover TV, Broadband & Mobile Phone Packages with Sky"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Discover Sky packages for TV, broadband & mobile including Glass - the new streaming TV with Sky Inside"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "skype-phish",
+      "official_url": "https://www.skype.com",
+      "title": "Free Online Meetings & Video Calls | Microsoft Teams",
+      "description": "Start free Teams video calls instantly! Connect, collaborate, and communicate effortlessly. Enjoy features like video calls, chat, file sharing, and more. Perfect for personal use, freelancers, solopreneurs, PTAs, teachers, small businesses and social events. Get started today!",
+      "current_matchers": [
+        "Skype | Stay connected with free video calls worldwide"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Free Online Meetings & Video Calls | Microsoft Teams"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Start free Teams video calls instantly! Connect, collaborate, and communicate effortlessly"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "skyscanner-phish",
+      "official_url": "https://www.skyscanner.net",
+      "title": "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner",
+      "description": "Compare cheap flight prices from all major airlines and travel agents, and find the cheapest tickets to all your favourite destinations. Book online today.",
+      "current_matchers": [
+        "Compare Cheap Flights &amp; Book Airline Tickets to Everywhere | Skyscanner"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Compare cheap flight prices from all major airlines and travel agents, and find the cheapest tickets to all your favourite destinations"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "snapchat-phish",
+      "official_url": "https://www.snapchat.com",
+      "title": "Snapchat \u2013 Say it in a Snap",
+      "description": "Chat, send Snaps, explore Stories and try Lenses on desktop, or download the app on mobile! See how to connect and create with friends on Snapchat, wherever you are.",
+      "current_matchers": [
+        "Snapchat - Say It In A Snap",
+        "Snapchat"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Snapchat \u2013 Say it in a Snap"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Chat, send Snaps, explore Stories and try Lenses on desktop, or download the app on mobile! See how to connect and create with friends on Snapchat, wherever you are"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "snapfish-phish",
+      "official_url": "https://www.snapfish.com",
+      "title": "Snapfish | Personalized Gifts, Cards, Home Decor, Photo Books & More",
+      "description": "Design and send the best personalized gifts, cards, home decor, photo books, and prints with Snapfish.",
+      "current_matchers": [
+        "Design and send the best personalized gifts, cards, home decor, photo books, and prints with Snapfish."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Snapfish | Personalized Gifts, Cards, Home Decor, Photo Books & More"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Design and send the best personalized gifts, cards, home decor, photo books, and prints with Snapfish"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "societe-generale-phish",
+      "official_url": "https://www.societegenerale.com",
+      "title": "Accueil - Groupe Soci\u00e9t\u00e9 G\u00e9n\u00e9rale",
+      "description": "Un leader europ\u00e9en des services financiers depuis plus de 150 ans, Soci\u00e9t\u00e9 G\u00e9n\u00e9rale s\u2019appuie sur trois m\u00e9tiers compl\u00e9mentaires, la Banque de d\u00e9tail en France, la Banque de d\u00e9tail et Services Financiers Internationaux et la Banque de Grande Client\u00e8le et Solutions Investisseurs.",
+      "current_matchers": [
+        "Un leader europ\u00e9en des services financiers depuis plus de 150 ans, Soci\u00e9t\u00e9 G\u00e9n\u00e9rale s\u2019appuie sur trois m\u00e9tiers compl\u00e9mentaires, la Banque de d\u00e9tail en France, la Banque de d\u00e9tail et Services Financiers Internationaux et la Banque de Grande Client\u00e8le et Solutions Investisseurs."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Accueil - Groupe Soci\u00e9t\u00e9 G\u00e9n\u00e9rale"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Un leader europ\u00e9en des services financiers depuis plus de 150 ans, Soci\u00e9t\u00e9 G\u00e9n\u00e9rale s\u2019appuie sur trois m\u00e9tiers compl\u00e9mentaires, la Banque de d\u00e9tail en France, la Banque de d\u00e9tail et Services Financiers Internationaux et la Banque de Grande Client\u00e8le et Solutions Investisseurs"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "soundcloud-phish",
+      "official_url": "https://www.soundcloud.com",
+      "title": "Stream and listen to music online for free with SoundCloud",
+      "description": "Discover and play over 320 million music tracks. Join the world\u00e2\u0080\u0099s largest online community of artists, bands, DJs, and audio creators.",
+      "current_matchers": [
+        "<title>Stream and listen to music online for free with SoundCloud"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Stream and listen to music online for free with SoundCloud"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Discover and play over 320 million music tracks"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "spotify-phish",
+      "official_url": "https://www.spotify.com",
+      "title": "Spotify \u2013 Web Player",
+      "description": null,
+      "current_matchers": [
+        "Spotify - Web Player: Music for everyone"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Spotify \u2013 Web Player"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Spotify \u2013 Web Player"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "spreadshirt-phish",
+      "official_url": "https://www.spreadshirt.com",
+      "title": "Spreadshirt Print on Demand Platform | Spreadshirt",
+      "description": "Create or Shop Unique Apparel, Accessoires or Home Products at Spreadshirt. Choose from several Products and Customize with Text, Designs",
+      "current_matchers": [
+        "Spreadshirt Print on Demand Platform | Spreadshirt"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Spreadshirt Print on Demand Platform | Spreadshirt"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Create or Shop Unique Apparel, Accessoires or Home Products at Spreadshirt"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "square-phish",
+      "official_url": "https://www.squareup.com",
+      "title": "Power your entire business | Square",
+      "description": "Sell more. Sell anywhere. Streamline operations. Manage your staff. Get paid faster. Sign up for Square today.",
+      "current_matchers": [
+        "Sell anywhere. Diversify revenue streams. Streamline operations. Manage your staff. Get paid faster. Sign up for Square today.",
+        "Square Dashboard"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Power your entire business | Square"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Sell more"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "squarespace-phish",
+      "official_url": "https://www.squarespace.com",
+      "title": "Website Builder \u2013 Easily Create Your Own Website \u2014 Squarespace",
+      "description": "Create a website and grow your business with a free Squarespace trial. Start with customizable website templates, AI website builder tools, or a domain name.",
+      "current_matchers": [
+        "<title>Website Builder &mdash; Easily Create Your Own Website &mdash; Squarespace"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Website Builder \u2013 Easily Create Your Own Website \u2014 Squarespace"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Create a website and grow your business with a free Squarespace trial"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "standard-chartered-phish",
+      "official_url": "https://www.sc.com",
+      "title": "Standard Chartered Bank",
+      "description": null,
+      "current_matchers": [
+        "Standard Chartered Bank"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Standard Chartered Bank"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Standard Chartered Bank"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "starz-phish",
+      "official_url": "https://www.starz.com",
+      "title": "STARZ - Captivating Original Series. Hit Movies. Bold Storytelling.",
+      "description": "STARZ brings diverse perspectives to life through bold storytelling. Sign-up to stream original series, movies, extras, and more\u2014on-demand and ad-free.",
+      "current_matchers": [
+        "Starz",
+        "STARZ brings diverse perspectives to life through bold storytelling. Sign-up to stream original series, movies, extras, and more\u2014on-demand and ad-free."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "STARZ - Captivating Original Series. Hit Movies. Bold Storytelling."
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "STARZ brings diverse perspectives to life through bold storytelling"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "steam-phish",
+      "official_url": "https://www.steampowered.com",
+      "title": "Welcome to Steam",
+      "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
+      "current_matchers": [
+        "Welcome to Steam",
+        "Steam is the ultimate destination for playing, discussing, and creating games."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Welcome to Steam"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Steam is the ultimate destination for playing, discussing, and creating games."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "stripe-phish",
+      "official_url": "https://www.stripe.com",
+      "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+      "description": "Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models and manage money movement.",
+      "current_matchers": [
+        "Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes. Accept payments and scale faster with AI.",
+        "Stripe Dashboard"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Stripe | Financial Infrastructure to Grow Your Revenue"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models and manage money movement"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "sumitomo-mitsui-phish",
+      "official_url": "https://smbc.co.jp",
+      "title": "\u008eO\u0088\u00e4\u008fZ\u0097F\u008b\u00e2\u008ds",
+      "description": "\u008eO\u0088\u00e4\u008fZ\u0097F\u008b\u00e2\u008ds\u0082\u00cc\u0083z\u0081[\u0083\u0080\u0083y\u0081[\u0083W\u0082\u00c5\u0082\u00b7\u0081B\u008c\u00fb\u008d\u00c0\u008aJ\u0090\u00dd\u0081A\u008fZ\u0091\u00ee\u0083\u008d\u0081[\u0083\u0093\u0081A\u008aO\u0089\u00dd\u0097a\u008b\u00e0\u0081A\u0093\u008a\u008e\u0091\u0090M\u0091\u00f5\u0093\u0099\u0082\u00cc\u008ae\u008e\u00ed\u008f\u00a4\u0095i\u0081E\u0083T\u0081[\u0083r\u0083X\u0082\u00c9\u0082\u00c2\u0082\u00a2\u0082\u00c4\u008cf\u008d\u00da\u0082\u00b5\u0082\u00c4\u0082\u00a2\u0082\u00dc\u0082\u00b7\u0081B\u0083C\u0083\u0093\u0083^\u0081[\u0083l\u0083b\u0083g\u0083o\u0083\u0093\u0083L\u0083\u0093\u0083O\u0082\u00c5\u0082\u00cd\u0081A\u008ec\u008d\u0082\u008f\u00c6\u0089\u00ef\u0082\u00e2\u0090U\u008d\u009e\u0081A\u008aO\u0089\u00dd\u0097a\u008b\u00e0\u0082\u00e2\u0093\u008a\u008e\u0091\u0090M\u0091\u00f5\u0082\u00cc\u0082\u00a8\u008e\u00e6\u0082\u00e8\u0088\u00f8\u0082\u00ab\u0082\u00cc\u0091\u00bc\u0081A\u0095\u00d6\u0097\u0098\u0082\u00c8Web\u0092\u00ca\u0092\u00a0\u0082\u00e0\u0082\u00b2\u0097\u0098\u0097p\u0082\u00a2\u0082\u00bd\u0082\u00be\u0082\u00af\u0082\u00dc\u0082\u00b7\u0081B",
+      "current_matchers": [
+        "Sumitomo Mitsui",
+        "Sign On"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "\u008eO\u0088\u00e4\u008fZ\u0097F\u008b\u00e2\u008ds"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "\u008eO\u0088\u00e4\u008fZ\u0097F\u008b\u00e2\u008ds\u0082\u00cc\u0083z\u0081[\u0083\u0080\u0083y\u0081[\u0083W\u0082\u00c5\u0082\u00b7\u0081B\u008c\u00fb\u008d\u00c0\u008aJ\u0090\u00dd\u0081A\u008fZ\u0091\u00ee\u0083\u008d\u0081[\u0083\u0093\u0081A\u008aO\u0089\u00dd\u0097a\u008b\u00e0\u0081A\u0093\u008a\u008e\u0091\u0090M\u0091\u00f5\u0093\u0099\u0082\u00cc\u008ae\u008e\u00ed\u008f\u00a4\u0095i\u0081E\u0083T\u0081[\u0083r\u0083X\u0082\u00c9\u0082\u00c2\u0082\u00a2\u0082\u00c4\u008cf\u008d\u00da\u0082\u00b5\u0082\u00c4\u0082\u00a2\u0082\u00dc\u0082\u00b7\u0081B\u0083C\u0083\u0093\u0083^\u0081[\u0083l\u0083b\u0083g\u0083o\u0083\u0093\u0083L\u0083\u0093\u0083O\u0082\u00c5\u0082\u00cd\u0081A\u008ec\u008d\u0082\u008f\u00c6\u0089\u00ef\u0082\u00e2\u0090U\u008d\u009e\u0081A\u008aO\u0089\u00dd\u0097a\u008b\u00e0\u0082\u00e2\u0093\u008a\u008e\u0091\u0090M\u0091\u00f5\u0082\u00cc\u0082\u00a8\u008e\u00e6\u0082\u00e8\u0088\u00f8\u0082\u00ab\u0082\u00cc\u0091\u00bc\u0081A\u0095\u00d6\u0097\u0098\u0082\u00c8Web\u0092\u00ca\u0092\u00a0\u0082\u00e0\u0082\u00b2\u0097\u0098\u0097p\u0082\u00a2\u0082\u00bd\u0082\u00be\u0082\u00af\u0082\u00dc\u0082\u00b7\u0081B"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "summit-racing-phish",
+      "official_url": "https://www.summitracing.com",
+      "title": "Pardon Our Interruption",
+      "description": null,
+      "current_matchers": [
+        "Summit Racing",
+        "<title>Summit Racing | Aftermarket Parts &amp; Accessories, Performance Parts, OEM Auto Parts"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Pardon Our Interruption"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Pardon Our Interruption"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "suntrust-phish",
+      "official_url": "https://www.suntrust.com",
+      "title": "Truist Bank | Checking, Savings, Lending, and Financial Services",
+      "description": "Your journey to better banking starts with Truist. Checking and savings accounts, credit cards, mortgages, small business, commercial banking, and more.",
+      "current_matchers": [
+        "SunTrust",
+        "Sign On"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Truist Bank | Checking, Savings, Lending, and Financial Services"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Your journey to better banking starts with Truist"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "target-phish",
+      "official_url": "https://www.target.com",
+      "title": "Target : Expect More. Pay Less.",
+      "description": "Shop Target online and in-store for everything from groceries and essentials to clothing and electronics. Choose contactless pickup or delivery today.",
+      "current_matchers": [
+        "Target : Expect More. Pay Less."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Target : Expect More. Pay Less."
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Shop Target online and in-store for everything from groceries and essentials to clothing and electronics"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "td-bank-phish",
+      "official_url": "https://www.td.com",
+      "title": "TD Canada Trust - Personal, Small Business Banking & Investing",
+      "description": "TD Canada Trust products and services include investing, mortgages, banking and small business. Featuring TD Canada Trust online banking",
+      "current_matchers": [
+        "Explore TD's online banking services, credit cards, checking accounts, savings accounts, loans and more financial products for you and your business."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "TD Canada Trust - Personal, Small Business Banking & Investing"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "TD Canada Trust products and services include investing, mortgages, banking and small business"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "telegram-phish",
+      "official_url": "https://www.telegram.org",
+      "title": "Telegram Messenger",
+      "description": "Fast. Secure. Powerful.",
+      "current_matchers": [
+        "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Telegram Messenger"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Fast. Secure. Powerful."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "three-mobile-phish",
+      "official_url": "https://three.co.uk",
+      "title": "Three | Phones, Broadband & SIM Only deals",
+      "description": "Get phones, tablets, Mobile Broadband and SIM Only deals on the UK\u2019s Fastest 5G Network.",
+      "current_matchers": [
+        "Three | Phones, Broadband &amp; SIM Only deals"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Three | Phones, Broadband & SIM Only deals"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Get phones, tablets, Mobile Broadband and SIM Only deals on the UK\u2019s Fastest 5G Network."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "ticketmaster-phish",
+      "official_url": "https://www.ticketmaster.com",
+      "title": "Ticketmaster: Buy Verified Tickets for Concerts, Sports, Theater and Events",
+      "description": "Buy and sell tickets online for concerts, sports, theater, family and other events near you from Ticketmaster.",
+      "current_matchers": [
+        "Buy and sell tickets online for concerts, sports, theater, family and other events near you from Ticketmaster."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Ticketmaster: Buy Verified Tickets for Concerts, Sports, Theater and Events"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Buy and sell tickets online for concerts, sports, theater, family and other events near you from Ticketmaster"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "todoist-phish",
+      "official_url": "https://www.todoist.com",
+      "title": "Todoist | A To-Do List to Organize Your Work & Life",
+      "description": "Trusted by 30 million people and teams. Todoist is the world's favorite task manager and to-do list app. Finally become focused, organized and calm.",
+      "current_matchers": [
+        "<title>Todoist | A To-Do List to Organize Your Work &amp; Life"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Todoist | A To-Do List to Organize Your Work & Life"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Trusted by 30 million people and teams"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "trip-phish",
+      "official_url": "https://www.trip.com",
+      "title": "Trip.com Official Site\u00e2\u0080\u008e\u00e2\u0080\u008e | Travel Deals and Promotions",
+      "description": "Choose from over 1.2 million hotels in more than 200 countries, 30 million real guest reviews. Book flights to over 5,000 destinations worldwide. 24/7 Customer Service.",
+      "current_matchers": [
+        "Trip.com: Book cheap flights, hotels, car rentals, trains and more"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Trip.com Official Site\u00e2\u0080\u008e\u00e2\u0080\u008e | Travel Deals and Promotions"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Choose from over 1"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "truist-phish",
+      "official_url": "https://www.truist.com/",
+      "title": "Truist Bank | Checking, Savings, Lending, and Financial Services",
+      "description": "Your journey to better banking starts with Truist. Checking and savings accounts, credit cards, mortgages, small business, commercial banking, and more.",
+      "current_matchers": [
+        "Your journey to better banking starts with Truist. Checking and savings accounts, credit cards, mortgages, small business, commercial banking, and more."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Truist Bank | Checking, Savings, Lending, and Financial Services"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Your journey to better banking starts with Truist"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "twilio-phish",
+      "official_url": "https://www.twilio.com",
+      "title": "Communications APIs with AI and data for SMS, Voice, Email | Twilio",
+      "description": "Create amazing customer experiences with our Customer Engagement Platform (CEP) that combines communication APIs with AI. Build solutions for SMS, WhatsApp, voice, and email.",
+      "current_matchers": [
+        "<title>Communications APIs with AI and data for SMS, Voice, Email | Twilio"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Communications APIs with AI and data for SMS, Voice, Email | Twilio"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Create amazing customer experiences with our Customer Engagement Platform (CEP) that combines communication APIs with AI"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "twitch-phish",
+      "official_url": "https://www.twitch.tv",
+      "title": "Twitch",
+      "description": "Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more.",
+      "current_matchers": [
+        "Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more. There\u2019s something for everyone on Twitch."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Twitch"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "typeform-phish",
+      "official_url": "https://www.typeform.com",
+      "title": "Typeform: People-Friendly Forms and Surveys",
+      "description": "Build beautiful, interactive forms \u2014 get more responses. No coding needed. Templates for quizzes, research, feedback, lead generation, and more. Sign up FREE.",
+      "current_matchers": [
+        "<title>Typeform: People-Friendly Forms and Surveys"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Typeform: People-Friendly Forms and Surveys"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Build beautiful, interactive forms \u2014 get more responses"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "uob-phish",
+      "official_url": "https://uob.com.sg",
+      "title": "United Overseas Bank",
+      "description": null,
+      "current_matchers": [
+        "United Overseas Bank"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "United Overseas Bank"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "United Overseas Bank"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "uplay-phish",
+      "official_url": "https://www.ubisoft.com",
+      "title": "Ubisoft",
+      "description": "Ubisoft website",
+      "current_matchers": [
+        "Welcome to the official website for Ubisoft, creator of Assassin's Creed, Just Dance, Tom Clancy's video game series, Rayman, Far Cry, Watch Dogs and many others. Learn more about our breathtaking games here!"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Ubisoft"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Ubisoft website"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "usps-phish",
+      "official_url": "https://www.usps.com",
+      "title": "Welcome | USPS",
+      "description": "Welcome to USPS.com. Track packages, pay and print postage with Click-N-Ship, schedule free package pickups, look up ZIP Codes, calculate postage prices, and find everything you need for sending mail and shipping packages.",
+      "current_matchers": [
+        "Welcome to USPS.com. Track packages, pay and print postage with Click-N-Ship, schedule free package pickups, look up ZIP Codes, calculate postage prices, and find everything you need for sending mail and shipping packages."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Welcome | USPS"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Welcome to USPS"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "varo-phish",
+      "official_url": "https://www.varo.com",
+      "title": "Home - Varo",
+      "description": null,
+      "current_matchers": [
+        "Home - Varo"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Home - Varo"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Home - Varo"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "venmo-phish",
+      "official_url": "https://www.venmo.com",
+      "title": "Pay Friends | Payments App | Venmo",
+      "description": "Welcome to Venmo! Manage your account balance, send/receive money, split bills, pay friends, and stay connected with your network all in one place.",
+      "current_matchers": [
+        "Pay Friends | Payments App | Venmo",
+        "Pay. Get paid. Shop. Share."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Pay Friends | Payments App | Venmo"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Welcome to Venmo! Manage your account balance, send/receive money, split bills, pay friends, and stay connected with your network all in one place"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "viber-phish",
+      "official_url": "https://www.viber.com",
+      "title": "Home | Viber",
+      "description": null,
+      "current_matchers": [
+        "Home | Viber"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Home | Viber"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Home | Viber"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "vistaprint-phish",
+      "official_url": "https://www.vistaprint.com",
+      "title": "VistaPrint Official Website: Online Printing Services",
+      "description": "VistaPrint online printing services help you create and order the best custom products: marketing materials, business cards, signage, promotional products, custom gifts, packaging and more.",
+      "current_matchers": [
+        "Vistaprint",
+        "<title>VistaPrint Official Website: Online Printing Services"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "VistaPrint Official Website: Online Printing Services"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "VistaPrint online printing services help you create and order the best custom products: marketing materials, business cards, signage, promotional products, custom gifts, packaging and more"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "visual-studio-code-phish",
+      "official_url": "https://www.visualstudio.com",
+      "title": "Visual Studio: IDE and Code Editor for Software Development",
+      "description": "Visual Studio dev tools & services make app development easy for any developer, on any platform & language. Develop with our code editor or IDE anywhere for free.",
+      "current_matchers": [
+        "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.  Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.",
+        "Visual Studio Code - Code Editing. Redefined"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Visual Studio: IDE and Code Editor for Software Development"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Visual Studio dev tools & services make app development easy for any developer, on any platform & language"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "vlc-player-phish",
+      "official_url": "https://www.videolan.org",
+      "title": "VLC: Official site - Free multimedia solutions for all OS! - VideoLAN",
+      "description": null,
+      "current_matchers": [
+        "VLC: Official site - Free multimedia solutions for all OS! - VideoLAN"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "VLC: Official site - Free multimedia solutions for all OS! - VideoLAN"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "VLC: Official site - Free multimedia solutions for all OS! - VideoLAN"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "vodafone-phish",
+      "official_url": "https://vodafone.co.uk",
+      "title": "Vodafone - Our Best Ever Network | Now With 5G",
+      "description": "Now offering 5G, experience our best ever network. Shop the latest smartphones, great sim only deals and our award winning broadband.",
+      "current_matchers": [
+        "Vodafone &ndash; Our Best Ever Network"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Vodafone - Our Best Ever Network | Now With 5G"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Now offering 5G, experience our best ever network"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "vudu-phish",
+      "official_url": "https://www.vudu.com",
+      "title": "Service is not available in your region.",
+      "description": null,
+      "current_matchers": [
+        "Vudu",
+        "title=\"Fandango at Home\""
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Service is not available in your region."
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Service is not available in your region."
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "walmart-phish",
+      "official_url": "https://www.walmart.com",
+      "title": "Walmart | Save Money. Live better.",
+      "description": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no order minimum. Start your free 30-day trial now!",
+      "current_matchers": [
+        "Walmart | Save Money. Live better."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Walmart | Save Money. Live better."
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Shop Walmart"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "webflow-phish",
+      "official_url": "https://www.webflow.com",
+      "title": "Webflow: Create a custom website | Visual website builder",
+      "description": "Create custom, responsive websites with the power of code \u2014 visually. Design and build your site with a flexible CMS and top-tier hosting. Try Webflow for free.",
+      "current_matchers": [
+        "<title>Webflow: Create a custom website | Visual website builder"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Webflow: Create a custom website | Visual website builder"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Create custom, responsive websites with the power of code \u2014 visually"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "wells-fargo-phish",
+      "official_url": "https://www.wellsfargo.com",
+      "title": "Wells Fargo Bank | Financial Services & Online Banking",
+      "description": "Committed to the financial health of our customers and communities. Explore bank accounts, loans, mortgages, investing, credit cards & banking services\u00bb",
+      "current_matchers": [
+        "Committed to the financial health of our customers and communities. Explore bank accounts, loans, mortgages, investing, credit cards & banking services\u00bb"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Wells Fargo Bank | Financial Services & Online Banking"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Committed to the financial health of our customers and communities"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "westpac-phish",
+      "official_url": "https://westpac.com.au",
+      "title": "Westpac - Personal, Business and Corporate Banking",
+      "description": "From to-do to done, it takes a little Westpac. Westpac offers a range of smart solutions to support your personal, business and corporate banking needs.",
+      "current_matchers": [
+        "From to-do to done, it takes a little Westpac. Westpac offers a range of smart solutions to support your personal, business and corporate banking needs."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Westpac - Personal, Business and Corporate Banking"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "From to-do to done, it takes a little Westpac"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "wetransfer-phish",
+      "official_url": "https://www.wetransfer.com",
+      "title": "WeTransfer | Send Large Files Fast",
+      "description": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today for free.",
+      "current_matchers": [
+        "WeTransfer - Send Large Files &amp; Share Photos Online"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "WeTransfer | Send Large Files Fast"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "The simple, quick and secure way to send your files around the world without an account"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "wikipedia-phish",
+      "official_url": "https://www.wikipedia.com",
+      "title": "Wikipedia",
+      "description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
+      "current_matchers": [
+        "Log in - Wikipedia"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Wikipedia"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "winscp-phish",
+      "official_url": "https://www.winscp.net",
+      "title": "WinSCP :: Official Site :: Free SFTP and FTP client for Windows",
+      "description": "WinSCP is a free file manager for Windows supporting FTP, SFTP, S3 and WebDAV.",
+      "current_matchers": [
+        "WinSCP :: Official Site :: Free SFTP and FTP client for Windows"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "WinSCP :: Official Site :: Free SFTP and FTP client for Windows"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "WinSCP is a free file manager for Windows supporting FTP, SFTP, S3 and WebDAV."
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "wise-phish",
+      "official_url": "https://www.wise.com",
+      "title": "Wise: The international account | Money without borders | Wise Ireland",
+      "description": "160+ countries, 40 currencies, one account. Save when you send, spend and manage your money internationally.",
+      "current_matchers": [
+        "160+ countries, 40 currencies, one account. Save when you send, spend and manage your money internationally."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Wise: The international account | Money without borders | Wise Ireland"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "160+ countries, 40 currencies, one account"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "wish-phish",
+      "official_url": "https://www.wish.com",
+      "title": "Wish | Shop and Save",
+      "description": "Discover affordable items for your home and life needs. Enjoy our money back guarantee, frequent discounts, flat rate shipping (select markets), and more.",
+      "current_matchers": [
+        "Wish",
+        "<title>Wish | Shop and Save"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Wish | Shop and Save"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Discover affordable items for your home and life needs"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "xbox-phish",
+      "official_url": "https://www.xbox.com",
+      "title": "Xbox Official Site (United Kingdom): Play Games Anywhere | Xbox",
+      "description": "Play with Xbox on PC, console & more. Explore Game Pass. Discover thousands of games. Shop controllers, handhelds & consoles. Join players anywhere.",
+      "current_matchers": [
+        "Xbox Official Site: Play Games Anywhere | Xbox"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Xbox Official Site (United Kingdom): Play Games Anywhere | Xbox"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Play with Xbox on PC, console & more"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "yahoo-phish",
+      "official_url": "https://www.yahoo.com",
+      "title": "Your privacy choices",
+      "description": null,
+      "current_matchers": [
+        "Best-in-class Yahoo Mail, breaking local, national and global news, finance, sport, music, films and more. You get more out of the web, you get more out of life."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Your privacy choices"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Your privacy choices"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "youtube-music-phish",
+      "official_url": "https://music.youtube.com",
+      "title": "Before you continue",
+      "description": null,
+      "current_matchers": [
+        "Your browser is deprecated. Please upgrade."
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "Before you continue"
+          ]
+        }
+      ],
+      "status": "match_failed",
+      "error_message": null,
+      "needs_update": true
+    },
+    {
+      "template_name": "zoom-phish",
+      "official_url": "https://www.zoom.us",
+      "title": "One platform to connect | Zoom",
+      "description": "Modernize workflows with Zoom's trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events.",
+      "current_matchers": [
+        "One platform to connect | Zoom"
+      ],
+      "suggested_matchers": [
+        {
+          "type": "word",
+          "part": "header",
+          "words": [
+            "One platform to connect | Zoom"
+          ]
+        },
+        {
+          "type": "word",
+          "part": "body",
+          "words": [
+            "Modernize workflows with Zoom's trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events"
+          ]
+        }
+      ],
+      "status": "success",
+      "error_message": null,
+      "needs_update": true
+    }
+  ]
+}

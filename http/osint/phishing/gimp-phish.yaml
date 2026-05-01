@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'GIMP - GNU Image Manipulation Program'
 
+      - type: word
+        part: body
+        words:
+          - 'GIMP - The GNU Image Manipulation Program: The Free and Open Source Image Editor'
       - type: status
         status:
           - 200

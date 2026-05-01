@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Bitbucket'
-          - '<title> Bitbucket | Git solution for teams using Jira'
+          - 'Bitbucket | Git solution for teams using Jira'
+
+      - type: word
+        part: body
+        words:
+          - 'Bitbucket Cloud is a Git-based code and CI/CD tool optimized for teams using Jira.'
         condition: and
 
       - type: status

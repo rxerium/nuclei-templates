@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'WinSCP :: Official Site :: Free SFTP and FTP client for Windows'
 
+      - type: word
+        part: body
+        words:
+          - 'WinSCP is a free file manager for Windows supporting FTP, SFTP, S3 and WebDAV.'
       - type: status
         status:
           - 200

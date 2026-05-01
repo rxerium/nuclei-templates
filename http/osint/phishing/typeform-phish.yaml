@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Typeform: People-Friendly Forms and Surveys'
+          - 'Typeform: People-Friendly Forms and Surveys'
 
+      - type: word
+        part: body
+        words:
+          - 'Build beautiful, interactive forms — get more responses'
       - type: status
         status:
           - 200

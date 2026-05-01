@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'DigitalOcean | Cloud Infrastructure for Developers'
-          - 'DigitalOcean'
+          - 'AI-Native Cloud | DigitalOcean'
+
+      - type: word
+        part: body
+        words:
+          - 'Run AI products in production with a unified stack for agents, inference, and cloud—built for control, performance, and economics at scale'
         condition: and
 
 

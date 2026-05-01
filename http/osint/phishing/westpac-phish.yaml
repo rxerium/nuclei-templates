@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "From to-do to done, it takes a little Westpac. Westpac offers a range of smart solutions to support your personal, business and corporate banking needs."
+          - 'Westpac - Personal, Business and Corporate Banking'
 
+      - type: word
+        part: body
+        words:
+          - 'From to-do to done, it takes a little Westpac'
       - type: status
         status:
           - 200

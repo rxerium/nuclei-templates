@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Why pay more for TV? Philo offers live TV and on-demand content for just $33/month. Stream your favorite shows, movies, and more across all your devices."
+          - 'Philo - Stream Live and On-Demand TV'
 
+      - type: word
+        part: body
+        words:
+          - 'Why pay more for TV? Start your Philo free trial and enjoy live TV plus on-demand content starting at just $25/month'
       - type: status
         status:
           - 200

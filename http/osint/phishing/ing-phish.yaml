@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Corporate site of ING, a global financial institution of Dutch origin, providing news, investor relations and general information"
+          - 'ING global company website | ING'
 
+      - type: word
+        part: body
+        words:
+          - 'Corporate site of ING, a global financial institution of Dutch origin, providing news, investor relations and general information'
       - type: status
         status:
           - 200

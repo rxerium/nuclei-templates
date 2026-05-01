@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Explore the new generation PlayStation 4 and PS5 consoles - experience immersive gaming with thousands of hit games in every genre to rewrite the rules for what a PlayStation console can do."
+          - 'PlayStation® Official Site: Consoles, Games, Accessories & More'
 
+      - type: word
+        part: body
+        words:
+          - 'Explore the new generation PlayStation 4 and PS5 consoles - experience immersive gaming with thousands of hit games in every genre to rewrite the rules for what a PlayStation console can do'
       - type: status
         status:
           - 200

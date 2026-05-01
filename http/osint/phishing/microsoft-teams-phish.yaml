@@ -22,9 +22,15 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Download Microsoft Teams Desktop and Mobile Apps | Microsoft Teams'
+          - 'Your request has been blocked. This could be
+                        due to several reasons.'
 
+      - type: word
+        part: body
+        words:
+          - 'Your request has been blocked. This could be'
       - type: status
         status:
           - 200

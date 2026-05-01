@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Starz'
-          - 'STARZ brings diverse perspectives to life through bold storytelling. Sign-up to stream original series, movies, extras, and more—on-demand and ad-free.'
+          - 'STARZ - Captivating Original Series. Hit Movies. Bold Storytelling.'
+
+      - type: word
+        part: body
+        words:
+          - 'STARZ brings diverse perspectives to life through bold storytelling'
         condition: and
 
       - type: status

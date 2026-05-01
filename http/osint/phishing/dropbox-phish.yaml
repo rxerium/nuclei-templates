@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Dropbox is a home for all of your work. You can store and share files, collaborate on projects and bring your best ideas to life, whether you’re working alone or as part of a team.'
+          - 'dropbox.com'
 
+      - type: word
+        part: body
+        words:
+          - 'Discover Dropbox – secure, easy cloud storage for file sharing and collaboration'
       - type: status
         status:
           - 200

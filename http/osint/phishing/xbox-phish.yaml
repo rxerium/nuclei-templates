@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Xbox Official Site: Play Games Anywhere | Xbox"
+          - 'Xbox Official Site (United Kingdom): Play Games Anywhere | Xbox'
 
+      - type: word
+        part: body
+        words:
+          - 'Play with Xbox on PC, console & more'
       - type: status
         status:
           - 200

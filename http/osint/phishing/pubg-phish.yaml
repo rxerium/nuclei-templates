@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'PUBG'
-          - '<title>PUBG: BATTLEGROUNDS'
+          - 'PUBG: BATTLEGROUNDS'
+
+      - type: word
+        part: body
+        words:
+          - 'PUBG: BATTLEGROUNDS is a battle royale that pits 100 players against each other'
         condition: and
 
       - type: status

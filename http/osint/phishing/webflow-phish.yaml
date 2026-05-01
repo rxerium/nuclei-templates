@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Webflow: Create a custom website | Visual website builder'
+          - 'Webflow: Create a custom website | Visual website builder'
 
+      - type: word
+        part: body
+        words:
+          - 'Create custom, responsive websites with the power of code — visually'
       - type: status
         status:
           - 200

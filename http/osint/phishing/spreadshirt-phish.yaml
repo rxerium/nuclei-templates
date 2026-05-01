@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Spreadshirt Print on Demand Platform | Spreadshirt"
+          - 'Spreadshirt Print on Demand Platform | Spreadshirt'
 
+      - type: word
+        part: body
+        words:
+          - 'Create or Shop Unique Apparel, Accessoires or Home Products at Spreadshirt'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'AVG 2024 | FREE Antivirus, VPN & TuneUp for All Your Devices'
+          - 'AVG 2026 | FREE Antivirus, VPN & TuneUp for All Your Devices'
 
+      - type: word
+        part: body
+        words:
+          - 'Download free antivirus and malware protection'
       - type: status
         status:
           - 200

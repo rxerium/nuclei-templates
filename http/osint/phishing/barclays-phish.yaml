@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Barclays'
-          - '<title>Barclays Group corporate website | Barclays'
+          - 'Barclays Group corporate website | Barclays'
+
+      - type: word
+        part: body
+        words:
+          - 'Barclays is a British universal bank'
         condition: and
 
       - type: status

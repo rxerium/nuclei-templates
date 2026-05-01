@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "<title>Dribbble - Discover the World's Top Designers &amp; Creative Professionals"
+          - 'Dribbble - Discover the World’s Top Designers & Creative Professionals'
 
+      - type: word
+        part: body
+        words:
+          - 'Find Top Designers & Creative Professionals on Dribbble'
       - type: status
         status:
           - 200

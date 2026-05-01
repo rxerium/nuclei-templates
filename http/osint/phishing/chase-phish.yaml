@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.com'
 
+      - type: word
+        part: body
+        words:
+          - 'Chase online; credit cards, mortgages, commercial banking, auto loans, investing & retirement planning, checking and business banking'
       - type: status
         status:
           - 200

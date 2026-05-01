@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Kaspersky Cyber Security Solutions for Home and Business  | Kaspersky'
 
+      - type: word
+        part: body
+        words:
+          - 'A Global Leader in Next Generation Cybersecurity Solutions and Services, Kaspersky Offers Premium Protection Against All Cyber Threats for Your Home and Business'
       - type: status
         status:
           - 200

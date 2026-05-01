@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Robinhood: 24/5 Commission-Free Stock Trading & Investing"
+          - 'Robinhood: Commission-free Stock Trading & Investing App'
 
+      - type: word
+        part: body
+        words:
+          - 'Robinhood UK has commission-free stock trading, and tools to help shape your financial future'
       - type: status
         status:
           - 200

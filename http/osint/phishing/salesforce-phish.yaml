@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Salesforce is the #1 AI CRM, helping companies become Agentic Enterprises where humans and agents drive success together through a unified AI, data, and Customer 360 platform."
+          - 'Salesforce UK: The #1 AI CRM | Salesforce UK'
 
+      - type: word
+        part: body
+        words:
+          - 'Salesforce is the #1 AI CRM, helping companies become Agentic Enterprises where humans and agents drive success together through a unified AI, data, and Customer 360 platform'
       - type: status
         status:
           - 200

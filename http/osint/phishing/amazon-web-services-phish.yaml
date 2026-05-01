@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Amazon Web Services Sign-In'
+          - 'Cloud Computing Services - Amazon Web Services (AWS)'
 
+      - type: word
+        part: body
+        words:
+          - 'Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services'
       - type: status
         status:
           - 200

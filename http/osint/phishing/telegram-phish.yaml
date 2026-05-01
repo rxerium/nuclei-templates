@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.'
+          - 'Telegram Messenger'
 
+      - type: word
+        part: body
+        words:
+          - 'Fast. Secure. Powerful.'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'title>Freshworks: Uncomplicated Software | IT Service, Customer Service'
+          - 'Freshworks: Uncomplicated Software | IT Service, Customer Service'
 
+      - type: word
+        part: body
+        words:
+          - 'Freshworks enterprise-grade solutions are powerful, yet easy to use, and quick to deliver results for customer service and IT teams'
       - type: status
         status:
           - 200

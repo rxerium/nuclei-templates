@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Buy games & game keys with Green Man Gaming - get the best prices, awesome bundles & exclusive game deals daily! Visit to explore Green Man Gaming now!"
+          - 'Green Man Gaming | Buy Games, Game Keys & Digital Games Today'
 
+      - type: word
+        part: body
+        words:
+          - 'Buy games & game keys with Green Man Gaming - get the best prices, awesome bundles & exclusive game deals daily! Visit to explore Green Man Gaming now!'
       - type: status
         status:
           - 200

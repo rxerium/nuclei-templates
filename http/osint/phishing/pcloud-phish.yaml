@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "pCloud - Europe's Most Secure Cloud Storage"
+          - 'pCloud - Secure Cloud Storage for Files, Photos & Documents'
 
+      - type: word
+        part: body
+        words:
+          - 'Store, sync, and share your files securely with pCloud'
       - type: status
         status:
           - 200

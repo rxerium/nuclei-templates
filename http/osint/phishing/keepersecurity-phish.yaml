@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Password and Secrets Management - Keeper Security'
+          - 'Keeper Security | Identity Security for Humans, Machines and AI Agents'
 
+      - type: word
+        part: body
+        words:
+          - 'Keeper is the unified control plane for privileged access, secrets, remote connections, endpoints and databases in a single zero-trust platform'
       - type: status
         status:
           - 200

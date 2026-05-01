@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Keybase is for keeping everyone's chats and files safe, from families to communities to companies. MacOS, Windows, Linux, iPhone, and Android."
+          - 'Keybase'
 
+      - type: word
+        part: body
+        words:
+          - 'Keybase is for keeping everyone''s chats and files safe, from families to communities to companies'
       - type: status
         status:
           - 200

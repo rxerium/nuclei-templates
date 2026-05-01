@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>Brevo | All-in-one Marketing &amp; Sales Platform'
+          - 'Brevo: Email & SMS Marketing, CRM & Automation Platform'
 
+      - type: word
+        part: body
+        words:
+          - 'Brevo is the most intuitive all-in-one customer engagement platform: email and SMS marketing, automation, CRM, live chat, and transactional email'
       - type: status
         status:
           - 200

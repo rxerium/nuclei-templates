@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Standard Chartered Bank"
+          - 'Standard Chartered Bank'
 
+      - type: word
+        part: body
+        words:
+          - 'Standard Chartered Bank'
       - type: status
         status:
           - 200

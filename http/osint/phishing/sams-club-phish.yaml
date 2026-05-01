@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "Shop Samsclub.com today for Every Day Low Prices. Join Sam's Club as a Plus Member and get free same-day or next-day delivery from your club & free shipping on eligible items totaling $50 or more."
+          - 'Let us know you''re not a robot - Sam''s Club'
 
+      - type: word
+        part: body
+        words:
+          - 'Let us know you''re not a robot - Sam''s Club'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'One platform to connect | Zoom'
 
+      - type: word
+        part: body
+        words:
+          - 'Modernize workflows with Zoom''s trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events'
       - type: status
         status:
           - 200

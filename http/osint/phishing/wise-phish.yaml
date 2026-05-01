@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "160+ countries, 40 currencies, one account. Save when you send, spend and manage your money internationally."
+          - 'Wise: The international account | Money without borders | Wise Ireland'
 
+      - type: word
+        part: body
+        words:
+          - '160+ countries, 40 currencies, one account'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - "lmr.com"
-          - '<title>Ford Mustang Parts &amp; Accessories | Late Model Restoration'
+          - 'Ford Mustang Parts & Accessories | Late Model Restoration'
+
+      - type: word
+        part: body
+        words:
+          - 'Shop 1000s of 1979-Present Mustang parts & accessories to restore or customize your car at LMR'
         condition: and
 
       - type: status

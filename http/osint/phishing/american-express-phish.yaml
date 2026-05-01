@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Credit Cards, Rewards, Travel and Business Services | American Express'
+          - 'Credit Cards, Rewards, Travel and Business Services | American Express UK'
 
+      - type: word
+        part: body
+        words:
+          - 'Welcome to American Express United Kingdom, provider of Credit Cards, Charge Cards, Travel & Insurance products'
       - type: status
         status:
           - 200

@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - '<title>ANZ Personal – Bank accounts, home loans, credit cards &amp; more | ANZ'
+          - 'ANZ Personal – Bank accounts, home loans, credit cards & more | ANZ'
 
+      - type: word
+        part: body
+        words:
+          - 'ANZ offers a range of personal banking services such as internet banking, bank accounts, credit cards, home loans, personal loans, travel and international, investment and insurance'
       - type: status
         status:
           - 200

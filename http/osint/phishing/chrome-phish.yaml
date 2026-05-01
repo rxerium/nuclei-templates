@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Google Chrome – Download the fast, secure browser from Google'
 
+      - type: word
+        part: body
+        words:
+          - 'Get more done with the new Google Chrome'
       - type: status
         status:
           - 200

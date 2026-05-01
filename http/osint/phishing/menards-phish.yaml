@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Menards'
-          - 'title>Home at Menards&#174;'
+          - 'Home at Menards®'
+
+      - type: word
+        part: body
+        words:
+          - 'Save BIG Money on your home improvement needs at over 300 stores in categories like tools, lumber, appliances, pet supplies, lawn and gardening and much more'
         condition: and
 
       - type: status

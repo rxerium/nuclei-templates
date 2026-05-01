@@ -22,8 +22,13 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
           - 'Bandcamp'
+
+      - type: word
+        part: body
+        words:
           - 'Discover amazing music and directly support the artists who make it.'
         condition: and
 

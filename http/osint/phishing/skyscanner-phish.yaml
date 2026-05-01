@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Compare Cheap Flights &amp; Book Airline Tickets to Everywhere | Skyscanner'
+          - 'Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner'
 
+      - type: word
+        part: body
+        words:
+          - 'Compare cheap flight prices from all major airlines and travel agents, and find the cheapest tickets to all your favourite destinations'
       - type: status
         status:
           - 200

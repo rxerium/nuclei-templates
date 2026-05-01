@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Trip.com: Book cheap flights, hotels, car rentals, trains and more'
+          - 'Trip.com Official Siteââ | Travel Deals and Promotions'
 
+      - type: word
+        part: body
+        words:
+          - 'Choose from over 1'
       - type: status
         status:
           - 200

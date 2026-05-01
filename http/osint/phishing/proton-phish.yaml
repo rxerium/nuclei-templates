@@ -22,9 +22,14 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
-          - 'Proton Account: Sign-in'
+          - 'Proton: Privacy by default'
 
+      - type: word
+        part: body
+        words:
+          - 'Over 100 million people use Proton to stay private and secure online'
       - type: status
         status:
           - 200
