@@ -1,0 +1,31 @@
+id: sungrow-inverter-panel
+
+info:
+  name: Sungrow Solar Inverter - Panel
+  author: rxerium
+  severity: info
+  description: |
+    Sungrow solar inverter web interface detected. Sungrow inverters are used in utility-scale, commercial, and residential solar installations for power conversion and grid management.
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: sungrow
+    product: solar-inverter
+    shodan-query: "SUNGROW"
+  tags: panel,ics,solar,energy,sungrow
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "<title>SUNGROW</title>"
+
+      - type: status
+        status:
+          - 200
+# digest: 490a0046304402202da342037901d6d55c25db8c4a0ae651d0949d4cf455f6309607d262e861a13302207c4d0421d2667832157a31e82589f582a2d1cf997dd47d56a0eecf76b5e2375b:a057de5828a7fac049eae914b3bc4a77

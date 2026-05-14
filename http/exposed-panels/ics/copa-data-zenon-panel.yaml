@@ -1,0 +1,33 @@
+id: copa-data-zenon-panel
+
+info:
+  name: Copa-Data zenon - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Copa-Data zenon is an industrial automation platform used in manufacturing,
+    energy, and infrastructure. The zenon Web Server and Smart Server expose a
+    browser-based HMI interface for remote monitoring and control of SCADA processes.
+  reference:
+    - https://www.copadata.com/en/products/zenon-software-platform/zenon-supervisor/
+    - https://www.copadata.com/en/support-services/knowledge-base-documents/zenon-web-server/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"COPA-DATA :: zenon"'
+  tags: panel,scada,hmi,ics,copa-data,zenon
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "COPA-DATA :: zenon"
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100f38538901662b37ca8fae05593f8c4ee477493a374b0fb02e426fe76af27d41b02202fffe851b368b2a6a637affcac6280a910eaadb8f514efa9215845a34dd3acbd:a057de5828a7fac049eae914b3bc4a77

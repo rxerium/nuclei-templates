@@ -1,0 +1,33 @@
+id: reliable-controls-panel
+
+info:
+  name: Reliable Controls MACH-Pro - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Reliable Controls MACH-ProWebSys is a web-based building controller for
+    HVAC, lighting, and energy management using BACnet/IP. These controllers
+    are widely deployed in commercial buildings across North America and are
+    often directly internet-facing with no VPN protection.
+  reference:
+    - https://reliablecontrols.com/products/mach-prowebsys/
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"Reliable Controls"
+  tags: panel,ics,bms,bacnet,building-automation,reliable-controls,mach-pro
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Reliable Controls"
+
+      - type: status
+        status:
+          - 200
+# digest: 490a00463044022024798cd52ba2e49fa266bd9a6aa9c3e8f911d5cafae82024670608b09aab25c402205fec7d81e5ee21dce3aa6e573a594ff5245bb4c7f2c1f43dfe09212eb60d648e:a057de5828a7fac049eae914b3bc4a77

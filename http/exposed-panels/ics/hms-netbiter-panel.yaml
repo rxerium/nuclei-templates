@@ -1,0 +1,32 @@
+id: hms-netbiter-panel
+
+info:
+  name: HMS Netbiter Remote Management - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    An HMS Networks Netbiter remote management gateway web interface was detected.
+    Netbiter gateways provide cloud-connected remote monitoring for industrial equipment,
+    SCADA systems, and energy infrastructure.
+  reference:
+    - https://www.hms-networks.com/netbiter
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"Netbiter"
+  tags: panel,ics,gateway,netbiter,hms,scada,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'based on NetBiter'
+
+      - type: status
+        status:
+          - 200
+# digest: 490a0046304402205f5a69c5faae5d62a8e56220c59c5c754fbf4642b159d3ec7288ee560b839efc02204ccc9afd6860c324e29b93e04e7508445f146ba0e46a3e7c236d02c56d7d52d5:a057de5828a7fac049eae914b3bc4a77

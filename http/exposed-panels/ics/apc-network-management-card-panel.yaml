@@ -1,0 +1,31 @@
+id: apc-network-management-card-panel
+
+info:
+  name: APC Network Management Card - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    An APC by Schneider Electric Network Management Card (NMC) interface was detected.
+    APC NMC cards provide remote monitoring and management of APC UPS systems over the network.
+  reference:
+    - https://www.apc.com/shop/us/en/categories/power/uninterruptible-power-supply-ups-/network-management-cards/N-bnpd3f
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"Network Management Card" http.html:"APC"
+  tags: panel,ics,ups,apc,schneider,power,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>Network Management Card</title>'
+
+      - type: status
+        status:
+          - 200
+# digest: 490a0046304402204c415731ac6a2859e8d88ddf486a60d7310d8136b0789b3c13bc5128b967388402201667afb596a9871285e9d2248c235c1c4b450125628e2747f7ccffafb2f98f2b:a057de5828a7fac049eae914b3bc4a77

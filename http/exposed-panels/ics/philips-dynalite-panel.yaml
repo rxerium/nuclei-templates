@@ -1,0 +1,31 @@
+id: philips-dynalite-panel
+
+info:
+  name: Philips Dynalite Ethernet Gateway - Panel
+  author: rxerium
+  severity: info
+  description: |
+    Philips Dynalite Ethernet Gateway panel detected. The Dynalite system is used for lighting control in commercial and residential buildings.
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: philips
+    product: dynalite
+    shodan-query: "Philips Dynalite"
+  tags: panel,ics,lighting,dynalite,philips
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Philips Dynalite"
+
+      - type: status
+        status:
+          - 200
+# digest: 4b0a00483046022100f828dd01f132976010e0b569479dd63bced18fa2d91a213608fa5d42ba90097a02210092edbef6c04efa6bb5148e3407c44021c9b3b0d54bec3df6c6fba01211f13f91:a057de5828a7fac049eae914b3bc4a77

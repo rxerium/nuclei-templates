@@ -1,0 +1,34 @@
+id: scadabr-panel
+
+info:
+  name: ScadaBR - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    ScadaBR is an open-source SCADA system based on Mango Automation, widely
+    used in Brazil and Latin America for industrial monitoring. The "powered by
+    Mango" tagline in the title is a unique identifier. Instances are often
+    internet-facing without authentication controls.
+  reference:
+    - https://www.scadabr.com.br/
+    - https://github.com/ScadaBR/ScadaBR
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"ScadaBR"
+  tags: panel,scada,ics,scadabr,mango,open-source,latin-america
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "ScadaBR"
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a0047304502207dd2aae67be2f66ea5e9e3636afe59e0b08830803216c65859e3371d996f34a9022100ec55df9486af1524c7ce307417f79c985968ce0f3b04e2cfaa096b9fbd877b7b:a057de5828a7fac049eae914b3bc4a77

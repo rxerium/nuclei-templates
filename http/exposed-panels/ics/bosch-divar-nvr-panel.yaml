@@ -1,0 +1,30 @@
+id: bosch-divar-nvr-panel
+
+info:
+  name: Bosch DIVAR NVR - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Bosch DIVAR 700 Series Network Video Recorder management panel has been detected.
+  reference:
+    - https://www.boschsecurity.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"Bosch" http.html:"DIVAR"'
+  tags: panel,bosch,divar,nvr,surveillance,ics
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Divar 700 Series'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a0047304502206a3a56ee8adb7407d796ab61dd1cf4e7b590a57494f9a0796f45244a9a8711d80221008d6b508b40874d2fe4f6e3f77a6c78ba7180e53541d942cc9530ba10b3c6c118:a057de5828a7fac049eae914b3bc4a77

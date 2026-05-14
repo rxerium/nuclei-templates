@@ -1,0 +1,30 @@
+id: fronius-inverter-panel
+
+info:
+  name: Fronius Inverter - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Fronius Inverter is the web interface for Fronius GEN24 and Symo series solar inverters, providing real-time monitoring, configuration, and energy management for photovoltaic systems.
+  reference:
+    - https://www.fronius.com/en/solar-energy/private-customers/products-solutions/solar-inverters
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Fronius Inverter"'
+  tags: panel,fronius,ics,scada,solar
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>Fronius Inverter</title>'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100b74f0861c842d6d521c7b1289de769cb7c789a6997e22df471cf8ca8115e9130022018a3d519a9c9859465cde9c590ac9d362d7560ff78c51e9cf0ede1ae7f71e72d:a057de5828a7fac049eae914b3bc4a77

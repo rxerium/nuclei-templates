@@ -1,0 +1,31 @@
+id: sma-sunny-webbox-panel
+
+info:
+  name: SMA Sunny WebBox - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    SMA Sunny WebBox is an embedded web server for monitoring and controlling SMA solar inverters and energy systems.
+  reference:
+    - https://www.sma.de/en/products/monitoring-control/sunny-webbox
+  metadata:
+    max-request: 2
+    shodan-query: 'http.title:"Sunny WebBox"'
+  tags: panel,ics,sma,solar,energy
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Sunny WebBox'
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100edf48a6bf0b0dd8681e5a86a0f73c2ce89c304ab0c34d48c44ff3cdb6e88847d022062a5e8f4eb0679f05b4a645ecf938d01ca3c8c0d4099736e140f2b2f61e3c545:a057de5828a7fac049eae914b3bc4a77

@@ -1,0 +1,31 @@
+id: eaton-ups-webcards-panel
+
+info:
+  name: Eaton UPS Web Card - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    An Eaton UPS Web Card management interface was detected. Eaton UPS Web Cards provide
+    network-based monitoring and management of Eaton uninterruptible power supplies.
+  reference:
+    - https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/network-cards-and-snmp-cards.html
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"Eaton UPS Web Card"
+  tags: panel,ics,ups,eaton,power,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>Eaton UPS Web Card</title>'
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100adcebbc8b29844e314ad4c818b4b31ad10ac54eb19760d8352c881f6138c79da02204070ccb15a563b7d3eef44fd621630ef564fa3f01c567160618f5fc2345be1c8:a057de5828a7fac049eae914b3bc4a77

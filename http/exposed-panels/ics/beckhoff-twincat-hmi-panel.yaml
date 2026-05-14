@@ -1,0 +1,36 @@
+id: beckhoff-twincat-hmi-panel
+
+info:
+  name: Beckhoff TwinCAT HMI Server - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Beckhoff TwinCAT HMI (Human Machine Interface) Server is part of the TwinCAT
+    industrial automation platform used in manufacturing, robotics, and process
+    automation. It exposes a web-based HMI accessible via browser for monitoring
+    and controlling PLC-driven systems.
+  reference:
+    - https://www.beckhoff.com/en-en/products/automation/twincat/te2xxx-twincat-3-target/te2000.html
+    - https://infosys.beckhoff.com/english.php?content=../content/1033/te2000_tc3_hmi_engineering/index.html
+  metadata:
+    max-request: 1
+    shodan-query: http.html:"TwinCAT" http.html:"Beckhoff"
+  tags: panel,scada,ics,beckhoff,twincat,hmi,plc,automation
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "TwinCAT"
+          - "Beckhoff"
+        condition: or
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a0047304502204cb11d71850486a4d3afee217f33089eaa2cde85b8cea96b7899b20e926ae72b022100853b7f932a513bc8d829839263947a92a7390e25809ec348acfc81916bf9b7ca:a057de5828a7fac049eae914b3bc4a77

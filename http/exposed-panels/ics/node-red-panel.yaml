@@ -1,0 +1,38 @@
+id: node-red-panel
+
+info:
+  name: Node-RED - Panel
+  author: rxerium
+  severity: info
+  description: |
+    Node-RED is a flow-based programming tool for wiring together hardware devices,
+    APIs and online services. It is widely used in IoT and ICS/OT environments.
+    Exposed instances allow unauthenticated access to flow editors and may expose
+    industrial control logic, credentials, and connected device data.
+  reference:
+    - https://nodered.org
+    - https://github.com/node-red/node-red
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Node-RED"'
+  tags: panel,ics,iot,nodered,node-red
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        words:
+          - "<title>Node-RED</title>"
+        part: body
+
+      - type: word
+        words:
+          - "node-red-icon"
+          - "node-red/images"
+        condition: or
+        part: body
+# digest: 4b0a00483046022100cd3d5c93014f12e6385047f03151e5f737881af222dcd4fee35a27caa24aad79022100fb3243a1c7410d4bb6cdd6ed53626324533e9ae8ca1c8a619fbd7b751536cbb7:a057de5828a7fac049eae914b3bc4a77

@@ -1,0 +1,33 @@
+id: moxa-mxview-panel
+
+info:
+  name: Moxa MXview One - Network Management Panel
+  author: rxerium
+  severity: info
+  description: |
+    Moxa MXview One is a network management platform for industrial Ethernet
+    infrastructure, OT network monitoring, and topology visualisation. It is
+    widely used in manufacturing, energy, and transportation to manage industrial
+    switches and routers.
+  reference:
+    - https://www.moxa.com/en/products/industrial-network-infrastructure/network-management-software/mxview-series/
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"MXview One Central Manager"
+  tags: panel,ics,ot,networking,moxa,mxview,industrial-ethernet
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "MXview"
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100a72e5f02a0daf1707dfdc2983ef98f9ef26abf25dd3b480d3a749515b2e6ceb502200e48fa464518fd978e50cf9a9e2d977e01095e2a81056e2744460e3e24fc4aea:a057de5828a7fac049eae914b3bc4a77

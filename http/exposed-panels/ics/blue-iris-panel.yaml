@@ -1,0 +1,31 @@
+id: blue-iris-panel
+
+info:
+  name: Blue Iris VMS - Panel
+  author: rxerium
+  severity: info
+  description: |
+    Blue Iris video management software panel detected. Blue Iris is a popular video surveillance management system for IP cameras.
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: blue-iris-software
+    product: blue-iris
+    shodan-query: "Blue Iris Login"
+  tags: panel,ics,surveillance,vms,blue-iris
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Blue Iris Login"
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a0047304502207a66e002aabf766cd1d07916bd0a120e2f99b0553e115334f9c029012fde3ed1022100a661e15865c08ffc9fb8488ee533c0608c864203ec02283342f12709741d297d:a057de5828a7fac049eae914b3bc4a77

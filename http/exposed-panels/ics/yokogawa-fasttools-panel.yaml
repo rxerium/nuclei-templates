@@ -1,0 +1,38 @@
+id: yokogawa-fasttools-panel
+
+info:
+  name: Yokogawa FAST/TOOLS - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Yokogawa FAST/TOOLS is an industrial SCADA/HMI platform for process monitoring and
+    control. The ORPHASWeb component exposes a web interface, typically on port 8080 or
+    8443, using Jetty as the embedded web server.
+  reference:
+    - https://www.yokogawa.com/us/products/software/fast-tools/
+  metadata:
+    max-request: 1
+    shodan-query: 'ssl.cert.subject.organization:"Yokogawa" http.server:"Jetty" port:8443'
+  tags: panel,yokogawa,fasttools,scada,ics,ot
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "FAST/TOOLS"
+          - "ORPHASWeb"
+          - "Yokogawa"
+        condition: or
+        part: body
+
+      - type: status
+        status:
+          - 200
+          - 302
+          - 401
+# digest: 490a004630440220747f33cd4069ffebfd21a9d0d6aa7b00ca40a08aadae3f773a3c9e9fed6648e8022032317167281a53c36e2bf45530e0066bb461600317121d8bce000bb18951a3c6:a057de5828a7fac049eae914b3bc4a77

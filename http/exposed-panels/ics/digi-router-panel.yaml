@@ -1,0 +1,35 @@
+id: digi-router-panel
+
+info:
+  name: Digi International Router - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Digi International cellular routers expose a web management interface used in industrial IoT and remote connectivity applications.
+  reference:
+    - https://www.digi.com/products/networking/cellular-routers
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Digi Router"'
+  tags: panel,ics,digi,router,industrial
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: header
+        words:
+          - 'TornadoServer'
+
+      - type: word
+        words:
+          - '<title>Digi Router</title>'
+
+      - type: status
+        status:
+          - 200
+# digest: 4b0a00483046022100ee1270c56043706bf9bfebf0d201b2edb77d968ee3b98f60a20f93a06a44884d022100b869781f4d9b63386152722ebefef1d9018daa2bf4d157940db20f10085fe2d3:a057de5828a7fac049eae914b3bc4a77

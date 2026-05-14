@@ -1,0 +1,38 @@
+id: phoenix-contact-visu-plus-panel
+
+info:
+  name: Phoenix Contact Visu+ HMI - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Phoenix Contact Visu+ is an HMI/SCADA visualization software used in industrial automation environments for process monitoring and control.
+  reference:
+    - https://www.phoenixcontact.com/en-us/products/hmi-software-visu
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Visu" http.html:"Phoenix Contact"'
+  tags: panel,ics,phoenix-contact,hmi,scada
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Visu'
+        part: title
+
+      - type: word
+        words:
+          - 'Phoenix Contact'
+          - 'phoenixcontact'
+        condition: or
+
+      - type: status
+        status:
+          - 200
+# digest: 4b0a004830460221008aa58b1730e9d3b6a6290892100c75e3222e2954ff42b92bc3cf217d4786e92d022100ed0730c184d8ac252367ecee51a79c0d611bf89df5dbe4bb820fc89610d17e70:a057de5828a7fac049eae914b3bc4a77

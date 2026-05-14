@@ -1,0 +1,34 @@
+id: siemens-desigo-panel
+
+info:
+  name: Siemens Desigo CC - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Siemens Desigo CC is a building management system (BMS) used for HVAC,
+    fire safety, and security in large commercial and institutional buildings.
+    The web interface (Desigo Web) is accessible via browser and is commonly
+    deployed on non-standard HTTPS ports.
+  reference:
+    - https://www.siemens.com/global/en/products/buildings/hvac/desigo-cc.html
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"Desigo Web"
+  tags: panel,ics,bms,hvac,siemens,desigo,building-automation
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Desigo"
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 4b0a004830460221009221d7f6d0e2e101da518e7e5fd31eb0e0e1d5a293a9a1743022c9d085898a19022100b55760706a55d7b42318a63397b558840b1c5503b88a5678f948c02614963bb8:a057de5828a7fac049eae914b3bc4a77

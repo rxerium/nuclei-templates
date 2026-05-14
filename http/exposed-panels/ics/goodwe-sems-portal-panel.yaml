@@ -1,0 +1,30 @@
+id: goodwe-sems-portal-panel
+
+info:
+  name: GoodWe SEMS Portal - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    GoodWe SEMS (Smart Energy Management System) Portal is a web-based monitoring and management platform for GoodWe solar inverters, providing real-time energy data, remote configuration, and fleet management.
+  reference:
+    - https://www.goodwe.com/sems
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"GOODWE SEMS PORTAL"'
+  tags: panel,goodwe,ics,scada,solar
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'GOODWE SEMS PORTAL'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100e24696d74b7cfd1a50b4bd6d016bb4d2b960dd56e677563311977189cffddb660220628fe9b6e74a4fae7ee18d94b7a0dc20efc0e6ee89aaf27d54e25ec65a8844d1:a057de5828a7fac049eae914b3bc4a77

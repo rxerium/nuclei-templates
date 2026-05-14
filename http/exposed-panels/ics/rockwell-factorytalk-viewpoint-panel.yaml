@@ -1,0 +1,35 @@
+id: rockwell-factorytalk-viewpoint-panel
+
+info:
+  name: Rockwell Automation FactoryTalk ViewPoint - Panel
+  author: rxerium
+  severity: info
+  description: |
+    Rockwell Automation FactoryTalk ViewPoint is a web-based HMI that allows remote
+    monitoring and control of industrial automation systems from a browser. It provides
+    access to FactoryTalk View Machine Edition and Site Edition displays. Exposed
+    instances may allow unauthorised access to industrial control system visualisations.
+  reference:
+    - https://www.rockwellautomation.com/en-us/products/software/factorytalk/operationsuite/view/factorytalk-viewpoint.html
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"FactoryTalk ViewPoint"'
+  tags: panel,ics,scada,rockwell,factorytalk
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        words:
+          - "FactoryTalk ViewPoint"
+        part: body
+
+      - type: word
+        words:
+          - "/ftvp/ViewPoint.aspx"
+        part: body
+# digest: 490a0046304402202d5afe47f585ebbdcd74addfd404e2b8faa8edcc3135d24734b34ca3f3b39c6c02202fcdd3346073911b13e47265e40f8643fd67edbd5c861301a3138f649eb0e265:a057de5828a7fac049eae914b3bc4a77

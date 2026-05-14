@@ -1,0 +1,32 @@
+id: saia-burgess-webeditor-panel
+
+info:
+  name: Saia-Burgess WebEditor HMI - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    A Saia-Burgess Controls AG WebEditor HMI interface was detected. WebEditor is used
+    to create and serve Java-applet-based HMI screens for Saia PCD programmable controllers
+    in building automation, HVAC, and industrial control installations.
+  reference:
+    - https://www.saia-pcd.com/en/products/software/saia-pcd-tools/Pages/webeditor.aspx
+  metadata:
+    max-request: 1
+    shodan-query: http.html:"Saia-Burgess Controls AG - WebEditor"
+  tags: panel,ics,scada,hmi,saia,bms,building-automation,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Saia-Burgess Controls AG - WebEditor'
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100d3939508da10cdd46abd6087a42fb643b439c718ca7ab8570c70b31b80c4359802206ba9c2bce4e4135da3d64b18e3cc1b9f098fc122c4bbe93c8ccb580b0706fc16:a057de5828a7fac049eae914b3bc4a77

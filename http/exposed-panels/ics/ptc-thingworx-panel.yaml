@@ -1,0 +1,40 @@
+id: ptc-thingworx-panel
+
+info:
+  name: PTC ThingWorx - Panel
+  author: rxerium
+  severity: info
+  description: |
+    PTC ThingWorx is an Industrial IoT (IIoT) platform for building and deploying
+    connected industrial applications, machine monitoring, and remote service solutions.
+    Exposed instances may provide unauthenticated access to IIoT dashboards and
+    connected device management interfaces.
+  reference:
+    - https://www.ptc.com/en/products/thingworx
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Thingworx"'
+  tags: panel,ics,iot,ptc,thingworx
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        words:
+          - "<title>Thingworx</title>"
+          - "<title>ThingWorx</title>"
+        condition: or
+        part: body
+
+      - type: word
+        words:
+          - "/Thingworx/Home"
+          - "Thingworx/index"
+        condition: or
+        part: body
+# digest: 490a00463044022074e4a4268984cd99f311ef45523deb0e12017e74617268f529fbe6772204ef2402205c80784257649fe9ce2928e93b1526a4dc629cb6d48bd396480c5006b14cc4bb:a057de5828a7fac049eae914b3bc4a77

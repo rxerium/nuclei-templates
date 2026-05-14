@@ -1,0 +1,32 @@
+id: comap-ibcom-panel
+
+info:
+  name: ComAp IB-COM Gateway - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    A ComAp IB-COM communication module web interface was detected. ComAp IB-COM is an
+    Ethernet gateway used with ComAp InteliGen and InteliSys generator controllers for
+    remote monitoring and control of diesel and gas generator sets.
+  reference:
+    - https://www.comap-control.com/products/detail/ib-com
+  metadata:
+    max-request: 1
+    shodan-query: http.html:"IB-COM" http.html:"ComAp"
+  tags: panel,ics,scada,comap,generator,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '&copy ComAp'
+
+      - type: status
+        status:
+          - 200
+# digest: 490a004630440220629060e432bf25e5e486d25d1d6c964831707b61c6b02a9e3250193056e7c5650220536ab8772e5445f62e66e5979e6942d121b0f536ab3e0a1c5c37481a9c9ca7ac:a057de5828a7fac049eae914b3bc4a77

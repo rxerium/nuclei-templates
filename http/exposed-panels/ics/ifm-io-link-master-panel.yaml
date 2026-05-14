@@ -1,0 +1,40 @@
+id: ifm-io-link-master-panel
+
+info:
+  name: IFM Electronic IO-Link Master - Panel
+  author: rxerium
+  severity: info
+  description: |
+    IFM Electronic IO-Link Master devices (AL1350, AL1352, AL1322 series) expose an
+    embedded web interface for device configuration and diagnostics. These are industrial
+    sensor/actuator communication controllers commonly deployed on factory floors.
+  reference:
+    - https://www.ifm.com/us/en/applications/io-link.html
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"IO-Link Master" http.html:"ifm"'
+  tags: panel,ifm,io-link,ics,ot,industrial
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "IO-Link Master"
+        part: body
+
+      - type: word
+        words:
+          - "ifm"
+          - "ifm electronic"
+        condition: or
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a004730450220405b5a0a3dd7c1aea35b42264dd779888014cd0f58d047b0f53eb3da2965ab80022100cceb1074519caf8614d732abb3e34598c69728f4b6b6b7011073f839788281ee:a057de5828a7fac049eae914b3bc4a77

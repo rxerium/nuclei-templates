@@ -1,0 +1,31 @@
+id: hms-anybus-mbus-panel
+
+info:
+  name: HMS Anybus M-Bus Gateway - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    An HMS Networks Anybus M-Bus/MTCP gateway web interface was detected. Anybus M-Bus gateways
+    provide Modbus TCP to M-Bus bridging for industrial metering and building automation systems.
+  reference:
+    - https://www.hms-networks.com/anybus/anybus-m-bus
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"Anybus M-Bus"
+  tags: panel,ics,gateway,anybus,hms,mbus,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Anybus M-Bus/MTCP'
+
+      - type: status
+        status:
+          - 200
+# digest: 490a00463044022048af10baa905ab1ddaf61fd3c3bb2a052be0e0bc77af55fb76bdfb8242bb4f5802206a140ec8f7f341354fbf45d5ffb9cf2f167e1a7ac0b37b2874284ce186156a06:a057de5828a7fac049eae914b3bc4a77

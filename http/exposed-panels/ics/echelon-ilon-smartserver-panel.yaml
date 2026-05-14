@@ -1,0 +1,36 @@
+id: echelon-ilon-smartserver-panel
+
+info:
+  name: Echelon i.LON SmartServer - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Echelon (now Adesto/Dialog Semiconductor) i.LON SmartServer is a LonWorks/IP-852
+    building automation controller used in HVAC, lighting, and energy management systems.
+    The embedded web interface is frequently exposed on standard and non-standard ports.
+  reference:
+    - https://www.echelon.com/products/ilon-smartserver/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"i.LON SmartServer"'
+  tags: panel,echelon,ilon,lonworks,scada,ics,ot,building-automation
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "i.LON SmartServer"
+          - "i.LON 10"
+        condition: or
+        part: body
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 490a0046304402202fa6a152373ca9828546ab085ce4d0848f5f029e0322d64804e275040bef477c022002ca9d5e88276ee543736bb9e6b5c32d3bcbff0372dc9f7e72b464e34ed852b6:a057de5828a7fac049eae914b3bc4a77

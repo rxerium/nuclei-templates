@@ -1,0 +1,37 @@
+id: cogent-datahub-panel
+
+info:
+  name: Cogent DataHub (OPC DataHub) - Panel
+  author: rxerium
+  severity: info
+  description: |
+    Cogent DataHub (OPC DataHub) is an industrial middleware platform for OPC connectivity,
+    data bridging, and SCADA integration. The embedded web server is commonly exposed on
+    port 80 or 443.
+  reference:
+    - https://www.cogentdatahub.com/products/datahub/
+    - https://www.opcdatahub.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"DataHub Web Server"'
+  tags: panel,cogent,datahub,opc,scada,ics,ot
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "DataHub Web Server"
+          - "OPC DataHub"
+        condition: or
+        part: body
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 490a004630440220224dd06e2693b053fa2142f7a9d48b74fe45d76686ebff5eff8b37f0be4a817c02207efd543accf0faf6e5f7de857ae82738408b7b3022b043705e2c0066e57fc22b:a057de5828a7fac049eae914b3bc4a77

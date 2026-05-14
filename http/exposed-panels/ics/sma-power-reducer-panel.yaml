@@ -1,0 +1,31 @@
+id: sma-power-reducer-panel
+
+info:
+  name: SMA Power Reducer Box - Panel
+  author: rxerium
+  severity: info
+  description: |
+    SMA Power Reducer Box panel detected. The Power Reducer Box is used for solar PV power management and curtailment control in grid-tied solar installations.
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: sma
+    product: power-reducer-box
+    shodan-query: "SMA Power Reducer"
+  tags: panel,ics,solar,energy,sma
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Power Reducer Box"
+
+      - type: status
+        status:
+          - 200
+# digest: 490a0046304402206fcec82ab4af0ec125dfcd7d7e3cead6132ea8de37c69129ccea749baf83822102204d91c443623a6de416cf16ae7d6f3fbe8a9919173d74fa99a2924b2460b2be8e:a057de5828a7fac049eae914b3bc4a77

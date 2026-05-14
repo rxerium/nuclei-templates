@@ -1,0 +1,35 @@
+id: siemens-wincc-oa-panel
+
+info:
+  name: Siemens WinCC OA - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Siemens WinCC OA (formerly ETM PVSS) is an industrial SCADA/HMI software platform.
+    The web client exposes a login interface on the network for remote operator access.
+  reference:
+    - https://www.siemens.com/global/en/products/automation/industry-software/automation-software/wincc-oa.html
+    - https://www.etm.at/en/products/wincc-oa/
+  metadata:
+    max-request: 3
+    shodan-query: 'http.title:"WinCC OA"'
+  tags: panel,siemens,scada,ics,wincc,ot
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "WinCC OA"
+        part: body
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 4b0a00483046022100b34bf000d64acdde41fd35a7cd58c4bb4d1166d0a96aa8e74d41bf1d771be233022100a420616d13c7890f002cbef920994a4f3c639d7dee19655e21ad97bf5f49d488:a057de5828a7fac049eae914b3bc4a77

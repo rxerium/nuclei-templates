@@ -1,0 +1,33 @@
+id: fuxa-scada-panel
+
+info:
+  name: FUXA - SCADA/HMI Panel
+  author: rxerium
+  severity: info
+  description: |
+    FUXA is an open-source web-based SCADA/HMI platform built on Node.js.
+    It supports Modbus, OPC-UA, BACnet, MQTT, and Siemens S7 protocols and
+    is widely self-hosted for small industrial deployments. Instances are
+    frequently exposed to the internet without authentication.
+  reference:
+    - https://github.com/frangoteam/FUXA
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"FUXA"
+  tags: panel,scada,hmi,ics,fuxa,open-source,nodejs,modbus,opc-ua
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "FUXA"
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100cfcde85be750704c2a36b2115bf6c1dfd55f65c8bf31f670595b48d52983af4f02205f0dbb0e3b75b01156c32afe86a8f60095f21c0e2fd3aba86cb233179c96d100:a057de5828a7fac049eae914b3bc4a77

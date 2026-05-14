@@ -1,0 +1,34 @@
+id: schneider-ecostruxure-panel
+
+info:
+  name: Schneider Electric EcoStruxure Building Operation - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Schneider Electric EcoStruxure Building Operation (formerly StruxureWare)
+    is an enterprise building management system for HVAC, lighting, power,
+    and security. The WebStation interface is the browser-based access point
+    for building operators and facility managers.
+  reference:
+    - https://www.se.com/ww/en/work/products/product-launch/building-operations/
+    - https://www.se.com/ww/en/work/products/product-launch/ecostruxure-building-operation/
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"Building Operation"
+  tags: panel,ics,bms,hvac,schneider,ecostruxure,building-automation,webstation
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Building Operation"
+
+      - type: status
+        status:
+          - 200
+# digest: 4b0a0048304602210096b8c44f2ae0785033afb09cadb4b0c71d2f1a9adcfe0aae694bf7590eb17845022100c928d9ffc1c6d0f075cc768da15bbfb64f689223394c10dd0111ebe74eba813b:a057de5828a7fac049eae914b3bc4a77

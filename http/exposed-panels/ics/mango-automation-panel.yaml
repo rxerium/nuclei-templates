@@ -1,0 +1,33 @@
+id: mango-automation-panel
+
+info:
+  name: Mango Automation - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Mango Automation by Infinite Automation Systems is an open-source SCADA/HMI
+    platform for industrial IoT, supporting Modbus, BACnet, SNMP, and other
+    protocols for real-time data acquisition and control.
+  reference:
+    - https://infiniteautomation.com/mango-automation-overview/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"Mango Automation, by Infinite Automation"'
+  tags: panel,mango,scada,ics,hmi,infinite-automation
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Mango Automation, by Infinite Automation'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 490a0046304402200f4d358d4c763e4475233c3e6e8f112f9e12eaf417f5adba0d499d02e3cdb67402200bae0b97aa1eb43f23729abf1920a637cf08ef2f5eed9b6d377bc4518fee2627:a057de5828a7fac049eae914b3bc4a77

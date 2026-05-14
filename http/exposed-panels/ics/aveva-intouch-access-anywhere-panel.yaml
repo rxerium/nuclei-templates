@@ -1,0 +1,39 @@
+id: aveva-intouch-access-anywhere-panel
+
+info:
+  name: AVEVA InTouch Access Anywhere - Panel
+  author: rxerium
+  severity: info
+  description: |
+    AVEVA InTouch Access Anywhere is a secure gateway that provides browser-based
+    remote access to InTouch HMI applications over the internet. It is widely used in
+    industrial process control, utilities, and manufacturing environments. Exposed
+    instances may provide access to industrial HMI displays and SCADA interfaces.
+  reference:
+    - https://www.aveva.com/en/products/intouch-hmi/
+    - https://www.aveva.com/en/products/intouch-access-anywhere/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"InTouch Access Anywhere"'
+  tags: panel,ics,scada,aveva,intouch,hmi
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        words:
+          - "InTouch Access Anywhere"
+        part: body
+
+      - type: word
+        words:
+          - "AccessAnywhere"
+          - "STR_SECUREGATEWAY"
+        condition: or
+        part: body
+# digest: 4a0a00473045022060f29fbeecce9041cf802e8b0be1df91fe4c008c694b845f40104a4ec8aa11a80221009ed9291ea826215e1550058d2b4bbf64ebfdd4065a804c357c7e2ee0b0e335c5:a057de5828a7fac049eae914b3bc4a77

@@ -1,0 +1,30 @@
+id: synology-surveillance-station-panel
+
+info:
+  name: Synology Surveillance Station - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Synology Surveillance Station NVR management panel has been detected.
+  reference:
+    - https://www.synology.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"Surveillance Station"'
+  tags: panel,synology,surveillance,nvr,ics
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Surveillance Station'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4b0a00483046022100b15af81a5f5909789b0e16f76a3303166f447da328817d22a584204de5d37644022100967c20064f261db307383e5b851db87f7f57dce5698298e38a2ef638a74e988e:a057de5828a7fac049eae914b3bc4a77

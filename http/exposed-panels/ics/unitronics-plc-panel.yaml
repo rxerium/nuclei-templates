@@ -1,0 +1,31 @@
+id: unitronics-plc-panel
+
+info:
+  name: Unitronics PLC - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Unitronics PLC web interface panel has been detected.
+  reference:
+    - https://www.unitronicsplc.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"Unitronics"'
+  tags: panel,unitronics,plc,ics
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Logo-Unitronics.svg'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4b0a004830460221008ed29883896a1913e6ed9654ac0cd6dd321846db9eb24584b222a68062ca4be5022100da1cf82ce6f8d09a036550491d55383922871f7e44fcd54332c782f7beef099a:a057de5828a7fac049eae914b3bc4a77

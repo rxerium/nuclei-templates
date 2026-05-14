@@ -1,0 +1,31 @@
+id: janitza-umg-panel
+
+info:
+  name: Janitza UMG Power Meter - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Janitza UMG series power meters and energy analyzers expose a web interface for energy monitoring and power quality analysis.
+  reference:
+    - https://www.janitza.de/energy-analyzers.html
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Janitza"'
+  tags: panel,ics,janitza,power-meter,energy
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>Janitza'
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a004730450220328ef942bd2028341e0c574b2b85330f3546a49970f631946b7a317acc44b186022100b8cf044142915264f5e4b0f9c7bf26447c5df9a080ca9fc30c501effcabe2ba4:a057de5828a7fac049eae914b3bc4a77

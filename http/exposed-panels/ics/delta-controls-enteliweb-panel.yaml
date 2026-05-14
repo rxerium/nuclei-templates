@@ -1,0 +1,35 @@
+id: delta-controls-enteliweb-panel
+
+info:
+  name: Delta Controls enteliWEB - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Delta Controls enteliWEB is a web-based building automation and energy
+    management system. It provides browser access to BACnet building controllers
+    for HVAC monitoring and control. Exposed instances may allow access to
+    building operations without authentication.
+  reference:
+    - https://www.deltacontrols.com/products/enteliweb/
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"enteliWEB Login Page"
+  tags: panel,ics,bms,bacnet,building-automation,delta-controls,enteliweb
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "enteliWEB"
+
+      - type: status
+        status:
+          - 200
+          - 301
+          - 302
+# digest: 4b0a00483046022100eb8eec7b330785ddd4f23dde680033cf39ead743b8eb6ae9f0514d2ad2b273c3022100dfd79636c8ae208198340994083e697a70c2df1bd195f8d92080364c07e69262:a057de5828a7fac049eae914b3bc4a77

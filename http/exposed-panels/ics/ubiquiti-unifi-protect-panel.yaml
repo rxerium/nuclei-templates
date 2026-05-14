@@ -1,0 +1,30 @@
+id: ubiquiti-unifi-protect-panel
+
+info:
+  name: Ubiquiti UniFi Protect - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Ubiquiti UniFi Protect Network Video Recorder management panel has been detected.
+  reference:
+    - https://www.ui.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"UniFi Protect"'
+  tags: panel,ubiquiti,unifi,protect,nvr,surveillance,ics
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'UniFi Protect Network Video Recorder'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100ab883c717143977e9adbc0e60bf5ac4089ba89a2de28942d88ac799855eff09a022064c29dcf002749d715253702594371690df1be12e7740c94894e7926eb3f7b28:a057de5828a7fac049eae914b3bc4a77

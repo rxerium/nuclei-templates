@@ -1,0 +1,31 @@
+id: fronius-solar-panel
+
+info:
+  name: Fronius Solar Inverter - Panel
+  author: rxerium
+  severity: info
+  description: |
+    Fronius solar inverter web interface detected. Fronius inverters are used in residential and commercial solar PV installations for DC to AC power conversion and monitoring.
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: fronius
+    product: solar-inverter
+    shodan-query: "Fronius"
+  tags: panel,ics,solar,energy,fronius
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "title ng-bind=\"'Fronius:"
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a004730450221008702fda7f904b453b294404f7a425b6f24bb3e13753b5be7ac1e7623e4f0ce9702203ad634b829656882239f47fb1f04bc1ab1abe389977ec969d65bdfc32ab13d55:a057de5828a7fac049eae914b3bc4a77

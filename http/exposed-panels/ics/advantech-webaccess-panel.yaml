@@ -1,0 +1,33 @@
+id: advantech-webaccess-panel
+
+info:
+  name: Advantech WebAccess HMI - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Advantech WebAccess is a browser-based HMI/SCADA software platform developed by Advantech (formerly BroadWin) for industrial automation and control.
+  reference:
+    - https://webaccess.advantech.com
+  metadata:
+    max-request: 2
+    shodan-query: 'http.title:"Advantech WebAccess"'
+  tags: panel,ics,advantech,scada,hmi
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Advantech WebAccess'
+          - 'BroadWin'
+        condition: or
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100f1475f5fcd2a89e63e3768266d96e56ef1769942f85b754825c41ec0cf2a180502206cee81a9ae7de763d3f4d11018774687d8cb1fa8c4a641fcbadda5d2f003bc8e:a057de5828a7fac049eae914b3bc4a77

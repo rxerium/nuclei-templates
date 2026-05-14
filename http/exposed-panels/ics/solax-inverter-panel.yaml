@@ -1,0 +1,31 @@
+id: solax-inverter-panel
+
+info:
+  name: SolaX Power Inverter - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    SolaX Power inverter monitoring panel has been detected.
+  reference:
+    - https://www.solaxpower.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Solax"'
+  tags: panel,solax,ics,solar
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - '<title>SOLAX</title>'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a004730450220412fb065278695db9bdcdf06f29cb976fa84535cf56018a7a5b8796d110b2e28022100f0552aee29b346419de7efd7c198287ac773857e594793f1a2d925146d4f7e6e:a057de5828a7fac049eae914b3bc4a77

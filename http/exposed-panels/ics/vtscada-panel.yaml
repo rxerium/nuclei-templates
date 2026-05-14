@@ -1,0 +1,36 @@
+id: vtscada-panel
+
+info:
+  name: VTScada - Internet Client Panel
+  author: rxerium
+  severity: info
+  description: |
+    VTScada (by Trihedral Engineering) is a SCADA platform used in water/
+    wastewater, oil and gas, and utilities. The Internet Client feature exposes
+    a browser-based view of process data, and is commonly deployed by municipal
+    water systems across North America.
+  reference:
+    - https://www.trihedral.com/vtscada/
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"VTScada Internet Client from Trihedral"
+  tags: panel,scada,ics,vtscada,trihedral,utilities,water,oil-gas
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "VTScada"
+
+      - type: word
+        words:
+          - "VTScada"
+          - "Trihedral"
+        condition: or
+# digest: 4a0a00473045022100fbcd3bb0de16e73428ae0fa561a411299ca0ab1cb487317d894d9dd9d1ae1772022044436afeac11e834473bfe5543df18fb5f446c2da0c93d246cc07515baf5c555:a057de5828a7fac049eae914b3bc4a77

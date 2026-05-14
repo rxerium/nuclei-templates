@@ -1,0 +1,31 @@
+id: andover-continuum-panel
+
+info:
+  name: Andover Continuum BMS - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Andover Continuum Building Management System panel has been detected.
+  reference:
+    - https://www.carrier.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"Andover Continuum"'
+  tags: panel,andover,continuum,ics,bms
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Andover Continuum'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 490a0046304402200cbcccd37d00145bee1db9533daac1e1deef2ef995722ac1e5296a8d6bce59ef022001ea3476055e9f1273de8eeb96e271ad96ff0a5fd5ba6bb73a4cc509b52082b0:a057de5828a7fac049eae914b3bc4a77

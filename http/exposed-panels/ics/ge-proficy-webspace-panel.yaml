@@ -1,0 +1,34 @@
+id: ge-proficy-webspace-panel
+
+info:
+  name: GE Proficy WebSpace - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    GE Proficy WebSpace is a thin-client delivery platform for GE Proficy
+    HMI/SCADA (iFIX, CIMPLICITY) applications over the web. It exposes
+    industrial HMI screens via browser on TCP/491 by default. The Server
+    header "WebSocket++/0.7.0" is a unique indicator.
+  reference:
+    - https://www.ge.com/digital/applications/hmi-scada/proficy-webspace
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Proficy WebSpace"'
+  tags: panel,scada,hmi,ics,ge,proficy,webspace,ifix,cimplicity
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "WebSocket++/0.7.0"
+
+      - type: word
+        words:
+          - "Proficy WebSpace"
+# digest: 490a0046304402202b0100c20fc155a1e1ecffc4cefa366dc4234b00d5b468ea36fe63544955dd2502201f95cceba74d45ce18a32598e62e9d56d6c3902f13d2cbb54360bb59448f616b:a057de5828a7fac049eae914b3bc4a77

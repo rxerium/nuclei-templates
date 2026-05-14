@@ -1,0 +1,40 @@
+id: opto22-groov-panel
+
+info:
+  name: Opto 22 groov - Panel
+  author: rxerium
+  severity: info
+  description: |
+    Opto 22 groov is an IIoT and industrial automation platform providing browser-based
+    HMI and edge computing capabilities. The groov View and groov Admin interfaces allow
+    control of industrial devices and data acquisition systems. Exposed instances may
+    provide unauthenticated access to industrial control panels.
+  reference:
+    - https://www.opto22.com/products/product-container/groov-epic
+    - https://www.opto22.com/products/product-container/groov-rio
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"groov"'
+  tags: panel,ics,iot,opto22,groov
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        words:
+          - "Loading - groov View"
+          - "groov Admin"
+        condition: or
+        part: body
+
+      - type: word
+        words:
+          - "groov_logo"
+          - "groov.css"
+        condition: or
+        part: body
+# digest: 4a0a004730450221008bbdf2e3662944158ae0f99ad5752e9247f153dfdf4d92ace1e0967f3915401f02204fbc1a0cb19abf6f550f1870f371ce7c29228fa5efe589835869113712d8d793:a057de5828a7fac049eae914b3bc4a77

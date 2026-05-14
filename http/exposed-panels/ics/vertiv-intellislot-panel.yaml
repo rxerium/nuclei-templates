@@ -1,0 +1,32 @@
+id: vertiv-intellislot-panel
+
+info:
+  name: Vertiv IntelliSlot Web Card - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    A Vertiv (formerly Emerson/Liebert) IntelliSlot Web/485 Card interface was detected.
+    IntelliSlot cards provide network-based monitoring and management of Vertiv Liebert UPS
+    and power conditioning systems in data centre environments.
+  reference:
+    - https://www.vertiv.com/en-us/products-catalog/monitoring-control-and-management/software-and-firmware/liebert-intellislot-unity-card/
+  metadata:
+    max-request: 1
+    shodan-query: http.html:"Liebert Corporation" http.html:"IntelliSlot"
+  tags: panel,ics,ups,vertiv,liebert,power,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'content="Liebert Corporation'
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100c81f72316af6485e50d9a0e9f7fe2855c8c9a278c373951824812389475ce98e02204a0715c2c80f20e6ef70fe4e3224e327ca0bfeabb18f12c0e2429d937351799d:a057de5828a7fac049eae914b3bc4a77

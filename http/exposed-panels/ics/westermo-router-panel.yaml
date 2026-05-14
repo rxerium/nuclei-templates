@@ -1,0 +1,31 @@
+id: westermo-router-panel
+
+info:
+  name: Westermo Industrial Router - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Westermo industrial router web interface panel has been detected.
+  reference:
+    - https://www.westermo.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"Westermo"'
+  tags: panel,westermo,router,ics
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'lynx - westermo'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a0047304502210082ec0061ff48882b4389a4a4093ed1094c4a28e29c127c8051fbf3bd2ecb975e022005f12f656ab10d86b8e4316957b11d283f7a371dbe0062658871bb2a9940f74e:a057de5828a7fac049eae914b3bc4a77

@@ -1,0 +1,31 @@
+id: eaton-powerxpert-panel
+
+info:
+  name: Eaton Power Xpert Gateway - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Eaton Power Xpert Gateway panel has been detected.
+  reference:
+    - https://www.eaton.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Eaton" http.html:"Power Xpert"'
+  tags: panel,eaton,powerxpert,ics,energy
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Eaton Power Xpert Gateway'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022017794a7a9c9652c0080afbb369710cf17bd4962bba5fac687b8494e8b3e85960022100d61fdd2b315db5887ac72d680f2c5a27542465e7a2f6f8b18cc7dff7c1ee6b66:a057de5828a7fac049eae914b3bc4a77

@@ -1,0 +1,31 @@
+id: accuenergy-acuvim-panel
+
+info:
+  name: Accuenergy Acuvim II - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Accuenergy Acuvim II Series Meter web server was detected. Acuvim II is a high-end
+    multifunction power meter used in power distribution and plant automation systems.
+  reference:
+    - https://www.accuenergy.com/products/acuvim-ii-series-power-meter/
+  metadata:
+    max-request: 1
+    shodan-query: http.html:"Acuvim II Series Meter Web Server"
+  tags: panel,ics,scada,accuenergy,acuvim,energy,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Acuvim II Series Meter Web Server'
+
+      - type: status
+        status:
+          - 200
+# digest: 4b0a00483046022100dfe9c906370870e34af3bff76d957194cf5900a7b71ad3f04204da092a3776ce022100d828f8500ed8fc76e0fdfab958dd1e29576ace54aaf454ca78ddc0b20f5403a5:a057de5828a7fac049eae914b3bc4a77

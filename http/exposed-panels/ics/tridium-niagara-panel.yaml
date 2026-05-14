@@ -1,0 +1,36 @@
+id: tridium-niagara-panel
+
+info:
+  name: Tridium Niagara - JACE Web Server Panel
+  author: rxerium
+  severity: info
+  description: |
+    Tridium Niagara (JACE) is one of the most widely deployed building automation
+    frameworks globally, used in HVAC, lighting, and energy management systems.
+    The Niagara4 web UI is served on port 443/8443 with a self-signed certificate
+    where the CN contains "Niagara4" and the issuer references Tridium.
+  reference:
+    - https://www.tridium.com/us/en/products/niagara
+  metadata:
+    max-request: 2
+    shodan-query: ssl.cert.subject.cn:"Niagara4" port:8443
+  tags: panel,ics,bms,building-automation,tridium,niagara,jace,hvac
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Niagara"
+          - "webstart/nwl"
+        condition: or
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 4b0a00483046022100e0ca76bc112244942b9f278e7def4a16230742d49edcbd721d3dca4dad1ba847022100f70b0d5d91b4673552904a40e656a975fcd2832d43900428b75e4359ba53c6ce:a057de5828a7fac049eae914b3bc4a77

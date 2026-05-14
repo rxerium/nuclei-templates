@@ -1,0 +1,38 @@
+id: sel-rtac-panel
+
+info:
+  name: SEL Real-Time Automation Controller - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Schweitzer Engineering Laboratories (SEL) Real-Time Automation Controller (RTAC)
+    is a programmable automation controller used in electric utility and industrial
+    automation environments for protection, control, and automation. The web interface
+    exposes a management panel for configuration and monitoring.
+  reference:
+    - https://selinc.com/products/3530/
+    - https://selinc.com/products/3555/
+  metadata:
+    max-request: 2
+    shodan-query: http.title:"SEL-RTAC"
+  tags: panel,scada,ics,sel,rtac,schweitzer,energy,utilities
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "SEL-RTAC"
+          - "Schweitzer Engineering Laboratories"
+          - "SELSESSID"
+        condition: or
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 490a0046304402205b123db598819b1cf0eacc42afb7b910f27666f97429a032b6c6fe7bb953336702205a4de3f5c7170efc87dcee663b23f1066d5676f0bd7d30c9d645f73b35bbc64a:a057de5828a7fac049eae914b3bc4a77

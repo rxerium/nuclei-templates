@@ -1,0 +1,31 @@
+id: indusoft-web-studio-panel
+
+info:
+  name: InduSoft Web Studio - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    An InduSoft Web Studio (IWS) SCADA HMI web interface was detected. InduSoft Web Studio
+    is a SCADA/HMI platform acquired by AVEVA used in industrial automation and process control.
+  reference:
+    - https://www.aveva.com/en/products/indusoft-web-studio/
+  metadata:
+    max-request: 1
+    shodan-query: http.html:"InduSoft Web Studio"
+  tags: panel,ics,scada,hmi,indusoft,aveva,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'InduSoft Web Studio'
+
+      - type: status
+        status:
+          - 200
+# digest: 490a00463044022072328ea8d4ae7f777cd1cbc0a2a77956c10b9b55b60afda874f1ee99c2bfd5c702200c11d0d430c976b102f92f8634637c79b3586a2468effc49070c5ee736694c12:a057de5828a7fac049eae914b3bc4a77

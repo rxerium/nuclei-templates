@@ -1,0 +1,30 @@
+id: supermicro-ipmi-panel
+
+info:
+  name: Supermicro IPMI - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Supermicro IPMI (Intelligent Platform Management Interface) provides remote server management capabilities including power control, hardware monitoring, and KVM-over-IP access.
+  reference:
+    - https://www.supermicro.com/en/solutions/management-software/ipmi-utilities
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Supermicro"'
+  tags: panel,supermicro,ipmi,ics,server-management
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Supermicro'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a0047304502207365601c4b44f518e785959ac49dad8293539c4ca95843c9d61b72a5940f715f022100c8a34b12673cd9cdd9dba162a4d227435c5616100529daa722f849c94824424e:a057de5828a7fac049eae914b3bc4a77

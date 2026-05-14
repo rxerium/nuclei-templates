@@ -1,0 +1,31 @@
+id: automationdirect-cmore-panel
+
+info:
+  name: AutomationDirect C-more HMI - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    AutomationDirect C-more HMI panel has been detected.
+  reference:
+    - https://www.automationdirect.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"AutomationDirect" http.html:"C-more"'
+  tags: panel,automationdirect,cmore,hmi,ics
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'C-more -- the best HMI presented by AutomationDirect'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 490a00463044022018bb8074e67a87082251b4686e4e9433cf1975074a811c4517b5bc730f0fbe3702203f2d01afd70a960a116674644d2726a994c9e3839c5c45bfa289a14dfbd63da2:a057de5828a7fac049eae914b3bc4a77

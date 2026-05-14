@@ -1,0 +1,35 @@
+id: codesys-webvisu-panel
+
+info:
+  name: CODESYS WebVisu - Panel
+  author: rxerium
+  severity: info
+  description: |
+    CODESYS WebVisu is the web-based HMI (Human-Machine Interface) component of the
+    CODESYS industrial automation runtime. It provides browser-based access to PLC
+    visualizations and industrial control interfaces. Exposed instances may reveal
+    real-time process data and control functions without authentication.
+  reference:
+    - https://www.codesys.com/products/codesys-runtime/web-visualization.html
+  metadata:
+    max-request: 1
+    shodan-query: 'html:"WEBVISU LOGIN"'
+  tags: panel,ics,scada,codesys,webvisu
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        words:
+          - "WebVisu Authentication"
+        part: title
+
+      - type: word
+        words:
+          - "WEBVISU LOGIN"
+        part: body
+# digest: 490a00463044022067edc47b59bbc0603a4bee1331d402bda3e93b68adffdc8cf389af4f83e26d880220782c1aebea412cc666c95c355f3d6cb66da41821bcd07703c49a70271768e84f:a057de5828a7fac049eae914b3bc4a77

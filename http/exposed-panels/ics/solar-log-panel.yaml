@@ -1,0 +1,34 @@
+id: solar-log-panel
+
+info:
+  name: Solar-Log - Monitoring Panel
+  author: rxerium
+  severity: info
+  description: |
+    Solar-Log is a solar plant monitoring system by Solare Datensysteme GmbH (Germany)
+    used for PV system monitoring, yield optimisation, and fault detection. The web
+    interface is commonly exposed on port 80, 81, or non-standard ports.
+  reference:
+    - https://www.solar-log.com/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Solar-Log"'
+  tags: panel,solar-log,solar,energy,ics,monitoring,ot
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Solar-Log"
+        part: body
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 490a0046304402204192d352e15dce28eaeefeb233deca70aa423715110f7c8f8b808b5cacae784e02200b69380bf24fc03f9e2bcad2f03377c99f7c8c3cc4ceb197f06da9e641c98f54:a057de5828a7fac049eae914b3bc4a77

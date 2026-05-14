@@ -1,0 +1,39 @@
+id: osisoft-pi-vision-panel
+
+info:
+  name: OSIsoft PI Vision - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    OSIsoft PI Vision (now AVEVA PI Vision) is a web-based data visualisation
+    platform for the PI System, widely used in energy, utilities, oil and gas,
+    and manufacturing for real-time operational data monitoring. Exposed instances
+    may provide access to sensitive operational technology data.
+  reference:
+    - https://www.aveva.com/en/products/pi-vision/
+    - https://docs.aveva.com/bundle/pi-vision/
+  metadata:
+    max-request: 2
+    shodan-query: 'http.title:"PI Vision"'
+  tags: panel,scada,historian,ics,osisoft,aveva,pi-vision,pi-system,energy
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "PI Vision"
+          - "Pi Vision"
+          - "pi_vision"
+          - "PIVision"
+        condition: or
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 490a0046304402204a8ca47fbf98dec6cd2784944770be805a48d907323e846ac045f7f71783df9a02200423f0b474e427884d111e1b1b2adbfd0d80fc8703330bdbe923e43fbf04b0b3:a057de5828a7fac049eae914b3bc4a77

@@ -1,0 +1,31 @@
+id: draytek-vigor-panel
+
+info:
+  name: DrayTek Vigor Router - Panel
+  author: rxerium
+  severity: info
+  description: |
+    DrayTek Vigor router web interface detected. Vigor routers are widely deployed SMB and enterprise networking devices supporting VPN, load balancing, and WAN connectivity.
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: draytek
+    product: vigor-router
+    shodan-query: "Vigor Login Page"
+  tags: panel,ics,router,network,draytek
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Vigor Login Page"
+
+      - type: status
+        status:
+          - 200
+# digest: 490a0046304402202eb314b64ed0f1ab9639639060816402d1d5048572c457188c85b9b345e0912102205ebff176cea1bdd3d3bdaec638e4d64d30eff7a91f7bd1912af4d05187de77a0:a057de5828a7fac049eae914b3bc4a77

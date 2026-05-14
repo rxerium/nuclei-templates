@@ -1,0 +1,35 @@
+id: automated-logic-webctrl-panel
+
+info:
+  name: Automated Logic WebCTRL - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Automated Logic WebCTRL is a web-based building automation system (BAS) used
+    for HVAC, lighting, and energy management in commercial buildings. The web
+    interface is served by the proprietary CJServer, which is a unique identifier
+    for this product.
+  reference:
+    - https://www.automatedlogic.com/en/products/webctrl-building-automation-system/
+  metadata:
+    max-request: 1
+    shodan-query: http.server:"CJServer"
+  tags: panel,ics,bms,hvac,building-automation,automated-logic,webctrl
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "CJServer"
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 490a004630440220410269d1f6addf8f431b08c801bebfac48c3d38873331800b1f7e7ad48c0516402204f97be593693f69b08548a4c3ee45598ce9d175ace7ea03b0998dd10f2115e9a:a057de5828a7fac049eae914b3bc4a77

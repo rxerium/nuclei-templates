@@ -1,0 +1,31 @@
+id: redlion-hmi-panel
+
+info:
+  name: Red Lion HMI - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Red Lion HMI web interface panel has been detected.
+  reference:
+    - https://www.redlion.net/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"Red Lion"'
+  tags: panel,redlion,hmi,ics
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'redlion.net'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a0047304502207d821b0ad75d384af8ffbe9d7f437f0bc60c8e07dfa30c540037efd685d88374022100b82624caf3b854d3adbf8e71e7245b1fbd986944aba0281d3f30ba2225994788:a057de5828a7fac049eae914b3bc4a77

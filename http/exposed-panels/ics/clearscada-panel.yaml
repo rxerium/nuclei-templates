@@ -1,0 +1,35 @@
+id: clearscada-panel
+
+info:
+  name: Schneider Electric ClearSCADA - Panel
+  author: rxerium
+  severity: info
+  description: |
+    ClearSCADA (now branded as EcoStruxure Geo SCADA Expert) is a Schneider Electric
+    SCADA platform used in water, oil and gas, and utilities sectors. Exposed instances
+    may provide unauthenticated access to industrial process data and control interfaces.
+  reference:
+    - https://www.se.com/ww/en/work/products/product-launch/scada/
+    - https://www.se.com/us/en/faqs/FA298792/
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"ClearSCADA"'
+  tags: panel,ics,scada,schneider,clearscada
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        words:
+          - "<title>ClearSCADA"
+        part: body
+
+      - type: word
+        words:
+          - "SCXWebServer"
+        part: header
+# digest: 4a0a004730450220664210f0179b8e5d79cadc262859f66dcd5e345f606c567bc89374a95679434c0221009eabcb6be2fa1c2eeb475848aa25d3980e0dde01ed09b2e85d281eb3f87c8d53:a057de5828a7fac049eae914b3bc4a77

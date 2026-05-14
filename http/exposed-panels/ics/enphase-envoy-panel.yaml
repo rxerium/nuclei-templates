@@ -1,0 +1,42 @@
+id: enphase-envoy-panel
+
+info:
+  name: Enphase Envoy Solar Gateway - Panel
+  author: rxerium
+  severity: info
+  description: |
+    Enphase Envoy is a communications gateway for Enphase microinverter solar systems.
+    The embedded web interface provides local monitoring and management of solar panels
+    and battery systems. Commonly exposed on port 80 at the installer/homeowner network level.
+  reference:
+    - https://enphase.com/store/communications/envoy
+  metadata:
+    max-request: 1
+    shodan-query: 'http.html:"Enphase Energy" http.html:"Envoy"'
+  tags: panel,enphase,envoy,solar,energy,ics,iot
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Enphase Energy"
+        part: body
+
+      - type: word
+        words:
+          - "Envoy"
+          - "envoy"
+        condition: or
+        part: body
+
+      - type: status
+        status:
+          - 200
+          - 302
+# digest: 4a0a004730450220633d6cf4abf7a6c708c501492686c2676993c1e4cd4b92b09531b4a265b08f1b022100821617ebd52751872159238ea1f4c7aad89334ef8324ed192df20c69fd9fcf13:a057de5828a7fac049eae914b3bc4a77

@@ -1,0 +1,33 @@
+id: saia-pcd-webserver-panel
+
+info:
+  name: Saia PCD Web Server - Login Panel
+  author: rxerium
+  severity: info
+  description: |
+    Saia-Burgess Controls PCD (Programmable Controller for Devices) is a building
+    automation and HVAC controller with an integrated web server for remote monitoring
+    and configuration of BACnet/Modbus installations.
+  reference:
+    - https://www.saia-pcd.com/en/products/plc/pcd-overview/Pages/overview.aspx
+  metadata:
+    max-request: 1
+    shodan-query: 'http.title:"Saia PCD Web Server"'
+  tags: panel,saia,pcd,ics,bms,hvac,building-automation
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Saia PCD Web Server'
+        part: body
+
+      - type: status
+        status:
+          - 200
+# digest: 4b0a00483046022100f5439e83278bb91ee0155a25d02859a6443be7163c9614a7f4c2b657575f7bae022100e4b66b1946162fdd9e3add376cea245380646998d008a83dd7e0fa5d94578aa4:a057de5828a7fac049eae914b3bc4a77
